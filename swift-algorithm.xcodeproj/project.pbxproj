@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E5512CC62A78E6CD00602494 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CC42A78E6CD00602494 /* ListNode.swift */; };
+		E5512CC72A78E6CD00602494 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CC52A78E6CD00602494 /* main.swift */; };
+		E5512CCC2A790B5800602494 /* linkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CC92A790B5800602494 /* linkList.swift */; };
+		E5512CCD2A790B5800602494 /* array.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CCB2A790B5800602494 /* array.swift */; };
+		E5512CD02A7A451000602494 /* 1.两数之和.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CCF2A7A451000602494 /* 1.两数之和.swift */; };
+		E5512CD32A7A456800602494 /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CD22A7A456800602494 /* Solution.swift */; };
+		E5512CD52A7A461A00602494 /* 5.最长回文子串.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CD42A7A461A00602494 /* 5.最长回文子串.swift */; };
+		E5512CD72A7A465D00602494 /* 9.回文数.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CD62A7A465D00602494 /* 9.回文数.swift */; };
+		E5512CD92A7A4ABD00602494 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CD82A7A4ABD00602494 /* TreeNode.swift */; };
+		E5512CDB2A7B401000602494 /* 104.二叉树的最大深度.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CDA2A7B401000602494 /* 104.二叉树的最大深度.swift */; };
+		E5512CDD2A7B472D00602494 /* 144.二叉树的前序遍历.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CDC2A7B472D00602494 /* 144.二叉树的前序遍历.swift */; };
+		E5512CDF2A7B875F00602494 /* 543.二叉树的直径.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CDE2A7B875F00602494 /* 543.二叉树的直径.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E5512CB62A78E67900602494 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E5512CB82A78E67900602494 /* swift-algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "swift-algorithm"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5512CC42A78E6CD00602494 /* ListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
+		E5512CC52A78E6CD00602494 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E5512CC92A790B5800602494 /* linkList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = linkList.swift; sourceTree = "<group>"; };
+		E5512CCB2A790B5800602494 /* array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = array.swift; sourceTree = "<group>"; };
+		E5512CCF2A7A451000602494 /* 1.两数之和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1.两数之和.swift"; sourceTree = "<group>"; };
+		E5512CD22A7A456800602494 /* Solution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution.swift; sourceTree = "<group>"; };
+		E5512CD42A7A461A00602494 /* 5.最长回文子串.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "5.最长回文子串.swift"; sourceTree = "<group>"; };
+		E5512CD62A7A465D00602494 /* 9.回文数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "9.回文数.swift"; sourceTree = "<group>"; };
+		E5512CD82A7A4ABD00602494 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
+		E5512CDA2A7B401000602494 /* 104.二叉树的最大深度.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "104.二叉树的最大深度.swift"; sourceTree = "<group>"; };
+		E5512CDC2A7B472D00602494 /* 144.二叉树的前序遍历.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "144.二叉树的前序遍历.swift"; sourceTree = "<group>"; };
+		E5512CDE2A7B875F00602494 /* 543.二叉树的直径.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "543.二叉树的直径.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5512CB52A78E67900602494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E5512CAF2A78E67900602494 = {
+			isa = PBXGroup;
+			children = (
+				E5512CCE2A7A44F500602494 /* Leetcode */,
+				E5512CC22A78E6CD00602494 /* Sources */,
+				E5512CB92A78E67900602494 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E5512CB92A78E67900602494 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5512CB82A78E67900602494 /* swift-algorithm */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5512CC22A78E6CD00602494 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E5512CC82A790B5800602494 /* 链表双指针技巧 */,
+				E5512CCA2A790B5800602494 /* 数组双指针技巧 */,
+				E5512CC52A78E6CD00602494 /* main.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E5512CC82A790B5800602494 /* 链表双指针技巧 */ = {
+			isa = PBXGroup;
+			children = (
+				E5512CC92A790B5800602494 /* linkList.swift */,
+			);
+			path = "链表双指针技巧";
+			sourceTree = "<group>";
+		};
+		E5512CCA2A790B5800602494 /* 数组双指针技巧 */ = {
+			isa = PBXGroup;
+			children = (
+				E5512CCB2A790B5800602494 /* array.swift */,
+			);
+			path = "数组双指针技巧";
+			sourceTree = "<group>";
+		};
+		E5512CCE2A7A44F500602494 /* Leetcode */ = {
+			isa = PBXGroup;
+			children = (
+				E5512CD12A7A454400602494 /* Common */,
+				E5512CCF2A7A451000602494 /* 1.两数之和.swift */,
+				E5512CD42A7A461A00602494 /* 5.最长回文子串.swift */,
+				E5512CD62A7A465D00602494 /* 9.回文数.swift */,
+				E5512CDA2A7B401000602494 /* 104.二叉树的最大深度.swift */,
+				E5512CDC2A7B472D00602494 /* 144.二叉树的前序遍历.swift */,
+				E5512CDE2A7B875F00602494 /* 543.二叉树的直径.swift */,
+			);
+			path = Leetcode;
+			sourceTree = "<group>";
+		};
+		E5512CD12A7A454400602494 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E5512CD22A7A456800602494 /* Solution.swift */,
+				E5512CC42A78E6CD00602494 /* ListNode.swift */,
+				E5512CD82A7A4ABD00602494 /* TreeNode.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5512CB72A78E67900602494 /* swift-algorithm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5512CBF2A78E67900602494 /* Build configuration list for PBXNativeTarget "swift-algorithm" */;
+			buildPhases = (
+				E5512CB42A78E67900602494 /* Sources */,
+				E5512CB52A78E67900602494 /* Frameworks */,
+				E5512CB62A78E67900602494 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swift-algorithm";
+			productName = "swift-algorithm";
+			productReference = E5512CB82A78E67900602494 /* swift-algorithm */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5512CB02A78E67900602494 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					E5512CB72A78E67900602494 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = E5512CB32A78E67900602494 /* Build configuration list for PBXProject "swift-algorithm" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E5512CAF2A78E67900602494;
+			productRefGroup = E5512CB92A78E67900602494 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5512CB72A78E67900602494 /* swift-algorithm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5512CB42A78E67900602494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5512CCC2A790B5800602494 /* linkList.swift in Sources */,
+				E5512CCD2A790B5800602494 /* array.swift in Sources */,
+				E5512CD92A7A4ABD00602494 /* TreeNode.swift in Sources */,
+				E5512CDF2A7B875F00602494 /* 543.二叉树的直径.swift in Sources */,
+				E5512CDB2A7B401000602494 /* 104.二叉树的最大深度.swift in Sources */,
+				E5512CD72A7A465D00602494 /* 9.回文数.swift in Sources */,
+				E5512CDD2A7B472D00602494 /* 144.二叉树的前序遍历.swift in Sources */,
+				E5512CD32A7A456800602494 /* Solution.swift in Sources */,
+				E5512CC72A78E6CD00602494 /* main.swift in Sources */,
+				E5512CD02A7A451000602494 /* 1.两数之和.swift in Sources */,
+				E5512CC62A78E6CD00602494 /* ListNode.swift in Sources */,
+				E5512CD52A7A461A00602494 /* 5.最长回文子串.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E5512CBD2A78E67900602494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E5512CBE2A78E67900602494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E5512CC02A78E67900602494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E5512CC12A78E67900602494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E5512CB32A78E67900602494 /* Build configuration list for PBXProject "swift-algorithm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5512CBD2A78E67900602494 /* Debug */,
+				E5512CBE2A78E67900602494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5512CBF2A78E67900602494 /* Build configuration list for PBXNativeTarget "swift-algorithm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5512CC02A78E67900602494 /* Debug */,
+				E5512CC12A78E67900602494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E5512CB02A78E67900602494 /* Project object */;
+}
