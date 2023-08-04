@@ -19,6 +19,10 @@
 		E5512CDB2A7B401000602494 /* 104.二叉树的最大深度.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CDA2A7B401000602494 /* 104.二叉树的最大深度.swift */; };
 		E5512CDD2A7B472D00602494 /* 144.二叉树的前序遍历.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CDC2A7B472D00602494 /* 144.二叉树的前序遍历.swift */; };
 		E5512CDF2A7B875F00602494 /* 543.二叉树的直径.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CDE2A7B875F00602494 /* 543.二叉树的直径.swift */; };
+		E5512CE12A7C9CA100602494 /* 509.斐波那契数.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CE02A7C9CA100602494 /* 509.斐波那契数.swift */; };
+		E5512CE32A7CD09E00602494 /* 322.零钱兑换.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CE22A7CD09E00602494 /* 322.零钱兑换.swift */; };
+		E5512CE52A7CF0AD00602494 /* 320.列举单词的全部缩写.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CE42A7CF0AD00602494 /* 320.列举单词的全部缩写.swift */; };
+		E5512CE72A7CF0FA00602494 /* 314.二叉树的垂直遍历.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CE62A7CF0FA00602494 /* 314.二叉树的垂直遍历.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +51,10 @@
 		E5512CDA2A7B401000602494 /* 104.二叉树的最大深度.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "104.二叉树的最大深度.swift"; sourceTree = "<group>"; };
 		E5512CDC2A7B472D00602494 /* 144.二叉树的前序遍历.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "144.二叉树的前序遍历.swift"; sourceTree = "<group>"; };
 		E5512CDE2A7B875F00602494 /* 543.二叉树的直径.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "543.二叉树的直径.swift"; sourceTree = "<group>"; };
+		E5512CE02A7C9CA100602494 /* 509.斐波那契数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "509.斐波那契数.swift"; sourceTree = "<group>"; };
+		E5512CE22A7CD09E00602494 /* 322.零钱兑换.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "322.零钱兑换.swift"; sourceTree = "<group>"; };
+		E5512CE42A7CF0AD00602494 /* 320.列举单词的全部缩写.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "320.列举单词的全部缩写.swift"; sourceTree = "<group>"; };
+		E5512CE62A7CF0FA00602494 /* 314.二叉树的垂直遍历.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "314.二叉树的垂直遍历.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +71,8 @@
 		E5512CAF2A78E67900602494 = {
 			isa = PBXGroup;
 			children = (
-				E5512CCE2A7A44F500602494 /* Leetcode */,
-				E5512CC22A78E6CD00602494 /* Sources */,
 				E5512CB92A78E67900602494 /* Products */,
+				E5512CC22A78E6CD00602494 /* Sources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,9 +87,10 @@
 		E5512CC22A78E6CD00602494 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				E5512CC82A790B5800602494 /* 链表双指针技巧 */,
-				E5512CCA2A790B5800602494 /* 数组双指针技巧 */,
+				E5512CCE2A7A44F500602494 /* Leetcode */,
 				E5512CC52A78E6CD00602494 /* main.swift */,
+				E5512CCA2A790B5800602494 /* 数组双指针技巧 */,
+				E5512CC82A790B5800602494 /* 链表双指针技巧 */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -106,13 +114,17 @@
 		E5512CCE2A7A44F500602494 /* Leetcode */ = {
 			isa = PBXGroup;
 			children = (
-				E5512CD12A7A454400602494 /* Common */,
 				E5512CCF2A7A451000602494 /* 1.两数之和.swift */,
-				E5512CD42A7A461A00602494 /* 5.最长回文子串.swift */,
-				E5512CD62A7A465D00602494 /* 9.回文数.swift */,
 				E5512CDA2A7B401000602494 /* 104.二叉树的最大深度.swift */,
 				E5512CDC2A7B472D00602494 /* 144.二叉树的前序遍历.swift */,
+				E5512CE62A7CF0FA00602494 /* 314.二叉树的垂直遍历.swift */,
+				E5512CE42A7CF0AD00602494 /* 320.列举单词的全部缩写.swift */,
+				E5512CE22A7CD09E00602494 /* 322.零钱兑换.swift */,
+				E5512CD42A7A461A00602494 /* 5.最长回文子串.swift */,
+				E5512CE02A7C9CA100602494 /* 509.斐波那契数.swift */,
 				E5512CDE2A7B875F00602494 /* 543.二叉树的直径.swift */,
+				E5512CD62A7A465D00602494 /* 9.回文数.swift */,
+				E5512CD12A7A454400602494 /* Common */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -120,8 +132,8 @@
 		E5512CD12A7A454400602494 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				E5512CD22A7A456800602494 /* Solution.swift */,
 				E5512CC42A78E6CD00602494 /* ListNode.swift */,
+				E5512CD22A7A456800602494 /* Solution.swift */,
 				E5512CD82A7A4ABD00602494 /* TreeNode.swift */,
 			);
 			path = Common;
@@ -185,18 +197,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5512CCC2A790B5800602494 /* linkList.swift in Sources */,
-				E5512CCD2A790B5800602494 /* array.swift in Sources */,
-				E5512CD92A7A4ABD00602494 /* TreeNode.swift in Sources */,
-				E5512CDF2A7B875F00602494 /* 543.二叉树的直径.swift in Sources */,
-				E5512CDB2A7B401000602494 /* 104.二叉树的最大深度.swift in Sources */,
-				E5512CD72A7A465D00602494 /* 9.回文数.swift in Sources */,
-				E5512CDD2A7B472D00602494 /* 144.二叉树的前序遍历.swift in Sources */,
-				E5512CD32A7A456800602494 /* Solution.swift in Sources */,
-				E5512CC72A78E6CD00602494 /* main.swift in Sources */,
 				E5512CD02A7A451000602494 /* 1.两数之和.swift in Sources */,
-				E5512CC62A78E6CD00602494 /* ListNode.swift in Sources */,
+				E5512CDB2A7B401000602494 /* 104.二叉树的最大深度.swift in Sources */,
+				E5512CDD2A7B472D00602494 /* 144.二叉树的前序遍历.swift in Sources */,
+				E5512CE72A7CF0FA00602494 /* 314.二叉树的垂直遍历.swift in Sources */,
+				E5512CE52A7CF0AD00602494 /* 320.列举单词的全部缩写.swift in Sources */,
+				E5512CE32A7CD09E00602494 /* 322.零钱兑换.swift in Sources */,
 				E5512CD52A7A461A00602494 /* 5.最长回文子串.swift in Sources */,
+				E5512CE12A7C9CA100602494 /* 509.斐波那契数.swift in Sources */,
+				E5512CDF2A7B875F00602494 /* 543.二叉树的直径.swift in Sources */,
+				E5512CD72A7A465D00602494 /* 9.回文数.swift in Sources */,
+				E5512CCD2A790B5800602494 /* array.swift in Sources */,
+				E5512CCC2A790B5800602494 /* linkList.swift in Sources */,
+				E5512CC62A78E6CD00602494 /* ListNode.swift in Sources */,
+				E5512CC72A78E6CD00602494 /* main.swift in Sources */,
+				E5512CD32A7A456800602494 /* Solution.swift in Sources */,
+				E5512CD92A7A4ABD00602494 /* TreeNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
