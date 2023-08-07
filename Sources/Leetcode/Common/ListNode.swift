@@ -10,7 +10,7 @@ import Foundation
 public class ListNode : Hashable {
     var value: Int
     var next: ListNode?
-    init(_ value: Int, next: ListNode? = nil) {
+    init(_ value: Int = 0, next: ListNode? = nil) {
         self.value = value
         self.next = next
     }

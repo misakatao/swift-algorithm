@@ -23,6 +23,24 @@
 		E5512CE32A7CD09E00602494 /* 322.零钱兑换.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CE22A7CD09E00602494 /* 322.零钱兑换.swift */; };
 		E5512CE52A7CF0AD00602494 /* 320.列举单词的全部缩写.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CE42A7CF0AD00602494 /* 320.列举单词的全部缩写.swift */; };
 		E5512CE72A7CF0FA00602494 /* 314.二叉树的垂直遍历.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CE62A7CF0FA00602494 /* 314.二叉树的垂直遍历.swift */; };
+		E5512CE92A7CF9CF00602494 /* 46.全排列.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CE82A7CF9CF00602494 /* 46.全排列.swift */; };
+		E5512CEB2A808CDA00602494 /* 37.解数独.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CEA2A808CDA00602494 /* 37.解数独.swift */; };
+		E5512CED2A808CFB00602494 /* 51.N 皇后.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CEC2A808CFB00602494 /* 51.N 皇后.swift */; };
+		E5512CF02A80C2E900602494 /* 3.无重复字符的最长子串.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CEF2A80C2E900602494 /* 3.无重复字符的最长子串.swift */; };
+		E5512CF22A80CA6600602494 /* 78.子集.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CF12A80CA6600602494 /* 78.子集.swift */; };
+		E5512CF42A80D38100602494 /* 77.组合.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CF32A80D38100602494 /* 77.组合.swift */; };
+		E5512CF62A80DB9300602494 /* 90.子集 II.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CF52A80DB9300602494 /* 90.子集 II.swift */; };
+		E5512CF82A80DCE600602494 /* 40.组合总和 II.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CF72A80DCE600602494 /* 40.组合总和 II.swift */; };
+		E5512CFA2A80E27A00602494 /* 47.全排列 II.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CF92A80E27A00602494 /* 47.全排列 II.swift */; };
+		E5512CFC2A80E2C700602494 /* 39.组合总和.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CFB2A80E2C700602494 /* 39.组合总和.swift */; };
+		E5512CFE2A80E39B00602494 /* 21.合并两个有序链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CFD2A80E39B00602494 /* 21.合并两个有序链表.swift */; };
+		E5512D002A80E42F00602494 /* 26.删除有序数组中的重复项.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CFF2A80E42F00602494 /* 26.删除有序数组中的重复项.swift */; };
+		E5512D022A80E46400602494 /* 27.移除元素.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512D012A80E46400602494 /* 27.移除元素.swift */; };
+		E5512D042A80E4C600602494 /* 35.搜索插入位置.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512D032A80E4C600602494 /* 35.搜索插入位置.swift */; };
+		E5512D062A80E59500602494 /* 52.N 皇后 II.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512D052A80E59500602494 /* 52.N 皇后 II.swift */; };
+		E5512D082A80E63400602494 /* 83.删除排序链表中的重复元素.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512D072A80E63400602494 /* 83.删除排序链表中的重复元素.swift */; };
+		E5512D0A2A80E7AC00602494 /* 160.相交链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512D092A80E7AC00602494 /* 160.相交链表.swift */; };
+		E5512D0C2A80E7E800602494 /* 167.两数之和 II - 输入有序数组.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512D0B2A80E7E800602494 /* 167.两数之和 II - 输入有序数组.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +73,24 @@
 		E5512CE22A7CD09E00602494 /* 322.零钱兑换.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "322.零钱兑换.swift"; sourceTree = "<group>"; };
 		E5512CE42A7CF0AD00602494 /* 320.列举单词的全部缩写.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "320.列举单词的全部缩写.swift"; sourceTree = "<group>"; };
 		E5512CE62A7CF0FA00602494 /* 314.二叉树的垂直遍历.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "314.二叉树的垂直遍历.swift"; sourceTree = "<group>"; };
+		E5512CE82A7CF9CF00602494 /* 46.全排列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "46.全排列.swift"; sourceTree = "<group>"; };
+		E5512CEA2A808CDA00602494 /* 37.解数独.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "37.解数独.swift"; sourceTree = "<group>"; };
+		E5512CEC2A808CFB00602494 /* 51.N 皇后.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "51.N 皇后.swift"; sourceTree = "<group>"; };
+		E5512CEF2A80C2E900602494 /* 3.无重复字符的最长子串.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3.无重复字符的最长子串.swift"; sourceTree = "<group>"; };
+		E5512CF12A80CA6600602494 /* 78.子集.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "78.子集.swift"; sourceTree = "<group>"; };
+		E5512CF32A80D38100602494 /* 77.组合.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "77.组合.swift"; sourceTree = "<group>"; };
+		E5512CF52A80DB9300602494 /* 90.子集 II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "90.子集 II.swift"; sourceTree = "<group>"; };
+		E5512CF72A80DCE600602494 /* 40.组合总和 II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "40.组合总和 II.swift"; sourceTree = "<group>"; };
+		E5512CF92A80E27A00602494 /* 47.全排列 II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "47.全排列 II.swift"; sourceTree = "<group>"; };
+		E5512CFB2A80E2C700602494 /* 39.组合总和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "39.组合总和.swift"; sourceTree = "<group>"; };
+		E5512CFD2A80E39B00602494 /* 21.合并两个有序链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "21.合并两个有序链表.swift"; sourceTree = "<group>"; };
+		E5512CFF2A80E42F00602494 /* 26.删除有序数组中的重复项.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "26.删除有序数组中的重复项.swift"; sourceTree = "<group>"; };
+		E5512D012A80E46400602494 /* 27.移除元素.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "27.移除元素.swift"; sourceTree = "<group>"; };
+		E5512D032A80E4C600602494 /* 35.搜索插入位置.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "35.搜索插入位置.swift"; sourceTree = "<group>"; };
+		E5512D052A80E59500602494 /* 52.N 皇后 II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "52.N 皇后 II.swift"; sourceTree = "<group>"; };
+		E5512D072A80E63400602494 /* 83.删除排序链表中的重复元素.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "83.删除排序链表中的重复元素.swift"; sourceTree = "<group>"; };
+		E5512D092A80E7AC00602494 /* 160.相交链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "160.相交链表.swift"; sourceTree = "<group>"; };
+		E5512D0B2A80E7E800602494 /* 167.两数之和 II - 输入有序数组.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "167.两数之和 II - 输入有序数组.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +123,7 @@
 		E5512CC22A78E6CD00602494 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E5512CEE2A80BE1E00602494 /* LCR */,
 				E5512CCE2A7A44F500602494 /* Leetcode */,
 				E5512CC52A78E6CD00602494 /* main.swift */,
 				E5512CCA2A790B5800602494 /* 数组双指针技巧 */,
@@ -117,13 +154,31 @@
 				E5512CCF2A7A451000602494 /* 1.两数之和.swift */,
 				E5512CDA2A7B401000602494 /* 104.二叉树的最大深度.swift */,
 				E5512CDC2A7B472D00602494 /* 144.二叉树的前序遍历.swift */,
+				E5512D092A80E7AC00602494 /* 160.相交链表.swift */,
+				E5512D0B2A80E7E800602494 /* 167.两数之和 II - 输入有序数组.swift */,
+				E5512CFD2A80E39B00602494 /* 21.合并两个有序链表.swift */,
+				E5512CFF2A80E42F00602494 /* 26.删除有序数组中的重复项.swift */,
+				E5512D012A80E46400602494 /* 27.移除元素.swift */,
+				E5512CEF2A80C2E900602494 /* 3.无重复字符的最长子串.swift */,
 				E5512CE62A7CF0FA00602494 /* 314.二叉树的垂直遍历.swift */,
 				E5512CE42A7CF0AD00602494 /* 320.列举单词的全部缩写.swift */,
 				E5512CE22A7CD09E00602494 /* 322.零钱兑换.swift */,
+				E5512D032A80E4C600602494 /* 35.搜索插入位置.swift */,
+				E5512CEA2A808CDA00602494 /* 37.解数独.swift */,
+				E5512CFB2A80E2C700602494 /* 39.组合总和.swift */,
+				E5512CF72A80DCE600602494 /* 40.组合总和 II.swift */,
+				E5512CE82A7CF9CF00602494 /* 46.全排列.swift */,
+				E5512CF92A80E27A00602494 /* 47.全排列 II.swift */,
 				E5512CD42A7A461A00602494 /* 5.最长回文子串.swift */,
 				E5512CE02A7C9CA100602494 /* 509.斐波那契数.swift */,
+				E5512CEC2A808CFB00602494 /* 51.N 皇后.swift */,
+				E5512D052A80E59500602494 /* 52.N 皇后 II.swift */,
 				E5512CDE2A7B875F00602494 /* 543.二叉树的直径.swift */,
+				E5512CF32A80D38100602494 /* 77.组合.swift */,
+				E5512CF12A80CA6600602494 /* 78.子集.swift */,
+				E5512D072A80E63400602494 /* 83.删除排序链表中的重复元素.swift */,
 				E5512CD62A7A465D00602494 /* 9.回文数.swift */,
+				E5512CF52A80DB9300602494 /* 90.子集 II.swift */,
 				E5512CD12A7A454400602494 /* Common */,
 			);
 			path = Leetcode;
@@ -137,6 +192,13 @@
 				E5512CD82A7A4ABD00602494 /* TreeNode.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		E5512CEE2A80BE1E00602494 /* LCR */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LCR;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,13 +262,31 @@
 				E5512CD02A7A451000602494 /* 1.两数之和.swift in Sources */,
 				E5512CDB2A7B401000602494 /* 104.二叉树的最大深度.swift in Sources */,
 				E5512CDD2A7B472D00602494 /* 144.二叉树的前序遍历.swift in Sources */,
+				E5512D0A2A80E7AC00602494 /* 160.相交链表.swift in Sources */,
+				E5512D0C2A80E7E800602494 /* 167.两数之和 II - 输入有序数组.swift in Sources */,
+				E5512CFE2A80E39B00602494 /* 21.合并两个有序链表.swift in Sources */,
+				E5512D002A80E42F00602494 /* 26.删除有序数组中的重复项.swift in Sources */,
+				E5512D022A80E46400602494 /* 27.移除元素.swift in Sources */,
+				E5512CF02A80C2E900602494 /* 3.无重复字符的最长子串.swift in Sources */,
 				E5512CE72A7CF0FA00602494 /* 314.二叉树的垂直遍历.swift in Sources */,
 				E5512CE52A7CF0AD00602494 /* 320.列举单词的全部缩写.swift in Sources */,
 				E5512CE32A7CD09E00602494 /* 322.零钱兑换.swift in Sources */,
+				E5512D042A80E4C600602494 /* 35.搜索插入位置.swift in Sources */,
+				E5512CEB2A808CDA00602494 /* 37.解数独.swift in Sources */,
+				E5512CFC2A80E2C700602494 /* 39.组合总和.swift in Sources */,
+				E5512CF82A80DCE600602494 /* 40.组合总和 II.swift in Sources */,
+				E5512CE92A7CF9CF00602494 /* 46.全排列.swift in Sources */,
+				E5512CFA2A80E27A00602494 /* 47.全排列 II.swift in Sources */,
 				E5512CD52A7A461A00602494 /* 5.最长回文子串.swift in Sources */,
 				E5512CE12A7C9CA100602494 /* 509.斐波那契数.swift in Sources */,
+				E5512CED2A808CFB00602494 /* 51.N 皇后.swift in Sources */,
+				E5512D062A80E59500602494 /* 52.N 皇后 II.swift in Sources */,
 				E5512CDF2A7B875F00602494 /* 543.二叉树的直径.swift in Sources */,
+				E5512CF42A80D38100602494 /* 77.组合.swift in Sources */,
+				E5512CF22A80CA6600602494 /* 78.子集.swift in Sources */,
+				E5512D082A80E63400602494 /* 83.删除排序链表中的重复元素.swift in Sources */,
 				E5512CD72A7A465D00602494 /* 9.回文数.swift in Sources */,
+				E5512CF62A80DB9300602494 /* 90.子集 II.swift in Sources */,
 				E5512CCD2A790B5800602494 /* array.swift in Sources */,
 				E5512CCC2A790B5800602494 /* linkList.swift in Sources */,
 				E5512CC62A78E6CD00602494 /* ListNode.swift in Sources */,

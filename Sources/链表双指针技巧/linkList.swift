@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Solution {
+class LinkListSolution {
     
     // 合并两个有序链表
     func mergeTwoLists(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {

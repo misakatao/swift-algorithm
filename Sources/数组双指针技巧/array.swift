@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Solution {
+class ArraySolution {
     
     // 删除有序数组中的重复项
     func removeDuplicates(_ list: [Int]) -> Int {
