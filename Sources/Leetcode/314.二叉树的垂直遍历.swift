@@ -16,7 +16,24 @@ extension Solution {
         var result = Array<Array<Int>>()
         var map = Dictionary<Int, Array<Int>>()
         
-        dfs(root, 0, &map)
+        func dfs(_ node: TreeNode?, _ pos: Int) {
+            guard let node = node else { return }
+            
+            minPos = min(minPos, pos)
+            maxPos = max(maxPos, pos)
+            
+            if var values = map[pos] {
+                values.append(node.value)
+                map[pos] = values
+            } else {
+                map[pos] = [node.value]
+            }
+            
+            dfs(node.left, pos - 1)
+            dfs(node.right, pos + 1)
+        }
+        
+        dfs(root, 0)
         
         for i in minPos...maxPos {
             if let values = map[i] {
@@ -25,22 +42,5 @@ extension Solution {
         }
         
         return result
-    }
-    
-    func dfs(_ node: TreeNode?, _ pos: Int, _ map: inout [Int: [Int]]) {
-        guard let node = node else { return }
-        
-        minPos = min(minPos, pos)
-        maxPos = max(maxPos, pos)
-        
-        if var values = map[pos] {
-            values.append(node.value)
-            map[pos] = values
-        } else {
-            map[pos] = [node.value]
-        }
-        
-        dfs(node.left, pos - 1, &map)
-        dfs(node.right, pos + 1, &map)
     }
 }

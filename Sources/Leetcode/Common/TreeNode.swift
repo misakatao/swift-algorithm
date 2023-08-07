@@ -11,7 +11,7 @@ public class TreeNode : Hashable {
     var value: Int
     var left: TreeNode?
     var right: TreeNode?
-    init(_ value: Int, left: TreeNode? = nil, right: TreeNode? = nil) {
+    init(_ value: Int = 0, left: TreeNode? = nil, right: TreeNode? = nil) {
         self.value = value
         self.left = left
         self.right = right

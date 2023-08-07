@@ -8,15 +8,15 @@
 import Foundation
 
 extension Solution {
-    
+    /*
+     给你二叉树的根节点 root ，返回它节点值的 前序 遍历。
+     */
     func preorderTraversal(_ root: TreeNode?) -> [Int] {
         var results = [Int]()
-        if root == nil {
-            return results
-        }
-        results.append(root!.value)
-        results.append(contentsOf: preorderTraversal(root?.left))
-        results.append(contentsOf: preorderTraversal(root?.right))
+        guard let root = root else { return results }
+        results.append(root.value)
+        results.append(contentsOf: preorderTraversal(root.left))
+        results.append(contentsOf: preorderTraversal(root.right))
         return results
     }
 }

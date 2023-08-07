@@ -14,22 +14,45 @@ func measureTime(_ closure: () -> Void) -> TimeInterval {
     return TimeInterval(Double(elapsedNanoSeconds) / 1_000_000)
 }
 
+func printJSON(_ obj: Any) {
+    do {
+        let jsonData = try JSONSerialization.data(withJSONObject: obj, options: .prettyPrinted)
+        if let jsonString = String(data: jsonData, encoding: .utf8) {
+            print(jsonString)
+        }
+    } catch {
+        print("Error converting to JSON: \(error)")
+    }
+}
+
 let s = Solution()
 
-func testCase_1() {
-    
+func testCase_3() {
+    print("耗时: \(measureTime { print(s.lengthOfLongestSubstring("abcabcbb")) }) ms")
 }
 
-func testCase_5() {
-    
+func testCase_39() {
+    print("耗时: \(measureTime { printJSON(s.combinationSum([10,1,2,7,6,1,5], 8)) }) ms")
 }
 
-func testCase_104() {
-    
+func testCase_40() {
+    print("耗时: \(measureTime { printJSON(s.combinationSum2([10,1,2,7,6,1,5], 8)) }) ms")
 }
 
-func testCase_144() {
-    
+func testCase_46() {
+    print("耗时: \(measureTime { printJSON(s.permute([1,3,5,7])) }) ms")
+}
+
+func testCase_51() {
+    print("耗时: \(measureTime { printJSON(s.solveNQueens(8)) }) ms")
+}
+
+func testCase_77() {
+    print("耗时: \(measureTime { printJSON(s.combine(4, 2)) }) ms")
+}
+
+func testCase_78() {
+    print("耗时: \(measureTime { printJSON(s.subsets([1,2,3])) }) ms")
 }
 
 func testCase_314() {
@@ -64,4 +87,5 @@ func testCase_543() {
     print("耗时: \(measureTime { print(s.diameterOfBinaryTree(root)) }) ms")
 }
 
-
+testCase_39()
+testCase_40()
