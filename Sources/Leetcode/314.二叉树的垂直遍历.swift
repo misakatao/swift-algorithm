@@ -13,7 +13,7 @@ var maxPos = 0
 extension Solution {
     
     func verticalOrder(_ root: TreeNode?) -> [[Int]] {
-        var result = Array<Array<Int>>()
+        var res = Array<Array<Int>>()
         var map = Dictionary<Int, Array<Int>>()
         
         func dfs(_ node: TreeNode?, _ pos: Int) {
@@ -37,10 +37,10 @@ extension Solution {
         
         for i in minPos...maxPos {
             if let values = map[i] {
-                result.append(values)
+                res.append(values)
             }
         }
         
-        return result
+        return res
     }
 }

@@ -10,16 +10,17 @@ import Foundation
 public class ListNode : Hashable {
     var value: Int
     var next: ListNode?
-    init(_ value: Int = 0, next: ListNode? = nil) {
+    init(_ value: Int, next: ListNode? = nil) {
         self.value = value
         self.next = next
     }
     
-    public static func == (lhs: ListNode, rhs: ListNode) -> Bool {
-        return lhs === rhs
-    }
-    
     public func hash(into hasher: inout Hasher) {
         hasher.combine(value)
+        hasher.combine(next)
+    }
+    
+    public static func == (lhs: ListNode, rhs: ListNode) -> Bool {
+        return lhs.value == rhs.value && lhs.next == rhs.next
     }
 }

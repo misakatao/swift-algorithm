@@ -9,41 +9,41 @@ import Foundation
 
 extension Solution {
     
-    typealias Matrix = [[UInt64]]
+    typealias Matrix = Array<Array<UInt64>>
     
     func matrixMultiply(_ a: Matrix, _ b: Matrix) -> Matrix {
         let n = a.count
         let m = b[0].count
         let p = b.count
         
-        var result = Matrix(repeating: Array(repeating: 0, count: m), count: n)
+        var res = Matrix(repeating: Array(repeating: 0, count: m), count: n)
         
         for i in 0..<n {
             for j in 0..<m {
                 for k in 0..<p {
-                    result[i][j] += a[i][k] * b[k][j]
+                    res[i][j] += a[i][k] * b[k][j]
                 }
             }
         }
         
-        return result
+        return res
     }
     
     func matrixPower(_ a: Matrix, _ n: Int) -> Matrix {
-        var result = a
+        var res = a
         var b = a
         var k = n - 1
         
         while k > 0 {
             if k % 2 != 0 {
-                result = matrixMultiply(result, b)
+                res = matrixMultiply(res, b)
             }
             
             b = matrixMultiply(b, b)
             k /= 2
         }
         
-        return result
+        return res
     }
     
     func fib(_ n: Int) -> Int {

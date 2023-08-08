@@ -14,8 +14,8 @@ extension Solution {
      candidates 中的 同一个 数字可以 无限制重复被选取 。如果至少一个数字的被选数量不同，则两种组合是不同的。 
      */
     func combinationSum(_ candidates: [Int], _ target: Int) -> [[Int]] {
-        var res = [[Int]]()
-        var track = [Int]()
+        var res = Array<Array<Int>>()
+        var track = Array<Int>()
         var trackSum: Int = 0
         
         func backtrack(_ index: Int) {

@@ -15,7 +15,7 @@ extension Solution {
         let chars = Array(s)
         var left: Int = 0
         var res: Int = 0
-        var window = [Character : Int]()
+        var window = Dictionary<Character, Int>()
         for (rightIndex, rightValue) in chars.enumerated() {
             window[rightValue, default: 0] += 1
             while window[rightValue]! > 1 {
