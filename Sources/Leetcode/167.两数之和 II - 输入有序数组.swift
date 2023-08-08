@@ -17,7 +17,7 @@ extension Solution {
      
      你所设计的解决方案必须只使用常量级的额外空间。
      */
-    func twoSumPlus(_ numbers: [Int], _ target: Int) -> [Int] {
+    func twoSum2(_ numbers: [Int], _ target: Int) -> [Int] {
         
         var left: Int = 0
         var right: Int = numbers.count - 1

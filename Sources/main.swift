@@ -32,15 +32,20 @@ func testCase_3() {
 }
 
 func testCase_39() {
-    print("耗时: \(measureTime { printJSON(s.combinationSum([10,1,2,7,6,1,5], 8)) }) ms")
+    let candidates = [10,1,2,7,6,1,5]
+    let target = 8
+    print("耗时: \(measureTime { printJSON(s.combinationSum(candidates, target)) }) ms")
 }
 
 func testCase_40() {
-    print("耗时: \(measureTime { printJSON(s.combinationSum2([10,1,2,7,6,1,5], 8)) }) ms")
+    let candidates = [10,1,2,7,6,1,5]
+    let target = 8
+    print("耗时: \(measureTime { printJSON(s.combinationSum2(candidates, target)) }) ms")
 }
 
 func testCase_46() {
-    print("耗时: \(measureTime { printJSON(s.permute([1,3,5,7])) }) ms")
+    let nums = [1,3,5,7]
+    print("耗时: \(measureTime { printJSON(s.permute(nums)) }) ms")
 }
 
 func testCase_51() {
@@ -52,19 +57,30 @@ func testCase_77() {
 }
 
 func testCase_78() {
-    print("耗时: \(measureTime { printJSON(s.subsets([1,2,3])) }) ms")
+    let nums = [1,2,3]
+    print("耗时: \(measureTime { printJSON(s.subsets(nums)) }) ms")
 }
 
-func testCase_314() {
-    
-}
-
-func testCase_320() {
-    
+func testCase_121() {
+    let filePath = FileManager.default.currentDirectoryPath + "/121.json"
+    if let data = FileManager.default.contents(atPath: filePath) {
+        do {
+            let json = try JSONSerialization.jsonObject(with: data, options: [.fragmentsAllowed])
+            if let prices = json as? Array<Int> {
+                print("耗时: \(measureTime { print(s.maxProfit(prices)) }) ms")
+            }
+        } catch {
+            print("Error parsing JSON: \(error)")
+        }
+    } else {
+        print("File data is empty.")
+    }
 }
 
 func testCase_322() {
-    print("耗时: \(measureTime { print(s.coinChange([186,419,83,408], 6249)) }) ms")
+    let coins = [186,419,83,408]
+    let amount = 6249
+    print("耗时: \(measureTime { print(s.coinChange(coins, amount)) }) ms")
 }
 
 func testCase_509() {
@@ -87,5 +103,21 @@ func testCase_543() {
     print("耗时: \(measureTime { print(s.diameterOfBinaryTree(root)) }) ms")
 }
 
-testCase_39()
-testCase_40()
+func testCase_752() {
+    let deadends = ["0201","0101","0102","1212","2002"]
+    let target = "0202"
+    print("耗时: \(measureTime { print(s.openLock(deadends, target)) }) ms")
+}
+
+//testCase_3()
+//testCase_39()
+//testCase_40()
+//testCase_46()
+//testCase_51()
+//testCase_77()
+//testCase_78()
+//testCase_121()
+//testCase_322()
+//testCase_509()
+//testCase_543()
+testCase_752()
