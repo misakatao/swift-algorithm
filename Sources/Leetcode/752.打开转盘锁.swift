@@ -19,9 +19,94 @@ extension Solution {
      */
     func openLock(_ deadends: [String], _ target: String) -> Int {
         var res: Int = 0
+        let deads: Set<String> = Set(deadends)
+        var visited: Set<String> = []
         
+//        var queue: [String] = []
+//        queue.append("0000")
+//
+//        while !queue.isEmpty {
+//            for _ in 0..<queue.count {
+//                let cur = queue.removeFirst()
+//
+//                if deads.contains(cur) {
+//                    continue
+//                }
+//
+//                if cur == target {
+//                    return res
+//                }
+//
+//                for j in 0..<4 {
+//                    for k in [-1, 1] {
+//                        var digits = Array<Character>(cur)
+//
+//                        var newDigit = Int(String(digits[j]))!
+//                        newDigit += k
+//                        if newDigit == -1 {
+//                            newDigit = 9
+//                        } else if newDigit == 10 {
+//                            newDigit = 0
+//                        }
+//                        digits[j] = Character(String(newDigit))
+//
+//                        let lock = String(digits)
+//                        if !visited.contains(lock) {
+//                            queue.append(lock)
+//                            visited.insert(lock)
+//                        }
+//                    }
+//                }
+//            }
+//            res += 1
+//        }
         
+        var queue1: Set<String> = []
+        var queue2: Set<String> = []
         
-        return res
+        queue1.insert("0000")
+        queue2.insert(target)
+        
+        while !queue1.isEmpty && !queue2.isEmpty {
+            var temp: Set<String> = []
+            for i in queue1 {
+                if deads.contains(i) {
+                    continue
+                }
+                /* 判断是否到达终点 */
+                if queue2.contains(i) {
+                    return res
+                }
+                
+                visited.insert(i)
+                
+                /* 将一个节点的未遍历相邻节点加入集合 */
+                for j in 0..<4 {
+                    for k in [-1, 1] {
+                        var digits: [Character] = Array(i)
+                        
+                        var newDigit = Int(String(digits[j]))!
+                        newDigit += k
+                        if newDigit == -1 {
+                            newDigit = 9
+                        } else if newDigit == 10 {
+                            newDigit = 0
+                        }
+                        digits[j] = Character(String(newDigit))
+                        
+                        let lock = String(digits)
+                        if !visited.contains(lock) {
+                            temp.insert(lock)
+                        }
+                    }
+                }
+            }
+            
+            res += 1
+            queue1 = queue2
+            queue2 = temp
+        }
+        
+        return -1
     }
 }

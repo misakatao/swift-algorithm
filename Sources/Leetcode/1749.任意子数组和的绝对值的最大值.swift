@@ -19,9 +19,7 @@ extension Solution {
      如果 x 是非负整数，那么 abs(x) = x 。
      */
     func maxAbsoluteSum(_ nums: [Int]) -> Int {
-        if nums.count == 0 {
-            return 0
-        }
+        if nums.count == 0 { return 0 }
         
         var positivePre: Int = 0
         var positiveRes: Int = 0

@@ -19,15 +19,14 @@ extension Solution {
         guard let root = root else { return 0 }
         
         var depth: Int = 1
-        var queue = Array<TreeNode>()
+        var queue: [TreeNode] = []
         queue.append(root)
         
-        var visited = Set<TreeNode>()
+        var visited: Set<TreeNode> = []
         visited.insert(root)
         
         while !queue.isEmpty {
-            let sz = queue.count
-            for _ in 0..<sz {
+            for _ in 0..<queue.count {
                 let cur = queue.removeFirst()
                 if cur.left == nil && cur.right == nil {
                     return depth

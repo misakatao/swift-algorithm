@@ -14,20 +14,20 @@ extension Solution {
      解集 不能 包含重复的子集。返回的解集中，子集可以按 任意顺序 排列。
      */
     func subsetsWithDup(_ nums: [Int]) -> [[Int]] {
-        var res = Array<Array<Int>>()
-        var subset = Array<Int>()
+        var res: [[Int]] = []
+        var track: [Int] = []
         
         let nums = nums.sorted()
         
         func backtrack(_ index: Int) {
-            res.append(subset)
+            res.append(track)
             for i in index..<nums.count {
                 if i > index && nums[i] == nums[i - 1] {
                     continue
                 }
-                subset.append(nums[i])
+                track.append(nums[i])
                 backtrack(i + 1)
-                subset.removeLast()
+                track.removeLast()
             }
         }
         backtrack(0)

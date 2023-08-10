@@ -10,9 +10,9 @@ import Foundation
 extension Solution {
     
     func generateAbbreviations(_ word: String) -> [String] {
-        var res = Array<String>()
-        let chars = Array(word)
-        var current = Array<Character>()
+        var res: [String] = []
+        let chars: [Character] = Array(word)
+        var current: [Character] = []
         
         func backtrack(_ chars: [Character], _ index: Int, _ current: inout [Character], _ count: Int) {
             if index == chars.count {

@@ -16,8 +16,8 @@ extension Solution {
      注意：解集不能包含重复的组合。 
      */
     func combinationSum2(_ candidates: [Int], _ target: Int) -> [[Int]] {
-        var res = Array<Array<Int>>()
-        var track = Array<Int>()
+        var res: [[Int]] = []
+        var track: [Int] = []
         let candidates = candidates.sorted()
         var trackSum: Int = 0
         

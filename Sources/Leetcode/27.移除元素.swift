@@ -15,9 +15,7 @@ extension Solution {
      元素的顺序可以改变。你不需要考虑数组中超出新长度后面的元素。
      */
     func removeElement(_ nums: inout [Int], _ val: Int) -> Int {
-        if nums.count == 0 {
-            return 0
-        }
+        if nums.count == 0 { return 0 }
         
         var left: Int = 0
         var right: Int = nums.count

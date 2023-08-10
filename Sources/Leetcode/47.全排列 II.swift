@@ -12,8 +12,8 @@ extension Solution {
      给定一个可包含重复数字的序列 nums ，按任意顺序 返回所有不重复的全排列。
      */
     func permuteUnique(_ nums: [Int]) -> [[Int]] {
-        var res = Array<Array<Int>>()
-        var track = Array<Int>()
+        var res: [[Int]] = []
+        var track: [Int] = []
         var used: [Bool] = Array(repeating: false, count: nums.count)
         let nums = nums.sorted()
         

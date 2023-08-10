@@ -15,7 +15,7 @@ extension Solution {
      */
     func totalNQueens(_ n: Int) -> Int {
         var res: Int = 0
-        var board = Array(repeating: Array(repeating: ".", count: n), count: n)
+        var board: [[String]] = Array(repeating: Array(repeating: ".", count: n), count: n)
         
         func isValid(_ board: [[String]], _ row: Int, _ column: Int) -> Bool {
             let n = board.count

@@ -14,9 +14,8 @@ extension Solution {
      子数组 是数组中的一个连续部分。
      */
     func maxSubArray(_ nums: [Int]) -> Int {
-        if nums.count == 0 {
-            return 0
-        }
+        if nums.count == 0 { return 0 }
+        
 //        if nums.count < 2 {
 //            return nums[0]
 //        }
