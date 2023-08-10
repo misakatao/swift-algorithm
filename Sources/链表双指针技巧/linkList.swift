@@ -9,32 +9,6 @@ import Foundation
 
 class LinkListSolution {
     
-    // 合并两个有序链表
-    func mergeTwoLists(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {
-        
-        let dummy = ListNode(0)
-        var cur: ListNode? = dummy
-                
-        var l1 = list1
-        var l2 = list2
-        
-        while l1 != nil && l2 != nil {
-            if l1!.value <= l2!.value {
-                cur?.next = l1
-                l1 = l1?.next
-            } else {
-                cur?.next = l2
-                l2 = l2?.next
-            }
-            
-            cur = cur?.next
-        }
-        
-        cur?.next = l1 ?? l2
-        
-        return dummy.next
-    }
-
     // 将链表按给定值划分
     func partition(_ head: ListNode?, _ x: Int) -> ListNode? {
         let dummySmaller = ListNode(0)
@@ -155,30 +129,7 @@ class LinkListSolution {
         return slow
     }
 
-    // 判断两个链表是否相交
-    func getIntersectionNode(_ headA: ListNode?, _ headB: ListNode?) -> ListNode? {
-        
-        var currA: ListNode? = headA
-        var currB: ListNode? = headB
-        
-        while currA !== currB {
-            if currA != nil {
-                currA = headB
-            } else {
-                currA = currA?.next
-            }
-            
-            if currB != nil {
-                currB = headA
-            } else {
-                currB = currB?.next
-            }
-        }
-        
-        return currA ?? currB
-    }
-
-    //删除有序数组中的重复项
+    // 删除有序链表中的重复项
     func removeDuplicates(_ head: ListNode?) -> ListNode? {
         
         if head == nil { return nil }
