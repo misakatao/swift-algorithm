@@ -14,9 +14,24 @@ func measureTime(_ closure: () -> Void) -> TimeInterval {
     return TimeInterval(Double(elapsedNanoSeconds) / 1_000_000)
 }
 
+func readJSON(_ filePath: String) -> Any? {
+    if let data = FileManager.default.contents(atPath: filePath) {
+        do {
+            let json = try JSONSerialization.jsonObject(with: data, options: [.fragmentsAllowed])
+            return json
+        } catch {
+            print("Error parsing JSON: \(error)")
+            return nil
+        }
+    } else {
+        print("File data is empty.")
+        return nil
+    }
+}
+
 func printJSON(_ obj: Any) {
     do {
-        let jsonData = try JSONSerialization.data(withJSONObject: obj, options: .prettyPrinted)
+        let jsonData = try JSONSerialization.data(withJSONObject: obj, options: [.prettyPrinted])
         if let jsonString = String(data: jsonData, encoding: .utf8) {
             print(jsonString)
         }
@@ -49,6 +64,12 @@ func testCase_40() {
     print("耗时: \(measureTime { printJSON(s.combinationSum2(candidates, target)) }) ms")
 }
 
+func testCase_42() {
+    // [4,2,0,3,2,5]
+    let heights = [0,1,0,2,1,0,1,3,2,1,2,1]
+    print("耗时: \(measureTime { printJSON(s.trap(heights)) }) ms")
+}
+
 func testCase_46() {
     let nums = [1,3,5,7]
     print("耗时: \(measureTime { printJSON(s.permute(nums)) }) ms")
@@ -72,18 +93,18 @@ func testCase_78() {
 }
 
 func testCase_121() {
-    let filePath = FileManager.default.currentDirectoryPath + "/121.json"
-    if let data = FileManager.default.contents(atPath: filePath) {
-        do {
-            let json = try JSONSerialization.jsonObject(with: data, options: [.fragmentsAllowed])
-            if let prices = json as? Array<Int> {
-                print("耗时: \(measureTime { print(s.maxProfit(prices)) }) ms")
-            }
-        } catch {
-            print("Error parsing JSON: \(error)")
-        }
-    } else {
-        print("File data is empty.")
+    let filePath = "/Users/misaka/Developer/121.json"
+    let data = readJSON(filePath)
+    if let prices = data as? Array<Int> {
+        print("耗时: \(measureTime { print(s.maxProfit(prices)) }) ms")
+    }
+}
+
+func testCase_122() {
+    let filePath = "/Users/misaka/Developer/121.json"
+    let data = readJSON(filePath)
+    if let prices = data as? Array<Int> {
+        print("耗时: \(measureTime { print(s.maxProfit2(prices)) }) ms")
     }
 }
 
@@ -135,9 +156,10 @@ func testCase_1281() {
 //testCase_34()
 //testCase_39()
 //testCase_40()
+testCase_42()
 //testCase_46()
 //testCase_51()
-testCase_76()
+//testCase_76()
 //testCase_77()
 //testCase_78()
 //testCase_121()
