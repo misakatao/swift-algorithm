@@ -67,7 +67,7 @@ func testCase_40() {
 func testCase_42() {
     // [4,2,0,3,2,5]
     let heights = [0,1,0,2,1,0,1,3,2,1,2,1]
-    print("耗时: \(measureTime { printJSON(s.trap(heights)) }) ms")
+    print("耗时: \(measureTime { print(s.trap(heights)) }) ms")
 }
 
 func testCase_46() {
@@ -156,13 +156,13 @@ func testCase_1281() {
 //testCase_34()
 //testCase_39()
 //testCase_40()
-testCase_42()
+//testCase_42()
 //testCase_46()
 //testCase_51()
 //testCase_76()
 //testCase_77()
 //testCase_78()
-//testCase_121()
+testCase_121()
 //testCase_322()
 //testCase_438()
 //testCase_509()

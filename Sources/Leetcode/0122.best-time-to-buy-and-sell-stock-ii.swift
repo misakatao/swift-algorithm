@@ -16,8 +16,6 @@ extension Solution {
      返回 你能获得的 最大 利润 。
      */
     func maxProfit2(_ prices: [Int]) -> Int {
-        var res: Int = 0
-        
-        return res
+        return 0
     }
 }
