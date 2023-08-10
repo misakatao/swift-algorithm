@@ -93,6 +93,10 @@ func testCase_322() {
     print("耗时: \(measureTime { print(s.coinChange(coins, amount)) }) ms")
 }
 
+func testCase_438() {
+    print("耗时: \(measureTime { print(s.findAnagrams("cbaebabacd", "abc")) }) ms")
+}
+
 func testCase_509() {
     print("耗时: \(measureTime { print(s.fib2(65)) }) ms")
     print("耗时: \(measureTime { print(s.fib1(65)) }) ms")
@@ -138,6 +142,7 @@ testCase_76()
 //testCase_78()
 //testCase_121()
 //testCase_322()
+//testCase_438()
 //testCase_509()
 //testCase_543()
 //testCase_567()

@@ -16,9 +16,6 @@ extension Solution {
      如果 s 中存在这样的子串，我们保证它是唯一的答案。
      */
     func minWindow(_ s: String, _ t: String) -> String {
-        print("s: \(s)")
-        print("t: \(t)")
-        
         // 存储滑动窗口的字符及其出现次数
         var window: [Character : Int] = [:]
         // 存储字符串t的字符及其出现次数
@@ -39,42 +36,39 @@ extension Solution {
         let chars: [Character] = Array(s)
         while right < chars.count {
             let rightValue = chars[right]
-            // 扩大窗口
+            // 扩大右窗口
             right += 1
             // 进行窗口内数据的一系列更新
-            if let index = needs[rightValue] {
+            if let count = needs[rightValue] {
                 window[rightValue, default: 0] += 1
                 
-                if window[rightValue] == index {
+                if window[rightValue] == count {
                     valid += 1
                 }
             }
-            
-            print("valid: \(valid) - window: \(window)")
-            
+            print("valid: \(valid) - window: \(window) - [\(left), \(right))")
             // 判断左侧窗口是否要收缩
-            while valid == needs.count {
+            while valid == needs.count { // window 和 needs 相等
+                print("-- start: \(start) - len: \(len)")
                 if (right - left) < len {
                     start = left
                     len = right - left
-                    print("-- start: \(start) - len: \(len)")
                 }
                 
                 let leftValue = chars[left]
-                // 缩小窗口
+                // 缩小左窗口
                 left += 1
                 // 进行窗口内数据的一系列更新
-                if let index = needs[leftValue] {
-                    if window[leftValue] == index {
+                if let count = needs[leftValue] {
+                    if window[leftValue] == count {
                         valid -= 1
                     }
                     window[leftValue]! -= 1
                 }
-                print("-- valid: \(valid) - window: \(window)")
             }
         }
         
-        if start == -1 || len == Int.max || start + len > chars.count { return "" }
+        if start + len > chars.count { return "" }
         return String(chars[start...(start + len - 1)])
     }
 }
