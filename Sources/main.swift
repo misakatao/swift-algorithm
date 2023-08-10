@@ -31,6 +31,12 @@ func testCase_3() {
     print("耗时: \(measureTime { print(s.lengthOfLongestSubstring("abcabcbb")) }) ms")
 }
 
+func testCase_34() {
+    let nums = [2,2]
+    let target = 1
+    print("耗时: \(measureTime { print(s.searchRange(nums, target)) }) ms")
+}
+
 func testCase_39() {
     let candidates = [10,1,2,7,6,1,5]
     let target = 8
@@ -50,6 +56,10 @@ func testCase_46() {
 
 func testCase_51() {
     print("耗时: \(measureTime { printJSON(s.solveNQueens(8)) }) ms")
+}
+
+func testCase_76() {
+    print("耗时: \(measureTime { print(s.minWindow("ADOBECODEBANC", "ABC")) }) ms")
 }
 
 func testCase_77() {
@@ -103,21 +113,33 @@ func testCase_543() {
     print("耗时: \(measureTime { print(s.diameterOfBinaryTree(root)) }) ms")
 }
 
+func testCase_567() {
+    print("耗时: \(measureTime { print(s.checkInclusion("ab", "eidbaooo")) }) ms")
+}
+
 func testCase_752() {
     let deadends = ["0201","0101","0102","1212","2002"]
     let target = "0202"
     print("耗时: \(measureTime { print(s.openLock(deadends, target)) }) ms")
 }
 
+func testCase_1281() {
+    print("耗时: \(measureTime { print(s.subtractProductAndSum(234)) }) ms")
+}
+
 //testCase_3()
+//testCase_34()
 //testCase_39()
 //testCase_40()
 //testCase_46()
 //testCase_51()
+testCase_76()
 //testCase_77()
 //testCase_78()
 //testCase_121()
 //testCase_322()
 //testCase_509()
 //testCase_543()
-testCase_752()
+//testCase_567()
+//testCase_752()
+//testCase_1281()

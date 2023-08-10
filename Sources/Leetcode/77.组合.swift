@@ -14,9 +14,9 @@ extension Solution {
      你可以按 任何顺序 返回答案。
      */
     func combine(_ n: Int, _ k: Int) -> [[Int]] {
-        var res = Array<Array<Int>>()
-        var track = Array<Int>()
-        let nums = Array(1...n)
+        var res: [[Int]] = []
+        var track: [Int] = []
+        let nums: [Int] = Array(1...n)
         
         func backtrack(_ index: Int) {
             if track.count == k {

@@ -49,6 +49,10 @@
 		E5512D1B2A82429A00602494 /* 1749.任意子数组和的绝对值的最大值.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512D1A2A82429A00602494 /* 1749.任意子数组和的绝对值的最大值.swift */; };
 		E5512D1D2A82434E00602494 /* 53.最大子数组和.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512D1C2A82434E00602494 /* 53.最大子数组和.swift */; };
 		E5512D1F2A8246D400602494 /* 752.打开转盘锁.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512D1E2A8246D400602494 /* 752.打开转盘锁.swift */; };
+		E5512D212A8361EE00602494 /* 1281.整数的各位积和之差.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512D202A8361EE00602494 /* 1281.整数的各位积和之差.swift */; };
+		E5512D232A8364E000602494 /* 34.在排序数组中查找元素的第一个和最后一个位置.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512D222A8364E000602494 /* 34.在排序数组中查找元素的第一个和最后一个位置.swift */; };
+		E57677922A837C2D00B6F386 /* 76.最小覆盖子串.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57677912A837C2D00B6F386 /* 76.最小覆盖子串.swift */; };
+		E57677942A838B4A00B6F386 /* 567.字符串的排列.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57677932A838B4A00B6F386 /* 567.字符串的排列.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -107,6 +111,10 @@
 		E5512D1A2A82429A00602494 /* 1749.任意子数组和的绝对值的最大值.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1749.任意子数组和的绝对值的最大值.swift"; sourceTree = "<group>"; };
 		E5512D1C2A82434E00602494 /* 53.最大子数组和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "53.最大子数组和.swift"; sourceTree = "<group>"; };
 		E5512D1E2A8246D400602494 /* 752.打开转盘锁.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "752.打开转盘锁.swift"; sourceTree = "<group>"; };
+		E5512D202A8361EE00602494 /* 1281.整数的各位积和之差.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1281.整数的各位积和之差.swift"; sourceTree = "<group>"; };
+		E5512D222A8364E000602494 /* 34.在排序数组中查找元素的第一个和最后一个位置.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "34.在排序数组中查找元素的第一个和最后一个位置.swift"; sourceTree = "<group>"; };
+		E57677912A837C2D00B6F386 /* 76.最小覆盖子串.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "76.最小覆盖子串.swift"; sourceTree = "<group>"; };
+		E57677932A838B4A00B6F386 /* 567.字符串的排列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "567.字符串的排列.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +180,7 @@
 				E5512D0D2A80FD4200602494 /* 111.二叉树的最小深度.swift */,
 				E5512D132A822C5600602494 /* 121.买卖股票的最佳时机.swift */,
 				E5512D152A8238B400602494 /* 122.买卖股票的最佳时机 II.swift */,
+				E5512D202A8361EE00602494 /* 1281.整数的各位积和之差.swift */,
 				E5512CDC2A7B472D00602494 /* 144.二叉树的前序遍历.swift */,
 				E5512D092A80E7AC00602494 /* 160.相交链表.swift */,
 				E5512D0B2A80E7E800602494 /* 167.两数之和 II - 输入有序数组.swift */,
@@ -184,6 +193,7 @@
 				E5512CE62A7CF0FA00602494 /* 314.二叉树的垂直遍历.swift */,
 				E5512CE42A7CF0AD00602494 /* 320.列举单词的全部缩写.swift */,
 				E5512CE22A7CD09E00602494 /* 322.零钱兑换.swift */,
+				E5512D222A8364E000602494 /* 34.在排序数组中查找元素的第一个和最后一个位置.swift */,
 				E5512D032A80E4C600602494 /* 35.搜索插入位置.swift */,
 				E5512CEA2A808CDA00602494 /* 37.解数独.swift */,
 				E5512CFB2A80E2C700602494 /* 39.组合总和.swift */,
@@ -196,7 +206,9 @@
 				E5512D052A80E59500602494 /* 52.N 皇后 II.swift */,
 				E5512D1C2A82434E00602494 /* 53.最大子数组和.swift */,
 				E5512CDE2A7B875F00602494 /* 543.二叉树的直径.swift */,
+				E57677932A838B4A00B6F386 /* 567.字符串的排列.swift */,
 				E5512D1E2A8246D400602494 /* 752.打开转盘锁.swift */,
+				E57677912A837C2D00B6F386 /* 76.最小覆盖子串.swift */,
 				E5512CF32A80D38100602494 /* 77.组合.swift */,
 				E5512CF12A80CA6600602494 /* 78.子集.swift */,
 				E5512D072A80E63400602494 /* 83.删除排序链表中的重复元素.swift */,
@@ -293,10 +305,12 @@
 				E5512D0C2A80E7E800602494 /* 167.两数之和 II - 输入有序数组.swift in Sources */,
 				E5512D1B2A82429A00602494 /* 1749.任意子数组和的绝对值的最大值.swift in Sources */,
 				E5512D122A81EC8700602494 /* 189.轮转数组.swift in Sources */,
+				E5512D212A8361EE00602494 /* 1281.整数的各位积和之差.swift in Sources */,
 				E5512CFE2A80E39B00602494 /* 21.合并两个有序链表.swift in Sources */,
 				E5512D002A80E42F00602494 /* 26.删除有序数组中的重复项.swift in Sources */,
 				E5512D022A80E46400602494 /* 27.移除元素.swift in Sources */,
 				E5512CF02A80C2E900602494 /* 3.无重复字符的最长子串.swift in Sources */,
+				E57677942A838B4A00B6F386 /* 567.字符串的排列.swift in Sources */,
 				E5512CE72A7CF0FA00602494 /* 314.二叉树的垂直遍历.swift in Sources */,
 				E5512CE52A7CF0AD00602494 /* 320.列举单词的全部缩写.swift in Sources */,
 				E5512CE32A7CD09E00602494 /* 322.零钱兑换.swift in Sources */,
@@ -309,7 +323,9 @@
 				E5512CD52A7A461A00602494 /* 5.最长回文子串.swift in Sources */,
 				E5512CE12A7C9CA100602494 /* 509.斐波那契数.swift in Sources */,
 				E5512CED2A808CFB00602494 /* 51.N 皇后.swift in Sources */,
+				E5512D232A8364E000602494 /* 34.在排序数组中查找元素的第一个和最后一个位置.swift in Sources */,
 				E5512D062A80E59500602494 /* 52.N 皇后 II.swift in Sources */,
+				E57677922A837C2D00B6F386 /* 76.最小覆盖子串.swift in Sources */,
 				E5512D1D2A82434E00602494 /* 53.最大子数组和.swift in Sources */,
 				E5512CDF2A7B875F00602494 /* 543.二叉树的直径.swift in Sources */,
 				E5512D1F2A8246D400602494 /* 752.打开转盘锁.swift in Sources */,

@@ -18,8 +18,8 @@ extension Solution {
      每一种解法包含一个不同的 n 皇后问题 的棋子放置方案，该方案中 'Q' 和 '.' 分别代表了皇后和空位。
      */
     func solveNQueens(_ n: Int) -> [[String]] {
-        var res = Array<Array<String>>()
-        var board = Array(repeating: Array(repeating: ".", count: n), count: n)
+        var res: [[String]] = []
+        var board: [[String]] = Array(repeating: Array(repeating: ".", count: n), count: n)
         
         func isValid(_ board: [[String]], _ row: Int, _ column: Int) -> Bool {
             let n = board.count

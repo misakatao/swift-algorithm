@@ -14,6 +14,7 @@ extension Solution {
      二叉树的 最大深度 是指从根节点到最远叶子节点的最长路径上的节点数。
      */
     func maxDepth(_ root: TreeNode?) -> Int {
-        return root == nil ? 0 : max(maxDepth(root?.left), maxDepth(root?.right)) + 1
+        guard let root = root else { return 0 }
+        return max(maxDepth(root.left), maxDepth(root.right)) + 1
     }
 }

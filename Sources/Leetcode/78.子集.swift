@@ -14,16 +14,16 @@ extension Solution {
      解集 不能 包含重复的子集。你可以按 任意顺序 返回解集。
      */
     func subsets(_ nums: [Int]) -> [[Int]] {
-        var res = Array<Array<Int>>()
-        var subset = Array<Int>()
+        var res: [[Int]] = []
+        var track: [Int] = []
         
         func backtrack(_ index: Int) {
-            res.append(subset)
+            res.append(track)
             
             for i in index..<nums.count {
-                subset.append(nums[i])
+                track.append(nums[i])
                 backtrack(i + 1)
-                subset.removeLast()
+                track.removeLast()
             }
         }
         

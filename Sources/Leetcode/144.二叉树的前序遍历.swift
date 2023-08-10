@@ -12,7 +12,7 @@ extension Solution {
      给你二叉树的根节点 root ，返回它节点值的 前序 遍历。
      */
     func preorderTraversal(_ root: TreeNode?) -> [Int] {
-        var res = Array<Int>()
+        var res: [Int] = []
         guard let root = root else { return res }
         res.append(root.value)
         res.append(contentsOf: preorderTraversal(root.left))
