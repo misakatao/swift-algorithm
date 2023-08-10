@@ -10,7 +10,6 @@
 		E5512CC62A78E6CD00602494 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CC42A78E6CD00602494 /* ListNode.swift */; };
 		E5512CC72A78E6CD00602494 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CC52A78E6CD00602494 /* main.swift */; };
 		E5512CCC2A790B5800602494 /* linkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CC92A790B5800602494 /* linkList.swift */; };
-		E5512CCD2A790B5800602494 /* array.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CCB2A790B5800602494 /* array.swift */; };
 		E5512CD02A7A451000602494 /* 0001.two-sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CCF2A7A451000602494 /* 0001.two-sum.swift */; };
 		E5512CD32A7A456800602494 /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CD22A7A456800602494 /* Solution.swift */; };
 		E5512CD52A7A461A00602494 /* 0005.longest-palindromic-substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CD42A7A461A00602494 /* 0005.longest-palindromic-substring.swift */; };
@@ -83,7 +82,6 @@
 		E5512CC42A78E6CD00602494 /* ListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		E5512CC52A78E6CD00602494 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E5512CC92A790B5800602494 /* linkList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = linkList.swift; sourceTree = "<group>"; };
-		E5512CCB2A790B5800602494 /* array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = array.swift; sourceTree = "<group>"; };
 		E5512CCF2A7A451000602494 /* 0001.two-sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0001.two-sum.swift"; sourceTree = "<group>"; };
 		E5512CD22A7A456800602494 /* Solution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution.swift; sourceTree = "<group>"; };
 		E5512CD42A7A461A00602494 /* 0005.longest-palindromic-substring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0005.longest-palindromic-substring.swift"; sourceTree = "<group>"; };
@@ -172,7 +170,6 @@
 				E5512CEE2A80BE1E00602494 /* LCR */,
 				E5512CCE2A7A44F500602494 /* Leetcode */,
 				E5512CC52A78E6CD00602494 /* main.swift */,
-				E5512CCA2A790B5800602494 /* 数组双指针技巧 */,
 				E5512CC82A790B5800602494 /* 链表双指针技巧 */,
 			);
 			path = Sources;
@@ -184,14 +181,6 @@
 				E5512CC92A790B5800602494 /* linkList.swift */,
 			);
 			path = "链表双指针技巧";
-			sourceTree = "<group>";
-		};
-		E5512CCA2A790B5800602494 /* 数组双指针技巧 */ = {
-			isa = PBXGroup;
-			children = (
-				E5512CCB2A790B5800602494 /* array.swift */,
-			);
-			path = "数组双指针技巧";
 			sourceTree = "<group>";
 		};
 		E5512CCE2A7A44F500602494 /* Leetcode */ = {
@@ -379,7 +368,6 @@
 				E5512D1F2A8246D400602494 /* 0752.open-the-lock.swift in Sources */,
 				E5512D212A8361EE00602494 /* 1281.subtract-the-product-and-sum-of-digits-of-an-integer.swift in Sources */,
 				E5512D1B2A82429A00602494 /* 1749.maximum-absolute-sum-of-any-subarray.swift in Sources */,
-				E5512CCD2A790B5800602494 /* array.swift in Sources */,
 				E5512CCC2A790B5800602494 /* linkList.swift in Sources */,
 				E5512CC62A78E6CD00602494 /* ListNode.swift in Sources */,
 				E5512CC72A78E6CD00602494 /* main.swift in Sources */,
