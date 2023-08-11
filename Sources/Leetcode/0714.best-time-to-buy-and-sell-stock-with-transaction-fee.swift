@@ -1,22 +1,24 @@
 //
 //  swift-algorithm
 //
-//  Created by Misaka on 2023/8/8.
+//  Created by Misaka on 2023/8/11.
 //
-//  买卖股票的最佳时机 II
+//  买卖股票的最佳时机含手续费
 
 import Foundation
 
 extension Solution {
     /*
-     给你一个整数数组 prices ，其中 prices[i] 表示某支股票第 i 天的价格。
-     
-     在每一天，你可以决定是否购买和/或出售股票。你在任何时候 最多 只能持有 一股 股票。你也可以先购买，然后在 同一天 出售。
-     
-     返回 你能获得的 最大 利润 。
+     给定一个整数数组 prices，其中 prices[i]表示第 i 天的股票价格 ；整数 fee 代表了交易股票的手续费用。
+
+     你可以无限次地完成交易，但是你每笔交易都需要付手续费。如果你已经购买了一个股票，在卖出它之前你就不能再继续购买股票了。
+
+     返回获得利润的最大值。
+
+     注意：这里的一笔交易指买入持有并卖出股票的整个过程，每笔交易你只需要为支付一次手续费。
      */
-    func maxProfit2(_ prices: [Int]) -> Int {
-        let count = prices.count
+    func maxProfit(_ prices: [Int], _ fee: Int) -> Int {
+        let count: Int = prices.count
         /*
          i: 天数
          k: 最大交易次数
@@ -25,18 +27,18 @@ extension Solution {
          dp[i][k][0] = max(dp[i - 1][k][0], dp[i - 1][k][1] + prices[i])
          dp[i][k][1] = max(dp[i - 1][k][1], dp[i - 1][k - 1][0] - prices[i])
          
-         k == Int.max
-                     = max(dp[i - 1][k][1], dp[i - 1][k][0] - prices[i])
+         手续费 free
+                     = max(dp[i - 1][k][1], dp[i - 1][k - 1][0] - free - prices[i])
          */
 //        var dp: [[Int]] = Array(repeating: Array(repeating: 0, count: 2), count: count)
 //        for i in 0..<count {
 //            if i - 1 < 0 {
 //                dp[i][0] = 0
-//                dp[i][1] = -prices[i]
+//                dp[i][1] = 0 - prices[i] - fee
 //                continue
 //            }
 //            dp[i][0] = max(dp[i - 1][0], dp[i - 1][1] + prices[i])
-//            dp[i][1] = max(dp[i - 1][1], dp[i - 1][0] - prices[i])
+//            dp[i][1] = max(dp[i - 1][1], dp[i - 1][0] - prices[i] - fee)
 //        }
 //        return dp[count - 1][0]
         
@@ -45,7 +47,7 @@ extension Solution {
         for i in 0..<count {
             let tmp = dp_i_0
             dp_i_0 = max(dp_i_0, dp_i_1 + prices[i])
-            dp_i_1 = max(dp_i_1, tmp - prices[i])
+            dp_i_1 = max(dp_i_1, tmp - prices[i] - fee)
         }
         return dp_i_0
     }
