@@ -63,6 +63,8 @@
 		E57677A62A84C77300B6F386 /* 0283.move-zeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57677A52A84C77300B6F386 /* 0283.move-zeroes.swift */; };
 		E57677A82A84C7D400B6F386 /* 0344.reverse-string.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57677A72A84C7D400B6F386 /* 0344.reverse-string.swift */; };
 		E57677AA2A84C8F100B6F386 /* 0704.binary-search.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57677A92A84C8F100B6F386 /* 0704.binary-search.swift */; };
+		E57677AE2A85E07A00B6F386 /* 0309.best-time-to-buy-and-sell-stock-with-cooldown.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57677AD2A85E07A00B6F386 /* 0309.best-time-to-buy-and-sell-stock-with-cooldown.swift */; };
+		E57677B02A85E71C00B6F386 /* 0714.best-time-to-buy-and-sell-stock-with-transaction-fee.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57677AF2A85E71C00B6F386 /* 0714.best-time-to-buy-and-sell-stock-with-transaction-fee.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -135,6 +137,8 @@
 		E57677A52A84C77300B6F386 /* 0283.move-zeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0283.move-zeroes.swift"; sourceTree = "<group>"; };
 		E57677A72A84C7D400B6F386 /* 0344.reverse-string.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0344.reverse-string.swift"; sourceTree = "<group>"; };
 		E57677A92A84C8F100B6F386 /* 0704.binary-search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0704.binary-search.swift"; sourceTree = "<group>"; };
+		E57677AD2A85E07A00B6F386 /* 0309.best-time-to-buy-and-sell-stock-with-cooldown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0309.best-time-to-buy-and-sell-stock-with-cooldown.swift"; sourceTree = "<group>"; };
+		E57677AF2A85E71C00B6F386 /* 0714.best-time-to-buy-and-sell-stock-with-transaction-fee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0714.best-time-to-buy-and-sell-stock-with-transaction-fee.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +229,7 @@
 				E57677972A84BB1F00B6F386 /* 0188.best-time-to-buy-and-sell-stock-iv.swift */,
 				E5512D112A81EC8700602494 /* 0189.rotate-array.swift */,
 				E57677A52A84C77300B6F386 /* 0283.move-zeroes.swift */,
+				E57677AD2A85E07A00B6F386 /* 0309.best-time-to-buy-and-sell-stock-with-cooldown.swift */,
 				E5512CE62A7CF0FA00602494 /* 0314.binary-tree-vertical-order-traversal.swift */,
 				E5512CE42A7CF0AD00602494 /* 0320.generalized-abbreviation.swift */,
 				E5512CE22A7CD09E00602494 /* 0322.coin-change.swift */,
@@ -234,6 +239,7 @@
 				E5512CDE2A7B875F00602494 /* 0543.diameter-of-binary-tree.swift */,
 				E57677932A838B4A00B6F386 /* 0567.permutation-in-string.swift */,
 				E57677A92A84C8F100B6F386 /* 0704.binary-search.swift */,
+				E57677AF2A85E71C00B6F386 /* 0714.best-time-to-buy-and-sell-stock-with-transaction-fee.swift */,
 				E5512D1E2A8246D400602494 /* 0752.open-the-lock.swift */,
 				E5512D202A8361EE00602494 /* 1281.subtract-the-product-and-sum-of-digits-of-an-integer.swift */,
 				E5512D1A2A82429A00602494 /* 1749.maximum-absolute-sum-of-any-subarray.swift */,
@@ -356,6 +362,7 @@
 				E57677982A84BB1F00B6F386 /* 0188.best-time-to-buy-and-sell-stock-iv.swift in Sources */,
 				E5512D122A81EC8700602494 /* 0189.rotate-array.swift in Sources */,
 				E57677A62A84C77300B6F386 /* 0283.move-zeroes.swift in Sources */,
+				E57677AE2A85E07A00B6F386 /* 0309.best-time-to-buy-and-sell-stock-with-cooldown.swift in Sources */,
 				E5512CE72A7CF0FA00602494 /* 0314.binary-tree-vertical-order-traversal.swift in Sources */,
 				E5512CE52A7CF0AD00602494 /* 0320.generalized-abbreviation.swift in Sources */,
 				E5512CE32A7CD09E00602494 /* 0322.coin-change.swift in Sources */,
@@ -365,6 +372,7 @@
 				E5512CDF2A7B875F00602494 /* 0543.diameter-of-binary-tree.swift in Sources */,
 				E57677942A838B4A00B6F386 /* 0567.permutation-in-string.swift in Sources */,
 				E57677AA2A84C8F100B6F386 /* 0704.binary-search.swift in Sources */,
+				E57677B02A85E71C00B6F386 /* 0714.best-time-to-buy-and-sell-stock-with-transaction-fee.swift in Sources */,
 				E5512D1F2A8246D400602494 /* 0752.open-the-lock.swift in Sources */,
 				E5512D212A8361EE00602494 /* 1281.subtract-the-product-and-sum-of-digits-of-an-integer.swift in Sources */,
 				E5512D1B2A82429A00602494 /* 1749.maximum-absolute-sum-of-any-subarray.swift in Sources */,

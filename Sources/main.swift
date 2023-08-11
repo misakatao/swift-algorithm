@@ -40,6 +40,16 @@ func printJSON(_ obj: Any) {
     }
 }
 
+func makeMaxProfitTest() -> [Int] {
+    let filePath = "/Users/misaka/Developer/121.json"
+    let data = readJSON(filePath)
+    if let prices = data as? Array<Int> {
+        return prices
+    } else {
+        return []
+    }
+}
+
 let s = Solution()
 
 func testCase_3() {
@@ -66,7 +76,7 @@ func testCase_40() {
 
 func testCase_42() {
     // [4,2,0,3,2,5]
-    let heights = [0,1,0,2,1,0,1,3,2,1,2,1]
+    let heights = [4,2,0,3,2,5] // [0,1,0,2,1,0,1,3,2,1,2,1]
     print("耗时: \(measureTime { print(s.trap(heights)) }) ms")
 }
 
@@ -93,19 +103,35 @@ func testCase_78() {
 }
 
 func testCase_121() {
-    let filePath = "/Users/misaka/Developer/121.json"
-    let data = readJSON(filePath)
-    if let prices = data as? Array<Int> {
-        print("耗时: \(measureTime { print(s.maxProfit(prices)) }) ms")
-    }
+    print("耗时: \(measureTime { print("示例1: \(s.maxProfit([7,1,5,3,6,4]))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.maxProfit([7,6,4,3,1]))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.maxProfit(makeMaxProfitTest()))") }) ms")
 }
 
 func testCase_122() {
-    let filePath = "/Users/misaka/Developer/121.json"
-    let data = readJSON(filePath)
-    if let prices = data as? Array<Int> {
-        print("耗时: \(measureTime { print(s.maxProfit2(prices)) }) ms")
-    }
+    print("耗时: \(measureTime { print("示例1: \(s.maxProfit2([7,1,5,3,6,4]))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.maxProfit2([1,2,3,4,5]))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.maxProfit2([7,6,4,3,1]))") }) ms")
+    print("耗时: \(measureTime { print("示例4: \(s.maxProfit2(makeMaxProfitTest()))") }) ms")
+}
+
+func testCase_123() {
+    print("耗时: \(measureTime { print("示例1: \(s.maxProfit3([3,3,5,0,0,3,1,4]))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.maxProfit3([1,2,3,4,5]))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.maxProfit3([7,6,4,3,1]))") }) ms")
+    print("耗时: \(measureTime { print("示例4: \(s.maxProfit3(makeMaxProfitTest()))") }) ms")
+}
+
+func testCase_188() {
+    print("耗时: \(measureTime { print("示例1: \(s.maxProfit4(2, [2,4,1]))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.maxProfit4(2, [3,2,6,5,0,3]))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.maxProfit4(2, makeMaxProfitTest()))") }) ms")
+}
+
+func testCase_309() {
+    print("耗时: \(measureTime { print("示例1: \(s.maxProfit5([1,2,3,0,2]))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.maxProfit5([1]))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.maxProfit5(makeMaxProfitTest()))") }) ms")
 }
 
 func testCase_322() {
@@ -142,6 +168,12 @@ func testCase_567() {
     print("耗时: \(measureTime { print(s.checkInclusion("ab", "eidbaooo")) }) ms")
 }
 
+func testCase_714() {
+    print("耗时: \(measureTime { print("示例1: \(s.maxProfit([1,3,2,8,4,9], 2))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.maxProfit([1,3,7,5,10,3], 3))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.maxProfit(makeMaxProfitTest(), 5))") }) ms")
+}
+
 func testCase_752() {
     let deadends = ["0201","0101","0102","1212","2002"]
     let target = "0202"
@@ -162,11 +194,16 @@ func testCase_1281() {
 //testCase_76()
 //testCase_77()
 //testCase_78()
-testCase_121()
+//testCase_121()
+//testCase_122()
+//testCase_123()
+testCase_188()
+//testCase_309()
 //testCase_322()
 //testCase_438()
 //testCase_509()
 //testCase_543()
 //testCase_567()
+//testCase_714()
 //testCase_752()
 //testCase_1281()

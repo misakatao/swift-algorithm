@@ -16,20 +16,28 @@ extension Solution {
      返回你可以从这笔交易中获取的最大利润。如果你不能获取任何利润，返回 0 。
      */
     func maxProfit(_ prices: [Int]) -> Int {
+        let count: Int = prices.count
         /*
+         i: 天数
+         k: 最大交易次数
+         [0,1]: 卖出、买入、持有
+         var dp: [[[Int]]] = Array(repeating: Array(repeating: Array(repeating: 0, count: 2), count: count), count: count)
          dp[i][k][0] = max(dp[i - 1][k][0], dp[i - 1][k][1] + prices[i])
          dp[i][k][1] = max(dp[i - 1][k][1], dp[i - 1][k - 1][0] - prices[i])
          
+         k == 1
          dp[i][1][0] = max(dp[i - 1][1][0], dp[i - 1][1][1] + prices[i])
          dp[i][1][1] = max(dp[i - 1][1][1], dp[i - 1][0][0] - prices[i])
                      = max(dp[i - 1][1][1], -prices[i])
-         解释：k = 0 的 base case，所以 dp[i - 1][0] = 0。
+         解释：k == 0 的 base case，dp[i - 1][0] = 0
          */
-        let count: Int = prices.count
 //        var dp: [[Int]] = Array(repeating: Array(repeating: 0, count: 2), count: count)
-//        dp[0][0] = 0
-//        dp[0][1] = -prices[0]
-//        for i in 1..<count {
+//        for i in 0..<count {
+//            if i - 1 < 0 {
+//                dp[i][0] = 0
+//                dp[i][1] = -prices[i]
+//                continue
+//            }
 //            dp[i][0] = max(dp[i - 1][0], dp[i - 1][1] + prices[i])
 //            dp[i][1] = max(dp[i - 1][1], -prices[i])
 //        }
@@ -37,7 +45,7 @@ extension Solution {
         
         var dp_i_0: Int = 0
         var dp_i_1: Int = Int.min
-        for i in 1..<count {
+        for i in 0..<count {
             dp_i_0 = max(dp_i_0, dp_i_1 + prices[i])
             dp_i_1 = max(dp_i_1, -prices[i])
         }
