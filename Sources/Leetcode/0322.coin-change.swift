@@ -32,15 +32,15 @@ extension Solution {
      `0 <= amount <= 104`
      */
     func coinChange(_ coins: [Int], _ amount: Int) -> Int {
-        var memo: [Int] = Array(repeating: amount + 1, count: amount + 1)
-        memo[0] = 0
+        var dp: [Int] = Array(repeating: amount + 1, count: amount + 1)
+        dp[0] = 0
         for i in 1...amount {
             for coin in coins {
                 if i >= coin {
-                    memo[i] = min(memo[i], memo[i - coin] + 1)
+                    dp[i] = min(dp[i], dp[i - coin] + 1)
                 }
             }
         }
-        return memo[amount] > amount ? -1 : memo[amount]
+        return dp[amount] > amount ? -1 : dp[amount]
     }
 }
