@@ -62,6 +62,21 @@ func testCase_11() {
     print("耗时: \(measureTime { print("示例3: \(s.maxArea(makeMaxInts()))") }) ms")
 }
 
+func testCase_23() {
+    let head1 = ListNode(1)
+    head1.next = ListNode(4)
+    head1.next?.next = ListNode(5)
+    
+    let head2 = ListNode(1)
+    head2.next = ListNode(3)
+    head2.next?.next = ListNode(4)
+    
+    let head3 = ListNode(2)
+    head3.next = ListNode(6)
+    
+    print("耗时: \(measureTime { print("示例1: \(String(describing: s.mergeKLists([head1, head2, head3])))") }) ms")
+}
+
 func testCase_34() {
     let nums = [2,2]
     let target = 1
@@ -202,10 +217,11 @@ func testCase_1749() {
 
 //testCase_3()
 //testCase_11()
+testCase_23()
 //testCase_34()
 //testCase_39()
 //testCase_40()
-testCase_42()
+//testCase_42()
 //testCase_46()
 //testCase_51()
 //testCase_76()
