@@ -19,7 +19,7 @@ extension Solution {
         var ls2: ListNode? = list2
         
         while ls1 != nil && ls2 != nil {
-            if ls1!.value < ls2!.value {
+            if ls1!.val < ls2!.val {
                 cur?.next = ls1
                 ls1 = ls1?.next
             } else {

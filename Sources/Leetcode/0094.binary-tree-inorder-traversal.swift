@@ -15,7 +15,7 @@ extension Solution {
         var results = [Int]()
         guard let root = root else { return results }
         results.append(contentsOf: inorderTraversal(root.left))
-        results.append(root.value)
+        results.append(root.val)
         results.append(contentsOf: inorderTraversal(root.right))
         return results
     }

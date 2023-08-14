@@ -16,7 +16,7 @@ extension Solution {
         guard let root = root else { return res }
         res.append(contentsOf: postorderTraversal(root.left))
         res.append(contentsOf: postorderTraversal(root.right))
-        res.append(root.value)
+        res.append(root.val)
         return res
     }
 }

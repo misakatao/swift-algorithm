@@ -18,7 +18,7 @@ extension Solution {
         var slow: ListNode? = head
         
         while fast != nil {
-            if fast!.value != slow!.value {
+            if fast!.val != slow!.val {
                 slow?.next = fast
                 slow = slow?.next
             }

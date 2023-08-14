@@ -23,10 +23,10 @@ extension Solution {
             maxPos = max(maxPos, pos)
             
             if var values = map[pos] {
-                values.append(node.value)
+                values.append(node.val)
                 map[pos] = values
             } else {
-                map[pos] = [node.value]
+                map[pos] = [node.val]
             }
             
             dfs(node.left, pos - 1)

@@ -14,7 +14,7 @@ extension Solution {
     func preorderTraversal(_ root: TreeNode?) -> [Int] {
         var res: [Int] = []
         guard let root = root else { return res }
-        res.append(root.value)
+        res.append(root.val)
         res.append(contentsOf: preorderTraversal(root.left))
         res.append(contentsOf: preorderTraversal(root.right))
         return res
