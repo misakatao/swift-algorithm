@@ -53,7 +53,7 @@ func makeMaxInts() -> [Int] {
 let s = Solution()
 
 func testCase_3() {
-    print("耗时: \(measureTime { print(s.lengthOfLongestSubstring("abcabcbb")) }) ms")
+    print("耗时: \(measureTime { print("示例1: \(s.lengthOfLongestSubstring("abcabcbb"))") }) ms")
 }
 
 func testCase_11() {
@@ -80,19 +80,19 @@ func testCase_23() {
 func testCase_34() {
     let nums = [2,2]
     let target = 1
-    print("耗时: \(measureTime { print(s.searchRange(nums, target)) }) ms")
+    print("耗时: \(measureTime { print("示例1: \(s.searchRange(nums, target))") }) ms")
 }
 
 func testCase_39() {
     let candidates = [10,1,2,7,6,1,5]
     let target = 8
-    print("耗时: \(measureTime { printJSON(s.combinationSum(candidates, target)) }) ms")
+    print("耗时: \(measureTime { printJSON("示例1: \(s.combinationSum(candidates, target))") }) ms")
 }
 
 func testCase_40() {
     let candidates = [10,1,2,7,6,1,5]
     let target = 8
-    print("耗时: \(measureTime { printJSON(s.combinationSum2(candidates, target)) }) ms")
+    print("耗时: \(measureTime { printJSON("示例1: \(s.combinationSum2(candidates, target))") }) ms")
 }
 
 func testCase_42() {
@@ -103,24 +103,24 @@ func testCase_42() {
 
 func testCase_46() {
     let nums = [1,3,5,7]
-    print("耗时: \(measureTime { printJSON(s.permute(nums)) }) ms")
+    print("耗时: \(measureTime { printJSON("示例1: \(s.permute(nums))") }) ms")
 }
 
 func testCase_51() {
-    print("耗时: \(measureTime { printJSON(s.solveNQueens(8)) }) ms")
+    print("耗时: \(measureTime { printJSON("示例1: \(s.solveNQueens(8))") }) ms")
 }
 
 func testCase_76() {
-    print("耗时: \(measureTime { print(s.minWindow("ADOBECODEBANC", "ABC")) }) ms")
+    print("耗时: \(measureTime { print("示例1: \(s.minWindow("ADOBECODEBANC", "ABC"))") }) ms")
 }
 
 func testCase_77() {
-    print("耗时: \(measureTime { printJSON(s.combine(4, 2)) }) ms")
+    print("耗时: \(measureTime { printJSON("示例1: \(s.combine(4, 2))") }) ms")
 }
 
 func testCase_78() {
     let nums = [1,2,3]
-    print("耗时: \(measureTime { printJSON(s.subsets(nums)) }) ms")
+    print("耗时: \(measureTime { printJSON("示例1: \(s.subsets(nums))") }) ms")
 }
 
 func testCase_121() {
@@ -158,17 +158,17 @@ func testCase_309() {
 func testCase_322() {
     let coins = [186,419,83,408]
     let amount = 6249
-    print("耗时: \(measureTime { print(s.coinChange(coins, amount)) }) ms")
+    print("耗时: \(measureTime { print("示例1: \(s.coinChange(coins, amount))") }) ms")
 }
 
 func testCase_438() {
-    print("耗时: \(measureTime { print(s.findAnagrams("cbaebabacd", "abc")) }) ms")
+    print("耗时: \(measureTime { print("示例1: \(s.findAnagrams("cbaebabacd", "abc"))") }) ms")
 }
 
 func testCase_509() {
-    print("耗时: \(measureTime { print(s.fib2(65)) }) ms")
-    print("耗时: \(measureTime { print(s.fib1(65)) }) ms")
-    print("耗时: \(measureTime { print(s.fib(65)) }) ms")
+    print("耗时: \(measureTime { print("示例1: \(s.fib2(65))") }) ms")
+    print("耗时: \(measureTime { print("示例1: \(s.fib1(65))") }) ms")
+    print("耗时: \(measureTime { print("示例1: \(s.fib(65))") }) ms")
 }
 
 func testCase_543() {
@@ -182,11 +182,11 @@ func testCase_543() {
     root.left?.left?.left = TreeNode(7)
     
     // 计算直径
-    print("耗时: \(measureTime { print(s.diameterOfBinaryTree(root)) }) ms")
+    print("耗时: \(measureTime { print("示例1: \(s.diameterOfBinaryTree(root))") }) ms")
 }
 
 func testCase_567() {
-    print("耗时: \(measureTime { print(s.checkInclusion("ab", "eidbaooo")) }) ms")
+    print("耗时: \(measureTime { print("示例1: \(s.checkInclusion("ab", "eidbaooo"))") }) ms")
 }
 
 func testCase_714() {
@@ -198,11 +198,16 @@ func testCase_714() {
 func testCase_752() {
     let deadends = ["0201","0101","0102","1212","2002"]
     let target = "0202"
-    print("耗时: \(measureTime { print(s.openLock(deadends, target)) }) ms")
+    print("耗时: \(measureTime { print("示例1: \(s.openLock(deadends, target))") }) ms")
+}
+
+func testCase_833() {
+    print("耗时: \(measureTime { print("示例1: \(s.findReplaceString("abcd", [0,2], ["a","cd"], ["eee","ffff"]))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.findReplaceString("vmokgggqzp", [3,5,1], ["kg","ggq","mo"], ["s","so","bfr"]))") }) ms")
 }
 
 func testCase_1281() {
-    print("耗时: \(measureTime { print(s.subtractProductAndSum(234)) }) ms")
+    print("耗时: \(measureTime { print("示例1: \(s.subtractProductAndSum(234))") }) ms")
 }
 
 func testCase_1572() {
@@ -217,7 +222,7 @@ func testCase_1749() {
 
 //testCase_3()
 //testCase_11()
-testCase_23()
+//testCase_23()
 //testCase_34()
 //testCase_39()
 //testCase_40()
@@ -239,6 +244,7 @@ testCase_23()
 //testCase_567()
 //testCase_714()
 //testCase_752()
+testCase_833()
 //testCase_1281()
 //testCase_1572()
 //testCase_1749()
