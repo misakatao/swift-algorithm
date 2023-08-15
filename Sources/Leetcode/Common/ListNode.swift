@@ -10,7 +10,7 @@ import Foundation
 public class ListNode {
     var val: Int
     var next: ListNode?
-    init(_ val: Int, next: ListNode? = nil) {
+    init(_ val: Int, _ next: ListNode? = nil) {
         self.val = val
         self.next = next
     }

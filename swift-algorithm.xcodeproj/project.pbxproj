@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E5512CC62A78E6CD00602494 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CC42A78E6CD00602494 /* ListNode.swift */; };
 		E5512CC72A78E6CD00602494 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CC52A78E6CD00602494 /* main.swift */; };
-		E5512CCC2A790B5800602494 /* linkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CC92A790B5800602494 /* linkList.swift */; };
 		E5512CD02A7A451000602494 /* 0001.two-sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CCF2A7A451000602494 /* 0001.two-sum.swift */; };
 		E5512CD32A7A456800602494 /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CD22A7A456800602494 /* Solution.swift */; };
 		E5512CD52A7A461A00602494 /* 0005.longest-palindromic-substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CD42A7A461A00602494 /* 0005.longest-palindromic-substring.swift */; };
@@ -77,6 +76,9 @@
 		E5801B842A8A00260088B018 /* 0141.linked-list-cycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5801B832A8A00260088B018 /* 0141.linked-list-cycle.swift */; };
 		E5801B862A8A1AFA0088B018 /* 0092.reverse-linked-list-ii.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5801B852A8A1AFA0088B018 /* 0092.reverse-linked-list-ii.swift */; };
 		E5801B882A8A1CDA0088B018 /* 0206.reverse-linked-list.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5801B872A8A1CDA0088B018 /* 0206.reverse-linked-list.swift */; };
+		E5A9B1432A8B28C000099C3C /* 0025.reverse-nodes-in-k-group.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A9B1422A8B28C000099C3C /* 0025.reverse-nodes-in-k-group.swift */; };
+		E5A9B1452A8B29CE00099C3C /* 0833.find-and-replace-in-string.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A9B1442A8B29CE00099C3C /* 0833.find-and-replace-in-string.swift */; };
+		E5A9B1472A8B7A2200099C3C /* 0234.palindrome-linked-list.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A9B1462A8B7A2200099C3C /* 0234.palindrome-linked-list.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -95,7 +97,6 @@
 		E5512CB82A78E67900602494 /* swift-algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "swift-algorithm"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5512CC42A78E6CD00602494 /* ListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		E5512CC52A78E6CD00602494 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		E5512CC92A790B5800602494 /* linkList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = linkList.swift; sourceTree = "<group>"; };
 		E5512CCF2A7A451000602494 /* 0001.two-sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0001.two-sum.swift"; sourceTree = "<group>"; };
 		E5512CD22A7A456800602494 /* Solution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution.swift; sourceTree = "<group>"; };
 		E5512CD42A7A461A00602494 /* 0005.longest-palindromic-substring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0005.longest-palindromic-substring.swift"; sourceTree = "<group>"; };
@@ -163,6 +164,9 @@
 		E5801B832A8A00260088B018 /* 0141.linked-list-cycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0141.linked-list-cycle.swift"; sourceTree = "<group>"; };
 		E5801B852A8A1AFA0088B018 /* 0092.reverse-linked-list-ii.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0092.reverse-linked-list-ii.swift"; sourceTree = "<group>"; };
 		E5801B872A8A1CDA0088B018 /* 0206.reverse-linked-list.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0206.reverse-linked-list.swift"; sourceTree = "<group>"; };
+		E5A9B1422A8B28C000099C3C /* 0025.reverse-nodes-in-k-group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0025.reverse-nodes-in-k-group.swift"; sourceTree = "<group>"; };
+		E5A9B1442A8B29CE00099C3C /* 0833.find-and-replace-in-string.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0833.find-and-replace-in-string.swift"; sourceTree = "<group>"; };
+		E5A9B1462A8B7A2200099C3C /* 0234.palindrome-linked-list.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0234.palindrome-linked-list.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,20 +199,10 @@
 		E5512CC22A78E6CD00602494 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				E5512CEE2A80BE1E00602494 /* LCR */,
 				E5512CCE2A7A44F500602494 /* Leetcode */,
 				E5512CC52A78E6CD00602494 /* main.swift */,
-				E5512CC82A790B5800602494 /* 链表双指针技巧 */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		E5512CC82A790B5800602494 /* 链表双指针技巧 */ = {
-			isa = PBXGroup;
-			children = (
-				E5512CC92A790B5800602494 /* linkList.swift */,
-			);
-			path = "链表双指针技巧";
 			sourceTree = "<group>";
 		};
 		E5512CCE2A7A44F500602494 /* Leetcode */ = {
@@ -223,6 +217,7 @@
 				E5801B7D2A89F8870088B018 /* 0019.remove-nth-node-from-end-of-list.swift */,
 				E5512CFD2A80E39B00602494 /* 0021.merge-two-sorted-lists.swift */,
 				E57677B92A89CD2800B6F386 /* 0023.merge-k-sorted-lists.swift */,
+				E5A9B1422A8B28C000099C3C /* 0025.reverse-nodes-in-k-group.swift */,
 				E5512CFF2A80E42F00602494 /* 0026.remove-duplicates-from-sorted-array.swift */,
 				E5512D012A80E46400602494 /* 0027.remove-element.swift */,
 				E5512D222A8364E000602494 /* 0034.find-first-and-last-position-of-element-in-sorted-array.swift */,
@@ -260,6 +255,7 @@
 				E57677972A84BB1F00B6F386 /* 0188.best-time-to-buy-and-sell-stock-iv.swift */,
 				E5512D112A81EC8700602494 /* 0189.rotate-array.swift */,
 				E5801B872A8A1CDA0088B018 /* 0206.reverse-linked-list.swift */,
+				E5A9B1462A8B7A2200099C3C /* 0234.palindrome-linked-list.swift */,
 				E57677A52A84C77300B6F386 /* 0283.move-zeroes.swift */,
 				E57677AD2A85E07A00B6F386 /* 0309.best-time-to-buy-and-sell-stock-with-cooldown.swift */,
 				E5512CE62A7CF0FA00602494 /* 0314.binary-tree-vertical-order-traversal.swift */,
@@ -274,6 +270,7 @@
 				E57677A92A84C8F100B6F386 /* 0704.binary-search.swift */,
 				E57677AF2A85E71C00B6F386 /* 0714.best-time-to-buy-and-sell-stock-with-transaction-fee.swift */,
 				E5512D1E2A8246D400602494 /* 0752.open-the-lock.swift */,
+				E5A9B1442A8B29CE00099C3C /* 0833.find-and-replace-in-string.swift */,
 				E5801B7F2A89FEA00088B018 /* 0876.middle-of-the-linked-list.swift */,
 				E5512D202A8361EE00602494 /* 1281.subtract-the-product-and-sum-of-digits-of-an-integer.swift */,
 				E57677B32A86302800B6F386 /* 1572.matrix-diagonal-sum.swift */,
@@ -292,13 +289,6 @@
 				E5512CD82A7A4ABD00602494 /* TreeNode.swift */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		E5512CEE2A80BE1E00602494 /* LCR */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LCR;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,6 +358,7 @@
 				E5801B7E2A89F8870088B018 /* 0019.remove-nth-node-from-end-of-list.swift in Sources */,
 				E5512CFE2A80E39B00602494 /* 0021.merge-two-sorted-lists.swift in Sources */,
 				E57677BA2A89CD2800B6F386 /* 0023.merge-k-sorted-lists.swift in Sources */,
+				E5A9B1432A8B28C000099C3C /* 0025.reverse-nodes-in-k-group.swift in Sources */,
 				E5512D002A80E42F00602494 /* 0026.remove-duplicates-from-sorted-array.swift in Sources */,
 				E5512D022A80E46400602494 /* 0027.remove-element.swift in Sources */,
 				E5512D232A8364E000602494 /* 0034.find-first-and-last-position-of-element-in-sorted-array.swift in Sources */,
@@ -405,6 +396,7 @@
 				E57677982A84BB1F00B6F386 /* 0188.best-time-to-buy-and-sell-stock-iv.swift in Sources */,
 				E5512D122A81EC8700602494 /* 0189.rotate-array.swift in Sources */,
 				E5801B882A8A1CDA0088B018 /* 0206.reverse-linked-list.swift in Sources */,
+				E5A9B1472A8B7A2200099C3C /* 0234.palindrome-linked-list.swift in Sources */,
 				E57677A62A84C77300B6F386 /* 0283.move-zeroes.swift in Sources */,
 				E57677AE2A85E07A00B6F386 /* 0309.best-time-to-buy-and-sell-stock-with-cooldown.swift in Sources */,
 				E5512CE72A7CF0FA00602494 /* 0314.binary-tree-vertical-order-traversal.swift in Sources */,
@@ -419,12 +411,12 @@
 				E57677AA2A84C8F100B6F386 /* 0704.binary-search.swift in Sources */,
 				E57677B02A85E71C00B6F386 /* 0714.best-time-to-buy-and-sell-stock-with-transaction-fee.swift in Sources */,
 				E5512D1F2A8246D400602494 /* 0752.open-the-lock.swift in Sources */,
+				E5A9B1452A8B29CE00099C3C /* 0833.find-and-replace-in-string.swift in Sources */,
 				E5801B802A89FEA00088B018 /* 0876.middle-of-the-linked-list.swift in Sources */,
 				E5512D212A8361EE00602494 /* 1281.subtract-the-product-and-sum-of-digits-of-an-integer.swift in Sources */,
 				E57677B42A86302800B6F386 /* 1572.matrix-diagonal-sum.swift in Sources */,
 				E5512D1B2A82429A00602494 /* 1749.maximum-absolute-sum-of-any-subarray.swift in Sources */,
 				E5801B7C2A89D4EA0088B018 /* Heap.swift in Sources */,
-				E5512CCC2A790B5800602494 /* linkList.swift in Sources */,
 				E5512CC62A78E6CD00602494 /* ListNode.swift in Sources */,
 				E5512CC72A78E6CD00602494 /* main.swift in Sources */,
 				E5512CD32A7A456800602494 /* Solution.swift in Sources */,

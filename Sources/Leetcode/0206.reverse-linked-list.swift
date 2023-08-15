@@ -1,9 +1,9 @@
 //
-//  0206.reverse-linked-list.swift
 //  swift-algorithm
 //
 //  Created by Misaka on 2023/8/14.
 //
+//  反转链表
 
 import Foundation
 

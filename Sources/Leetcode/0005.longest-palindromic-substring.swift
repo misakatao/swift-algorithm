@@ -24,7 +24,7 @@ extension Solution {
                 l -= 1
                 r += 1
             }
-            return Array(chars[(l+1)...r])
+            return Array(chars[(l + 1)...r])
         }
         
         for i in 0..<chars.count {
