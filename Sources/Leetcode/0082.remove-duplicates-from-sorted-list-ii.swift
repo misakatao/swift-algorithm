@@ -14,7 +14,7 @@ extension Solution {
     func deleteDuplicates2(_ head: ListNode?) -> ListNode? {
         guard let head = head else { return nil }
         
-        var dummy = ListNode(0, head)
+        let dummy = ListNode(0, head)
         var pre: ListNode? = dummy
         var cur: ListNode? = dummy.next
         while cur != nil && cur?.next != nil {

@@ -14,7 +14,7 @@ extension Solution {
     func isPalindrome(_ head: ListNode?) -> Bool {
         var left: ListNode? = head
         func traverse(_ right: ListNode?) -> Bool {
-            if right == nil { return }
+            if right == nil { return true }
             var res = traverse(right?.next)
             res = res && right?.val == left?.val
             left = left?.next
