@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E54FC5C12A8C9ADD001768B8 /* 2682.find-the-losers-of-the-circular-game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5C02A8C9ADD001768B8 /* 2682.find-the-losers-of-the-circular-game.swift */; };
+		E54FC5C32A8CACA9001768B8 /* 0004.median-of-two-sorted-arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5C22A8CACA9001768B8 /* 0004.median-of-two-sorted-arrays.swift */; };
 		E5512CC62A78E6CD00602494 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CC42A78E6CD00602494 /* ListNode.swift */; };
 		E5512CC72A78E6CD00602494 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CC52A78E6CD00602494 /* main.swift */; };
 		E5512CD02A7A451000602494 /* 0001.two-sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CCF2A7A451000602494 /* 0001.two-sum.swift */; };
@@ -94,6 +96,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E54FC5C02A8C9ADD001768B8 /* 2682.find-the-losers-of-the-circular-game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2682.find-the-losers-of-the-circular-game.swift"; sourceTree = "<group>"; };
+		E54FC5C22A8CACA9001768B8 /* 0004.median-of-two-sorted-arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0004.median-of-two-sorted-arrays.swift"; sourceTree = "<group>"; };
 		E5512CB82A78E67900602494 /* swift-algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "swift-algorithm"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5512CC42A78E6CD00602494 /* ListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		E5512CC52A78E6CD00602494 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -211,6 +215,7 @@
 				E5512CCF2A7A451000602494 /* 0001.two-sum.swift */,
 				E576779D2A84C2DB00B6F386 /* 0002.add-two-numbers.swift */,
 				E5512CEF2A80C2E900602494 /* 0003.longest-substring-without-repeating-characters.swift */,
+				E54FC5C22A8CACA9001768B8 /* 0004.median-of-two-sorted-arrays.swift */,
 				E5512CD42A7A461A00602494 /* 0005.longest-palindromic-substring.swift */,
 				E5512CD62A7A465D00602494 /* 0009.palindrome-number.swift */,
 				E57677B12A86225B00B6F386 /* 0011.container-with-most-water.swift */,
@@ -275,6 +280,7 @@
 				E5512D202A8361EE00602494 /* 1281.subtract-the-product-and-sum-of-digits-of-an-integer.swift */,
 				E57677B32A86302800B6F386 /* 1572.matrix-diagonal-sum.swift */,
 				E5512D1A2A82429A00602494 /* 1749.maximum-absolute-sum-of-any-subarray.swift */,
+				E54FC5C02A8C9ADD001768B8 /* 2682.find-the-losers-of-the-circular-game.swift */,
 				E5512CD12A7A454400602494 /* Common */,
 			);
 			path = Leetcode;
@@ -352,6 +358,7 @@
 				E5512CD02A7A451000602494 /* 0001.two-sum.swift in Sources */,
 				E576779E2A84C2DB00B6F386 /* 0002.add-two-numbers.swift in Sources */,
 				E5512CF02A80C2E900602494 /* 0003.longest-substring-without-repeating-characters.swift in Sources */,
+				E54FC5C32A8CACA9001768B8 /* 0004.median-of-two-sorted-arrays.swift in Sources */,
 				E5512CD52A7A461A00602494 /* 0005.longest-palindromic-substring.swift in Sources */,
 				E5512CD72A7A465D00602494 /* 0009.palindrome-number.swift in Sources */,
 				E57677B22A86225B00B6F386 /* 0011.container-with-most-water.swift in Sources */,
@@ -416,6 +423,7 @@
 				E5512D212A8361EE00602494 /* 1281.subtract-the-product-and-sum-of-digits-of-an-integer.swift in Sources */,
 				E57677B42A86302800B6F386 /* 1572.matrix-diagonal-sum.swift in Sources */,
 				E5512D1B2A82429A00602494 /* 1749.maximum-absolute-sum-of-any-subarray.swift in Sources */,
+				E54FC5C12A8C9ADD001768B8 /* 2682.find-the-losers-of-the-circular-game.swift in Sources */,
 				E5801B7C2A89D4EA0088B018 /* Heap.swift in Sources */,
 				E5512CC62A78E6CD00602494 /* ListNode.swift in Sources */,
 				E5512CC72A78E6CD00602494 /* main.swift in Sources */,

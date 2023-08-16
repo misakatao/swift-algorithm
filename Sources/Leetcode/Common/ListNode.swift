@@ -14,6 +14,15 @@ public class ListNode {
         self.val = val
         self.next = next
     }
+    var toString: String {
+        var res: [String] = []
+        var cur: ListNode? = self
+        while cur != nil {
+            res.append(String(cur?.val ?? 0))
+            cur = cur?.next
+        }
+        return "[\(res.joined(separator: ","))]"
+    }
     /*
     public func hash(into hasher: inout Hasher) {
         hasher.combine(val)
