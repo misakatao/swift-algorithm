@@ -16,7 +16,29 @@ extension Solution {
      你可以假设除了数字 0 之外，这两个数都不会以 0 开头。
      */
     func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
+        let dummy = ListNode(0)
+        var cur: ListNode? = dummy
         
-        return nil
+        var node1: ListNode? = l1
+        var node2: ListNode? = l2
+        var carry: Int = 0 // 记录进位
+        while node1 != nil || node2 != nil || carry > 0 {
+            
+            var add = carry
+            if node1 != nil {
+                add += node1!.val
+                node1 = node1?.next
+            }
+            
+            if node2 != nil {
+                add += node2!.val
+                node2 = node2?.next
+            }
+            
+            carry = add / 10
+            cur?.next = ListNode(add % 10)
+            cur = cur?.next
+        }
+        return dummy.next
     }
 }

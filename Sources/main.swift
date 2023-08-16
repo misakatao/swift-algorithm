@@ -52,8 +52,25 @@ func makeMaxInts() -> [Int] {
 
 let s = Solution()
 
+func testCase_2() {
+    let head1 = ListNode(2)
+    head1.next = ListNode(4)
+    head1.next?.next = ListNode(3)
+    
+    let head2 = ListNode(5)
+    head2.next = ListNode(6)
+    head2.next?.next = ListNode(4)
+    
+    print("耗时: \(measureTime { print("示例1: \(s.addTwoNumbers(head1, head2)?.toString ?? "")") }) ms")
+}
+
 func testCase_3() {
     print("耗时: \(measureTime { print("示例1: \(s.lengthOfLongestSubstring("abcabcbb"))") }) ms")
+}
+
+func testCase_4() {
+    print("耗时: \(measureTime { print("示例1: \(s.findMedianSortedArrays([1,3], [2]))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.findMedianSortedArrays([1,2], [3,4]))") }) ms")
 }
 
 func testCase_11() {
@@ -74,7 +91,7 @@ func testCase_23() {
     let head3 = ListNode(2)
     head3.next = ListNode(6)
     
-    print("耗时: \(measureTime { print("示例1: \(String(describing: s.mergeKLists([head1, head2, head3])))") }) ms")
+    print("耗时: \(measureTime { print("示例1: \(s.mergeKLists([head1, head2, head3])?.toString ?? "")") }) ms")
 }
 
 func testCase_34() {
@@ -220,7 +237,15 @@ func testCase_1749() {
     print("耗时: \(measureTime { print("示例2: \(s.maxAbsoluteSum([2,-5,1,-4,3,-2]))") }) ms")
 }
 
+func testCase_2682() {
+    print("耗时: \(measureTime { print("示例1: \(s.circularGameLosers(5, 2))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.circularGameLosers(4, 4))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.circularGameLosers(5, 3))") }) ms")
+}
+
+//testCase_2()
 //testCase_3()
+testCase_4()
 //testCase_11()
 //testCase_23()
 //testCase_34()
@@ -244,7 +269,8 @@ func testCase_1749() {
 //testCase_567()
 //testCase_714()
 //testCase_752()
-testCase_833()
+//testCase_833()
 //testCase_1281()
 //testCase_1572()
 //testCase_1749()
+//testCase_2682()
