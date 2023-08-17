@@ -178,14 +178,18 @@ func testCase_322() {
     print("耗时: \(measureTime { print("示例1: \(s.coinChange(coins, amount))") }) ms")
 }
 
+func testCase_370() {
+    print("耗时: \(measureTime { print("示例1: \(s.getModifiedArray(5, [[1,3,2], [2,4,3], [0,2,-2]]))") }) ms")
+}
+
 func testCase_438() {
     print("耗时: \(measureTime { print("示例1: \(s.findAnagrams("cbaebabacd", "abc"))") }) ms")
 }
 
 func testCase_509() {
     print("耗时: \(measureTime { print("示例1: \(s.fib2(65))") }) ms")
-    print("耗时: \(measureTime { print("示例1: \(s.fib1(65))") }) ms")
-    print("耗时: \(measureTime { print("示例1: \(s.fib(65))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.fib1(65))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.fib(65))") }) ms")
 }
 
 func testCase_543() {
@@ -221,6 +225,16 @@ func testCase_752() {
 func testCase_833() {
     print("耗时: \(measureTime { print("示例1: \(s.findReplaceString("abcd", [0,2], ["a","cd"], ["eee","ffff"]))") }) ms")
     print("耗时: \(measureTime { print("示例2: \(s.findReplaceString("vmokgggqzp", [3,5,1], ["kg","ggq","mo"], ["s","so","bfr"]))") }) ms")
+}
+
+func testCase_1094() {
+    print("耗时: \(measureTime { print("示例1: \(s.carPooling([[2,1,5],[3,3,7]], 4))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.carPooling([[2,1,5],[3,3,7]], 5))") }) ms")
+}
+
+func testCase_1109() {
+    print("耗时: \(measureTime { print("示例1: \(s.corpFlightBookings([[1,2,10],[2,3,20],[2,5,25]], 5))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.corpFlightBookings([[1,2,10],[2,2,15]], 2))") }) ms")
 }
 
 func testCase_1281() {
@@ -269,6 +283,7 @@ func testCase_2682() {
 //testCase_188()
 //testCase_309()
 //testCase_322()
+//testCase_370()
 //testCase_438()
 //testCase_509()
 //testCase_543()
@@ -276,8 +291,10 @@ func testCase_2682() {
 //testCase_714()
 //testCase_752()
 //testCase_833()
+//testCase_1094()
+testCase_1109()
 //testCase_1281()
-testCase_1444()
+//testCase_1444()
 //testCase_1572()
 //testCase_1749()
 //testCase_2682()
