@@ -12,6 +12,9 @@
 		E54FC5C52A8CD1D1001768B8 /* 0303.range-sum-query-immutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5C42A8CD1D1001768B8 /* 0303.range-sum-query-immutable.swift */; };
 		E54FC5C72A8DBCB0001768B8 /* 1444.number-of-ways-of-cutting-a-pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5C62A8DBCB0001768B8 /* 1444.number-of-ways-of-cutting-a-pizza.swift */; };
 		E54FC5C92A8E111E001768B8 /* 0304.range-sum-query-2d-immutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5C82A8E111E001768B8 /* 0304.range-sum-query-2d-immutable.swift */; };
+		E54FC5CB2A8E1E29001768B8 /* 1094.car-pooling.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5CA2A8E1E29001768B8 /* 1094.car-pooling.swift */; };
+		E54FC5CD2A8E20AC001768B8 /* 0370.range-addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5CC2A8E20AC001768B8 /* 0370.range-addition.swift */; };
+		E54FC5CF2A8E22F3001768B8 /* 1109.corporate-flight-bookings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5CE2A8E22F3001768B8 /* 1109.corporate-flight-bookings.swift */; };
 		E5512CC62A78E6CD00602494 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CC42A78E6CD00602494 /* ListNode.swift */; };
 		E5512CC72A78E6CD00602494 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CC52A78E6CD00602494 /* main.swift */; };
 		E5512CD02A7A451000602494 /* 0001.two-sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CCF2A7A451000602494 /* 0001.two-sum.swift */; };
@@ -104,6 +107,9 @@
 		E54FC5C42A8CD1D1001768B8 /* 0303.range-sum-query-immutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0303.range-sum-query-immutable.swift"; sourceTree = "<group>"; };
 		E54FC5C62A8DBCB0001768B8 /* 1444.number-of-ways-of-cutting-a-pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1444.number-of-ways-of-cutting-a-pizza.swift"; sourceTree = "<group>"; };
 		E54FC5C82A8E111E001768B8 /* 0304.range-sum-query-2d-immutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0304.range-sum-query-2d-immutable.swift"; sourceTree = "<group>"; };
+		E54FC5CA2A8E1E29001768B8 /* 1094.car-pooling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1094.car-pooling.swift"; sourceTree = "<group>"; };
+		E54FC5CC2A8E20AC001768B8 /* 0370.range-addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0370.range-addition.swift"; sourceTree = "<group>"; };
+		E54FC5CE2A8E22F3001768B8 /* 1109.corporate-flight-bookings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1109.corporate-flight-bookings.swift"; sourceTree = "<group>"; };
 		E5512CB82A78E67900602494 /* swift-algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "swift-algorithm"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5512CC42A78E6CD00602494 /* ListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		E5512CC52A78E6CD00602494 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -275,6 +281,7 @@
 				E5512CE42A7CF0AD00602494 /* 0320.generalized-abbreviation.swift */,
 				E5512CE22A7CD09E00602494 /* 0322.coin-change.swift */,
 				E57677A72A84C7D400B6F386 /* 0344.reverse-string.swift */,
+				E54FC5CC2A8E20AC001768B8 /* 0370.range-addition.swift */,
 				E57677952A847BA500B6F386 /* 0438.find-all-anagrams-in-a-string.swift */,
 				E5512CE02A7C9CA100602494 /* 0509.fibonacci-number.swift */,
 				E5512CDE2A7B875F00602494 /* 0543.diameter-of-binary-tree.swift */,
@@ -285,6 +292,8 @@
 				E5512D1E2A8246D400602494 /* 0752.open-the-lock.swift */,
 				E5A9B1442A8B29CE00099C3C /* 0833.find-and-replace-in-string.swift */,
 				E5801B7F2A89FEA00088B018 /* 0876.middle-of-the-linked-list.swift */,
+				E54FC5CA2A8E1E29001768B8 /* 1094.car-pooling.swift */,
+				E54FC5CE2A8E22F3001768B8 /* 1109.corporate-flight-bookings.swift */,
 				E5512D202A8361EE00602494 /* 1281.subtract-the-product-and-sum-of-digits-of-an-integer.swift */,
 				E54FC5C62A8DBCB0001768B8 /* 1444.number-of-ways-of-cutting-a-pizza.swift */,
 				E57677B32A86302800B6F386 /* 1572.matrix-diagonal-sum.swift */,
@@ -364,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E54FC5CB2A8E1E29001768B8 /* 1094.car-pooling.swift in Sources */,
 				E5512CD02A7A451000602494 /* 0001.two-sum.swift in Sources */,
 				E576779E2A84C2DB00B6F386 /* 0002.add-two-numbers.swift in Sources */,
 				E5512CF02A80C2E900602494 /* 0003.longest-substring-without-repeating-characters.swift in Sources */,
@@ -387,6 +397,7 @@
 				E5512CFA2A80E27A00602494 /* 0047.permutations-ii.swift in Sources */,
 				E5512CED2A808CFB00602494 /* 0051.n-queens.swift in Sources */,
 				E5512D062A80E59500602494 /* 0052.n-queens-ii.swift in Sources */,
+				E54FC5CD2A8E20AC001768B8 /* 0370.range-addition.swift in Sources */,
 				E5512D1D2A82434E00602494 /* 0053.maximum-subarray.swift in Sources */,
 				E57677922A837C2D00B6F386 /* 0076.minimum-window-substring.swift in Sources */,
 				E5512CF42A80D38100602494 /* 0077.combinations.swift in Sources */,
@@ -405,6 +416,7 @@
 				E576779A2A84BB7100B6F386 /* 0123.best-time-to-buy-and-sell-stock-iii.swift in Sources */,
 				E5801B842A8A00260088B018 /* 0141.linked-list-cycle.swift in Sources */,
 				E5801B822A89FFE40088B018 /* 0142.linked-list-cycle-ii.swift in Sources */,
+				E54FC5CF2A8E22F3001768B8 /* 1109.corporate-flight-bookings.swift in Sources */,
 				E5512CDD2A7B472D00602494 /* 0144.binary-tree-preorder-traversal.swift in Sources */,
 				E57677A42A84C6B400B6F386 /* 0145.binary-tree-postorder-traversal.swift in Sources */,
 				E5512D0A2A80E7AC00602494 /* 0160.intersection-of-two-linked-lists.swift in Sources */,
