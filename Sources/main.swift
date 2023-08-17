@@ -227,6 +227,12 @@ func testCase_1281() {
     print("耗时: \(measureTime { print("示例1: \(s.subtractProductAndSum(234))") }) ms")
 }
 
+func testCase_1444() {
+    print("耗时: \(measureTime { print("示例1: \(s.ways(["A..","AAA","..."], 3))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.ways(["A..","AA.","..."], 3))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.ways2(["A..","A..","..."], 1))") }) ms")
+}
+
 func testCase_1572() {
     print("耗时: \(measureTime { print("示例1: \(s.diagonalSum([[1,2,3],[4,5,6],[7,8,9]]))") }) ms")
     print("耗时: \(measureTime { print("示例2: \(s.diagonalSum([[1,1,1,1], [1,1,1,1], [1,1,1,1], [1,1,1,1]]))") }) ms")
@@ -245,7 +251,7 @@ func testCase_2682() {
 
 //testCase_2()
 //testCase_3()
-testCase_4()
+//testCase_4()
 //testCase_11()
 //testCase_23()
 //testCase_34()
@@ -271,6 +277,7 @@ testCase_4()
 //testCase_752()
 //testCase_833()
 //testCase_1281()
+testCase_1444()
 //testCase_1572()
 //testCase_1749()
 //testCase_2682()
