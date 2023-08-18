@@ -18,7 +18,7 @@ extension Solution {
         for head in lists {
             var p = head
             while p != nil {
-                minHead.insert(p!)
+                minHead.append(p!)
 
                 let cur = p?.next
                 p?.next = nil
