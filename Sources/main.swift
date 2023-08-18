@@ -95,21 +95,15 @@ func testCase_23() {
 }
 
 func testCase_34() {
-    let nums = [2,2]
-    let target = 1
-    print("耗时: \(measureTime { print("示例1: \(s.searchRange(nums, target))") }) ms")
+    print("耗时: \(measureTime { print("示例1: \(s.searchRange([2,2], 2))") }) ms")
 }
 
 func testCase_39() {
-    let candidates = [10,1,2,7,6,1,5]
-    let target = 8
-    print("耗时: \(measureTime { printJSON("示例1: \(s.combinationSum(candidates, target))") }) ms")
+    print("耗时: \(measureTime { printJSON("示例1: \(s.combinationSum([10,1,2,7,6,1,5], 8))") }) ms")
 }
 
 func testCase_40() {
-    let candidates = [10,1,2,7,6,1,5]
-    let target = 8
-    print("耗时: \(measureTime { printJSON("示例1: \(s.combinationSum2(candidates, target))") }) ms")
+    print("耗时: \(measureTime { printJSON("示例1: \(s.combinationSum2([10,1,2,7,6,1,5], 8))") }) ms")
 }
 
 func testCase_42() {
@@ -119,12 +113,31 @@ func testCase_42() {
 }
 
 func testCase_46() {
-    let nums = [1,3,5,7]
-    print("耗时: \(measureTime { printJSON("示例1: \(s.permute(nums))") }) ms")
+    print("耗时: \(measureTime { printJSON("示例1: \(s.permute([1,3,5,7]))") }) ms")
+}
+
+func testCase_48() {
+    var matrix1 = [[1,2,3],[4,5,6],[7,8,9]]
+    s.rotate(&matrix1)
+    print("耗时: \(measureTime { print("示例1: \(matrix1)") }) ms")
+    
+    var matrix2 = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]
+    s.rotate(&matrix2)
+    print("耗时: \(measureTime { print("示例1: \(matrix2)") }) ms")
 }
 
 func testCase_51() {
     print("耗时: \(measureTime { printJSON("示例1: \(s.solveNQueens(8))") }) ms")
+}
+
+func testCase_54() {
+    print("耗时: \(measureTime { print("示例1: \(s.spiralOrder([[1,2,3],[4,5,6],[7,8,9]]))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.spiralOrder([[1,2,3,4],[5,6,7,8],[9,10,11,12]]))") }) ms")
+}
+
+func testCase_59() {
+    print("耗时: \(measureTime { print("示例1: \(s.generateMatrix(3))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.generateMatrix(1))") }) ms")
 }
 
 func testCase_76() {
@@ -136,8 +149,7 @@ func testCase_77() {
 }
 
 func testCase_78() {
-    let nums = [1,2,3]
-    print("耗时: \(measureTime { printJSON("示例1: \(s.subsets(nums))") }) ms")
+    print("耗时: \(measureTime { printJSON("示例1: \(s.subsets([1,2,3]))") }) ms")
 }
 
 func testCase_121() {
@@ -160,6 +172,12 @@ func testCase_123() {
     print("耗时: \(measureTime { print("示例4: \(s.maxProfit3(makeMaxInts()))") }) ms")
 }
 
+func testCase_151() {
+    print("耗时: \(measureTime { print("示例1: \(s.reverseWords("the sky is blue"))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.reverseWords("  hello world  "))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.reverseWords("a good   example"))") }) ms")
+}
+
 func testCase_188() {
     print("耗时: \(measureTime { print("示例1: \(s.maxProfit4(2, [2,4,1]))") }) ms")
     print("耗时: \(measureTime { print("示例2: \(s.maxProfit4(2, [3,2,6,5,0,3]))") }) ms")
@@ -173,9 +191,7 @@ func testCase_309() {
 }
 
 func testCase_322() {
-    let coins = [186,419,83,408]
-    let amount = 6249
-    print("耗时: \(measureTime { print("示例1: \(s.coinChange(coins, amount))") }) ms")
+    print("耗时: \(measureTime { print("示例1: \(s.coinChange([186,419,83,408], 6249))") }) ms")
 }
 
 func testCase_370() {
@@ -217,9 +233,7 @@ func testCase_714() {
 }
 
 func testCase_752() {
-    let deadends = ["0201","0101","0102","1212","2002"]
-    let target = "0202"
-    print("耗时: \(measureTime { print("示例1: \(s.openLock(deadends, target))") }) ms")
+    print("耗时: \(measureTime { print("示例1: \(s.openLock(["0201","0101","0102","1212","2002"], "0202"))") }) ms")
 }
 
 func testCase_798() {
@@ -283,13 +297,17 @@ func testCase_2682() {
 //testCase_40()
 //testCase_42()
 //testCase_46()
+//testCase_48()
 //testCase_51()
+//testCase_54()
+testCase_59()
 //testCase_76()
 //testCase_77()
 //testCase_78()
 //testCase_121()
 //testCase_122()
 //testCase_123()
+//testCase_151()
 //testCase_188()
 //testCase_309()
 //testCase_322()
@@ -300,7 +318,7 @@ func testCase_2682() {
 //testCase_567()
 //testCase_714()
 //testCase_752()
-testCase_798()
+//testCase_798()
 //testCase_833()
 //testCase_1094()
 //testCase_1109()
