@@ -7,10 +7,6 @@
 
 import Foundation
 
-extension String {
-    
-}
-
 extension Solution {
     /*
      你会得到一个字符串 s (索引从 0 开始)，你必须对它执行 k 个替换操作。替换操作以三个长度均为 k 的并行数组给出：indices, sources,  targets。

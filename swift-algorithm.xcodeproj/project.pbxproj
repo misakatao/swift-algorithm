@@ -16,6 +16,7 @@
 		E54FC5CD2A8E20AC001768B8 /* 0370.range-addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5CC2A8E20AC001768B8 /* 0370.range-addition.swift */; };
 		E54FC5CF2A8E22F3001768B8 /* 1109.corporate-flight-bookings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5CE2A8E22F3001768B8 /* 1109.corporate-flight-bookings.swift */; };
 		E54FC5D12A8F02EA001768B8 /* 1388.pizza-with-3n-slices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5D02A8F02EA001768B8 /* 1388.pizza-with-3n-slices.swift */; };
+		E54FC5D32A8F3CBA001768B8 /* 0798.smallest-rotation-with-highest-score.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5D22A8F3CBA001768B8 /* 0798.smallest-rotation-with-highest-score.swift */; };
 		E5512CC62A78E6CD00602494 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CC42A78E6CD00602494 /* ListNode.swift */; };
 		E5512CC72A78E6CD00602494 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CC52A78E6CD00602494 /* main.swift */; };
 		E5512CD02A7A451000602494 /* 0001.two-sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CCF2A7A451000602494 /* 0001.two-sum.swift */; };
@@ -112,6 +113,7 @@
 		E54FC5CC2A8E20AC001768B8 /* 0370.range-addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0370.range-addition.swift"; sourceTree = "<group>"; };
 		E54FC5CE2A8E22F3001768B8 /* 1109.corporate-flight-bookings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1109.corporate-flight-bookings.swift"; sourceTree = "<group>"; };
 		E54FC5D02A8F02EA001768B8 /* 1388.pizza-with-3n-slices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1388.pizza-with-3n-slices.swift"; sourceTree = "<group>"; };
+		E54FC5D22A8F3CBA001768B8 /* 0798.smallest-rotation-with-highest-score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0798.smallest-rotation-with-highest-score.swift"; sourceTree = "<group>"; };
 		E5512CB82A78E67900602494 /* swift-algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "swift-algorithm"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5512CC42A78E6CD00602494 /* ListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		E5512CC52A78E6CD00602494 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -292,6 +294,7 @@
 				E57677A92A84C8F100B6F386 /* 0704.binary-search.swift */,
 				E57677AF2A85E71C00B6F386 /* 0714.best-time-to-buy-and-sell-stock-with-transaction-fee.swift */,
 				E5512D1E2A8246D400602494 /* 0752.open-the-lock.swift */,
+				E54FC5D22A8F3CBA001768B8 /* 0798.smallest-rotation-with-highest-score.swift */,
 				E5A9B1442A8B29CE00099C3C /* 0833.find-and-replace-in-string.swift */,
 				E5801B7F2A89FEA00088B018 /* 0876.middle-of-the-linked-list.swift */,
 				E54FC5CA2A8E1E29001768B8 /* 1094.car-pooling.swift */,
@@ -404,7 +407,6 @@
 				E5512CF42A80D38100602494 /* 0077.combinations.swift in Sources */,
 				E5512CF22A80CA6600602494 /* 0078.subsets.swift in Sources */,
 				E57677A02A84C57C00B6F386 /* 0082.remove-duplicates-from-sorted-list-ii.swift in Sources */,
-				E54FC5D12A8F02EA001768B8 /* 1388.pizza-with-3n-slices.swift in Sources */,
 				E5512D082A80E63400602494 /* 0083.remove-duplicates-from-sorted-list.swift in Sources */,
 				E57677B82A89C9C500B6F386 /* 0086.partition-list.swift in Sources */,
 				E5512D102A81DAF800602494 /* 0088.merge-sorted-array.swift in Sources */,
@@ -443,11 +445,13 @@
 				E57677AA2A84C8F100B6F386 /* 0704.binary-search.swift in Sources */,
 				E57677B02A85E71C00B6F386 /* 0714.best-time-to-buy-and-sell-stock-with-transaction-fee.swift in Sources */,
 				E5512D1F2A8246D400602494 /* 0752.open-the-lock.swift in Sources */,
+				E54FC5D32A8F3CBA001768B8 /* 0798.smallest-rotation-with-highest-score.swift in Sources */,
 				E5A9B1452A8B29CE00099C3C /* 0833.find-and-replace-in-string.swift in Sources */,
 				E5801B802A89FEA00088B018 /* 0876.middle-of-the-linked-list.swift in Sources */,
 				E54FC5CB2A8E1E29001768B8 /* 1094.car-pooling.swift in Sources */,
 				E54FC5CF2A8E22F3001768B8 /* 1109.corporate-flight-bookings.swift in Sources */,
 				E5512D212A8361EE00602494 /* 1281.subtract-the-product-and-sum-of-digits-of-an-integer.swift in Sources */,
+				E54FC5D12A8F02EA001768B8 /* 1388.pizza-with-3n-slices.swift in Sources */,
 				E54FC5C72A8DBCB0001768B8 /* 1444.number-of-ways-of-cutting-a-pizza.swift in Sources */,
 				E57677B42A86302800B6F386 /* 1572.matrix-diagonal-sum.swift in Sources */,
 				E5512D1B2A82429A00602494 /* 1749.maximum-absolute-sum-of-any-subarray.swift in Sources */,

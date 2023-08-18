@@ -222,6 +222,11 @@ func testCase_752() {
     print("耗时: \(measureTime { print("示例1: \(s.openLock(deadends, target))") }) ms")
 }
 
+func testCase_798() {
+    print("耗时: \(measureTime { print("示例1: \(s.bestRotation([2,3,1,4,0]))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.bestRotation([1,3,0,2,4]))") }) ms")
+}
+
 func testCase_833() {
     print("耗时: \(measureTime { print("示例1: \(s.findReplaceString("abcd", [0,2], ["a","cd"], ["eee","ffff"]))") }) ms")
     print("耗时: \(measureTime { print("示例2: \(s.findReplaceString("vmokgggqzp", [3,5,1], ["kg","ggq","mo"], ["s","so","bfr"]))") }) ms")
@@ -295,8 +300,9 @@ func testCase_2682() {
 //testCase_567()
 //testCase_714()
 //testCase_752()
+testCase_798()
 //testCase_833()
-testCase_1094()
+//testCase_1094()
 //testCase_1109()
 //testCase_1281()
 //testCase_1388()
