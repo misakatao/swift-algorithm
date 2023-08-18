@@ -26,7 +26,7 @@ public struct Heap<T> {
     }
     
     // MARK: - Public
-    mutating func insert(_ element: T) {
+    mutating func append(_ element: T) {
         elements.append(element)
         siftUp(elements.count - 1)
     }

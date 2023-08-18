@@ -241,6 +241,11 @@ func testCase_1281() {
     print("耗时: \(measureTime { print("示例1: \(s.subtractProductAndSum(234))") }) ms")
 }
 
+func testCase_1388() {
+    print("耗时: \(measureTime { print("示例1: \(s.maxSizeSlices([1,2,3,4,5,6]))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.maxSizeSlices([8,9,8,6,1,1]))") }) ms")
+}
+
 func testCase_1444() {
     print("耗时: \(measureTime { print("示例1: \(s.ways(["A..","AAA","..."], 3))") }) ms")
     print("耗时: \(measureTime { print("示例2: \(s.ways(["A..","AA.","..."], 3))") }) ms")
@@ -291,9 +296,10 @@ func testCase_2682() {
 //testCase_714()
 //testCase_752()
 //testCase_833()
-//testCase_1094()
-testCase_1109()
+testCase_1094()
+//testCase_1109()
 //testCase_1281()
+//testCase_1388()
 //testCase_1444()
 //testCase_1572()
 //testCase_1749()

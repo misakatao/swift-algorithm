@@ -17,7 +17,36 @@ extension Solution {
      */
     func carPooling(_ trips: [[Int]], _ capacity: Int) -> Bool {
         
+        var stations: Int = 0
+        for trip in trips {
+            let toStation = trip[2]
+            
+            if toStation + 1 > stations {
+                stations = toStation + 1
+            }
+        }
         
-        return false
+        var diff: [Int] = Array(repeating: 0, count: stations)
+        for trip in trips {
+            let val = trip[0] // 乘客数量
+            let i = trip[1] // 第 trip[1] 站乘客上车
+            let j = trip[2] - 1 // 第 trip[2] 站乘客已经下车，即乘客在车上的区间是 [trip[1], trip[2] - 1]
+            
+            diff[i] += val
+            if j + 1 < diff.count {
+                diff[j + 1] -= val
+            }
+        }
+        
+        var curCapacity: Int = 0
+        for i in 0..<diff.count {
+            curCapacity += diff[i]
+            
+            if curCapacity > capacity {
+                return false
+            }
+        }
+    
+        return true
     }
 }
