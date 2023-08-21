@@ -21,6 +21,8 @@
 		E54FC5D72A8F4D6D001768B8 /* 0151.reverse-words-in-a-string.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5D62A8F4D6D001768B8 /* 0151.reverse-words-in-a-string.swift */; };
 		E54FC5D92A8F56E8001768B8 /* 0054.spiral-matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5D82A8F56E8001768B8 /* 0054.spiral-matrix.swift */; };
 		E54FC5DB2A8F5BFC001768B8 /* 0059.spiral-matrix-ii.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5DA2A8F5BFC001768B8 /* 0059.spiral-matrix-ii.swift */; };
+		E54FC5DD2A8F6967001768B8 /* 0006.zigzag-conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5DC2A8F6967001768B8 /* 0006.zigzag-conversion.swift */; };
+		E54FC5DF2A935C61001768B8 /* 0015.3sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5DE2A935C61001768B8 /* 0015.3sum.swift */; };
 		E5512CC62A78E6CD00602494 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CC42A78E6CD00602494 /* ListNode.swift */; };
 		E5512CC72A78E6CD00602494 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CC52A78E6CD00602494 /* main.swift */; };
 		E5512CD02A7A451000602494 /* 0001.two-sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CCF2A7A451000602494 /* 0001.two-sum.swift */; };
@@ -122,6 +124,8 @@
 		E54FC5D62A8F4D6D001768B8 /* 0151.reverse-words-in-a-string.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0151.reverse-words-in-a-string.swift"; sourceTree = "<group>"; };
 		E54FC5D82A8F56E8001768B8 /* 0054.spiral-matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0054.spiral-matrix.swift"; sourceTree = "<group>"; };
 		E54FC5DA2A8F5BFC001768B8 /* 0059.spiral-matrix-ii.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0059.spiral-matrix-ii.swift"; sourceTree = "<group>"; };
+		E54FC5DC2A8F6967001768B8 /* 0006.zigzag-conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0006.zigzag-conversion.swift"; sourceTree = "<group>"; };
+		E54FC5DE2A935C61001768B8 /* 0015.3sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 0015.3sum.swift; sourceTree = "<group>"; };
 		E5512CB82A78E67900602494 /* swift-algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "swift-algorithm"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5512CC42A78E6CD00602494 /* ListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		E5512CC52A78E6CD00602494 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -241,8 +245,10 @@
 				E5512CEF2A80C2E900602494 /* 0003.longest-substring-without-repeating-characters.swift */,
 				E54FC5C22A8CACA9001768B8 /* 0004.median-of-two-sorted-arrays.swift */,
 				E5512CD42A7A461A00602494 /* 0005.longest-palindromic-substring.swift */,
+				E54FC5DC2A8F6967001768B8 /* 0006.zigzag-conversion.swift */,
 				E5512CD62A7A465D00602494 /* 0009.palindrome-number.swift */,
 				E57677B12A86225B00B6F386 /* 0011.container-with-most-water.swift */,
+				E54FC5DE2A935C61001768B8 /* 0015.3sum.swift */,
 				E5801B7D2A89F8870088B018 /* 0019.remove-nth-node-from-end-of-list.swift */,
 				E5512CFD2A80E39B00602494 /* 0021.merge-two-sorted-lists.swift */,
 				E57677B92A89CD2800B6F386 /* 0023.merge-k-sorted-lists.swift */,
@@ -396,8 +402,10 @@
 				E5512CF02A80C2E900602494 /* 0003.longest-substring-without-repeating-characters.swift in Sources */,
 				E54FC5C32A8CACA9001768B8 /* 0004.median-of-two-sorted-arrays.swift in Sources */,
 				E5512CD52A7A461A00602494 /* 0005.longest-palindromic-substring.swift in Sources */,
+				E54FC5DD2A8F6967001768B8 /* 0006.zigzag-conversion.swift in Sources */,
 				E5512CD72A7A465D00602494 /* 0009.palindrome-number.swift in Sources */,
 				E57677B22A86225B00B6F386 /* 0011.container-with-most-water.swift in Sources */,
+				E54FC5DF2A935C61001768B8 /* 0015.3sum.swift in Sources */,
 				E5801B7E2A89F8870088B018 /* 0019.remove-nth-node-from-end-of-list.swift in Sources */,
 				E5512CFE2A80E39B00602494 /* 0021.merge-two-sorted-lists.swift in Sources */,
 				E57677BA2A89CD2800B6F386 /* 0023.merge-k-sorted-lists.swift in Sources */,

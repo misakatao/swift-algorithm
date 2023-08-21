@@ -73,10 +73,24 @@ func testCase_4() {
     print("耗时: \(measureTime { print("示例2: \(s.findMedianSortedArrays([1,2], [3,4]))") }) ms")
 }
 
+func testCase_6() {
+    print("耗时: \(measureTime { print("示例1: \(s.convert("PAYPALISHIRING", 3))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.convert("PAYPALISHIRING", 4))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.convert("A", 1))") }) ms")
+}
+
 func testCase_11() {
     print("耗时: \(measureTime { print("示例1: \(s.maxArea([1,8,6,2,5,4,8,3,7]))") }) ms")
     print("耗时: \(measureTime { print("示例2: \(s.maxArea([1,1]))") }) ms")
     print("耗时: \(measureTime { print("示例3: \(s.maxArea(makeMaxInts()))") }) ms")
+}
+
+func testCase_15() {
+    print("耗时: \(measureTime { print("示例1: \(s.threeSum([-1,0,1,2,-1,-4]))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.threeSum([0,1,1]))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.threeSum([0,0,0]))") }) ms")
+    print("耗时: \(measureTime { print("示例4: \(s.threeSum([0,3,0,1,1,-1,-5,-5,3,-3,-3,0]))") }) ms")
+    
 }
 
 func testCase_23() {
@@ -290,7 +304,9 @@ func testCase_2682() {
 //testCase_2()
 //testCase_3()
 //testCase_4()
+//testCase_6()
 //testCase_11()
+testCase_15()
 //testCase_23()
 //testCase_34()
 //testCase_39()
@@ -300,7 +316,7 @@ func testCase_2682() {
 //testCase_48()
 //testCase_51()
 //testCase_54()
-testCase_59()
+//testCase_59()
 //testCase_76()
 //testCase_77()
 //testCase_78()
