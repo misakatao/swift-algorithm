@@ -1,21 +1,22 @@
 //
 //  swift-algorithm
 //
-//  Created by Misaka on 2023/8/21.
+//  Created by Misaka on 2023/8/22.
 //
-//  三数之和
+//  四数之和
 
 import Foundation
 
 extension Solution {
     /*
-     给你一个整数数组 nums ，判断是否存在三元组 [nums[i], nums[j], nums[k]] 满足 i != j、i != k 且 j != k ，同时还满足 nums[i] + nums[j] + nums[k] == 0 。请
+     给你一个由 n 个整数组成的数组 nums ，和一个目标值 target 。请你找出并返回满足下述全部条件且不重复的四元组 [nums[a], nums[b], nums[c], nums[d]] （若两个四元组元素一一对应，则认为两个四元组重复）：
      
-     你返回所有和为 0 且不重复的三元组。
-     
-     注意：答案中不可以包含重复的三元组。
+     0 <= a, b, c, d < n
+     a、b、c 和 d 互不相同
+     nums[a] + nums[b] + nums[c] + nums[d] == target
+     你可以按 任意顺序 返回答案 。
      */
-    func threeSum(_ nums: [Int]) -> [[Int]] {
+    func fourSum(_ nums: [Int], _ target: Int) -> [[Int]] {
         func nSum(_ nums: [Int], _ n: Int, _ start: Int, _ target: Int) -> [[Int]] {
             var res: [[Int]] = []
             if n < 2 || n > nums.count {
@@ -62,6 +63,6 @@ extension Solution {
             }
             return res
         }
-        return nSum(nums.sorted(), 3, 0, 0)
+        return nSum(nums.sorted(), 4, 0, target)
     }
 }

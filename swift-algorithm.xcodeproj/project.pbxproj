@@ -30,6 +30,8 @@
 		E54FC5E92A94923A001768B8 /* 0198.house-robber.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5E82A94923A001768B8 /* 0198.house-robber.swift */; };
 		E54FC5EB2A949BD9001768B8 /* 0213.house-robber-ii.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5EA2A949BD9001768B8 /* 0213.house-robber-ii.swift */; };
 		E54FC5ED2A949D92001768B8 /* 0337.house-robber-iii.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5EC2A949D92001768B8 /* 0337.house-robber-iii.swift */; };
+		E54FC5EF2A94A788001768B8 /* 0118.pascals-triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5EE2A94A788001768B8 /* 0118.pascals-triangle.swift */; };
+		E54FC5F12A94BE78001768B8 /* 0018.4sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5F02A94BE78001768B8 /* 0018.4sum.swift */; };
 		E5512CC62A78E6CD00602494 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CC42A78E6CD00602494 /* ListNode.swift */; };
 		E5512CC72A78E6CD00602494 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CC52A78E6CD00602494 /* main.swift */; };
 		E5512CD02A7A451000602494 /* 0001.two-sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CCF2A7A451000602494 /* 0001.two-sum.swift */; };
@@ -140,6 +142,8 @@
 		E54FC5E82A94923A001768B8 /* 0198.house-robber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0198.house-robber.swift"; sourceTree = "<group>"; };
 		E54FC5EA2A949BD9001768B8 /* 0213.house-robber-ii.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0213.house-robber-ii.swift"; sourceTree = "<group>"; };
 		E54FC5EC2A949D92001768B8 /* 0337.house-robber-iii.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0337.house-robber-iii.swift"; sourceTree = "<group>"; };
+		E54FC5EE2A94A788001768B8 /* 0118.pascals-triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0118.pascals-triangle.swift"; sourceTree = "<group>"; };
+		E54FC5F02A94BE78001768B8 /* 0018.4sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 0018.4sum.swift; sourceTree = "<group>"; };
 		E5512CB82A78E67900602494 /* swift-algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "swift-algorithm"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5512CC42A78E6CD00602494 /* ListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		E5512CC52A78E6CD00602494 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -263,6 +267,7 @@
 				E5512CD62A7A465D00602494 /* 0009.palindrome-number.swift */,
 				E57677B12A86225B00B6F386 /* 0011.container-with-most-water.swift */,
 				E54FC5DE2A935C61001768B8 /* 0015.3sum.swift */,
+				E54FC5F02A94BE78001768B8 /* 0018.4sum.swift */,
 				E5801B7D2A89F8870088B018 /* 0019.remove-nth-node-from-end-of-list.swift */,
 				E54FC5E02A94585B001768B8 /* 0020.valid-parentheses.swift */,
 				E5512CFD2A80E39B00602494 /* 0021.merge-two-sorted-lists.swift */,
@@ -298,6 +303,7 @@
 				E57677A12A84C5DE00B6F386 /* 0094.binary-tree-inorder-traversal.swift */,
 				E5512CDA2A7B401000602494 /* 0104.maximum-depth-of-binary-tree.swift */,
 				E5512D0D2A80FD4200602494 /* 0111.minimum-depth-of-binary-tree.swift */,
+				E54FC5EE2A94A788001768B8 /* 0118.pascals-triangle.swift */,
 				E5512D132A822C5600602494 /* 0121.best-time-to-buy-and-sell-stock.swift */,
 				E5512D152A8238B400602494 /* 0122.best-time-to-buy-and-sell-stock-ii.swift */,
 				E57677992A84BB7100B6F386 /* 0123.best-time-to-buy-and-sell-stock-iii.swift */,
@@ -427,6 +433,7 @@
 				E5512CD72A7A465D00602494 /* 0009.palindrome-number.swift in Sources */,
 				E57677B22A86225B00B6F386 /* 0011.container-with-most-water.swift in Sources */,
 				E54FC5DF2A935C61001768B8 /* 0015.3sum.swift in Sources */,
+				E54FC5F12A94BE78001768B8 /* 0018.4sum.swift in Sources */,
 				E5801B7E2A89F8870088B018 /* 0019.remove-nth-node-from-end-of-list.swift in Sources */,
 				E54FC5E12A94585B001768B8 /* 0020.valid-parentheses.swift in Sources */,
 				E5512CFE2A80E39B00602494 /* 0021.merge-two-sorted-lists.swift in Sources */,
@@ -462,6 +469,7 @@
 				E57677A22A84C5DE00B6F386 /* 0094.binary-tree-inorder-traversal.swift in Sources */,
 				E5512CDB2A7B401000602494 /* 0104.maximum-depth-of-binary-tree.swift in Sources */,
 				E5512D0E2A80FD4200602494 /* 0111.minimum-depth-of-binary-tree.swift in Sources */,
+				E54FC5EF2A94A788001768B8 /* 0118.pascals-triangle.swift in Sources */,
 				E5512D142A822C5600602494 /* 0121.best-time-to-buy-and-sell-stock.swift in Sources */,
 				E5512D162A8238B400602494 /* 0122.best-time-to-buy-and-sell-stock-ii.swift in Sources */,
 				E576779A2A84BB7100B6F386 /* 0123.best-time-to-buy-and-sell-stock-iii.swift in Sources */,
