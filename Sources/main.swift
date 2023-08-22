@@ -102,6 +102,11 @@ func testCase_15() {
     print("耗时: \(measureTime { print("示例4: \(s.threeSum([0,3,0,1,1,-1,-5,-5,3,-3,-3,0]))") }) ms")
 }
 
+func testCase_18() {
+    print("耗时: \(measureTime { print("示例1: \(s.fourSum([1,0,-1,0,-2,2], 0))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.fourSum([2,2,2,2,2], 8))") }) ms")
+}
+
 func testCase_23() {
     let head1 = ListNode(1)
     head1.next = ListNode(4)
@@ -183,6 +188,11 @@ func testCase_77() {
 
 func testCase_78() {
     print("耗时: \(measureTime { printJSON("示例1: \(s.subsets([1,2,3]))") }) ms")
+}
+
+func testCase_118() {
+    print("耗时: \(measureTime { print("示例1: \(s.generate(5))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.generate(1))") }) ms")
 }
 
 func testCase_121() {
@@ -366,6 +376,7 @@ func testCase_2682() {
 //testCase_6()
 //testCase_11()
 //testCase_15()
+testCase_18()
 //testCase_23()
 //testCase_34()
 //testCase_39()
@@ -381,6 +392,7 @@ func testCase_2682() {
 //testCase_76()
 //testCase_77()
 //testCase_78()
+//testCase_118()
 //testCase_121()
 //testCase_122()
 //testCase_123()
@@ -390,7 +402,7 @@ func testCase_2682() {
 //testCase_213()
 //testCase_309()
 //testCase_322()
-testCase_337()
+//testCase_337()
 //testCase_370()
 //testCase_438()
 //testCase_509()
