@@ -32,6 +32,13 @@
 		E54FC5ED2A949D92001768B8 /* 0337.house-robber-iii.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5EC2A949D92001768B8 /* 0337.house-robber-iii.swift */; };
 		E54FC5EF2A94A788001768B8 /* 0118.pascals-triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5EE2A94A788001768B8 /* 0118.pascals-triangle.swift */; };
 		E54FC5F12A94BE78001768B8 /* 0018.4sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5F02A94BE78001768B8 /* 0018.4sum.swift */; };
+		E54FC5F32A95A882001768B8 /* 2237.move-pieces-to-obtain-a-string.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5F22A95A882001768B8 /* 2237.move-pieces-to-obtain-a-string.swift */; };
+		E54FC5F52A95AE47001768B8 /* 1782.count-pairs-of-nodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5F42A95AE47001768B8 /* 1782.count-pairs-of-nodes.swift */; };
+		E54FC5F72A95DA3A001768B8 /* 0187.repeated-dna-sequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5F62A95DA3A001768B8 /* 0187.repeated-dna-sequences.swift */; };
+		E54FC5F92A95E20C001768B8 /* 0028.find-the-index-of-the-first-occurrence-in-a-string:description.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5F82A95E20C001768B8 /* 0028.find-the-index-of-the-first-occurrence-in-a-string:description.swift */; };
+		E54FC5FB2A95F443001768B8 /* 0528.random-pick-with-weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5FA2A95F443001768B8 /* 0528.random-pick-with-weight.swift */; };
+		E54FC5FD2A960EC5001768B8 /* 0875.koko-eating-bananas.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5FC2A960EC5001768B8 /* 0875.koko-eating-bananas.swift */; };
+		E54FC5FF2A96131A001768B8 /* 1011.capacity-to-ship-packages-within-d-days.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5FE2A96131A001768B8 /* 1011.capacity-to-ship-packages-within-d-days.swift */; };
 		E5512CC62A78E6CD00602494 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CC42A78E6CD00602494 /* ListNode.swift */; };
 		E5512CC72A78E6CD00602494 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CC52A78E6CD00602494 /* main.swift */; };
 		E5512CD02A7A451000602494 /* 0001.two-sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CCF2A7A451000602494 /* 0001.two-sum.swift */; };
@@ -144,6 +151,13 @@
 		E54FC5EC2A949D92001768B8 /* 0337.house-robber-iii.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0337.house-robber-iii.swift"; sourceTree = "<group>"; };
 		E54FC5EE2A94A788001768B8 /* 0118.pascals-triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0118.pascals-triangle.swift"; sourceTree = "<group>"; };
 		E54FC5F02A94BE78001768B8 /* 0018.4sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 0018.4sum.swift; sourceTree = "<group>"; };
+		E54FC5F22A95A882001768B8 /* 2237.move-pieces-to-obtain-a-string.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2237.move-pieces-to-obtain-a-string.swift"; sourceTree = "<group>"; };
+		E54FC5F42A95AE47001768B8 /* 1782.count-pairs-of-nodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1782.count-pairs-of-nodes.swift"; sourceTree = "<group>"; };
+		E54FC5F62A95DA3A001768B8 /* 0187.repeated-dna-sequences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0187.repeated-dna-sequences.swift"; sourceTree = "<group>"; };
+		E54FC5F82A95E20C001768B8 /* 0028.find-the-index-of-the-first-occurrence-in-a-string:description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0028.find-the-index-of-the-first-occurrence-in-a-string:description.swift"; sourceTree = "<group>"; };
+		E54FC5FA2A95F443001768B8 /* 0528.random-pick-with-weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0528.random-pick-with-weight.swift"; sourceTree = "<group>"; };
+		E54FC5FC2A960EC5001768B8 /* 0875.koko-eating-bananas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0875.koko-eating-bananas.swift"; sourceTree = "<group>"; };
+		E54FC5FE2A96131A001768B8 /* 1011.capacity-to-ship-packages-within-d-days.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1011.capacity-to-ship-packages-within-d-days.swift"; sourceTree = "<group>"; };
 		E5512CB82A78E67900602494 /* swift-algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "swift-algorithm"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5512CC42A78E6CD00602494 /* ListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		E5512CC52A78E6CD00602494 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -275,6 +289,7 @@
 				E5A9B1422A8B28C000099C3C /* 0025.reverse-nodes-in-k-group.swift */,
 				E5512CFF2A80E42F00602494 /* 0026.remove-duplicates-from-sorted-array.swift */,
 				E5512D012A80E46400602494 /* 0027.remove-element.swift */,
+				E54FC5F82A95E20C001768B8 /* 0028.find-the-index-of-the-first-occurrence-in-a-string:description.swift */,
 				E5512D222A8364E000602494 /* 0034.find-first-and-last-position-of-element-in-sorted-array.swift */,
 				E5512D032A80E4C600602494 /* 0035.search-insert-position.swift */,
 				E5512CEA2A808CDA00602494 /* 0037.sudoku-solver.swift */,
@@ -314,6 +329,7 @@
 				E54FC5D62A8F4D6D001768B8 /* 0151.reverse-words-in-a-string.swift */,
 				E5512D092A80E7AC00602494 /* 0160.intersection-of-two-linked-lists.swift */,
 				E5512D0B2A80E7E800602494 /* 0167.two-sum-ii-input-array-is-sorted.swift */,
+				E54FC5F62A95DA3A001768B8 /* 0187.repeated-dna-sequences.swift */,
 				E57677972A84BB1F00B6F386 /* 0188.best-time-to-buy-and-sell-stock-iv.swift */,
 				E5512D112A81EC8700602494 /* 0189.rotate-array.swift */,
 				E54FC5E82A94923A001768B8 /* 0198.house-robber.swift */,
@@ -332,6 +348,7 @@
 				E54FC5CC2A8E20AC001768B8 /* 0370.range-addition.swift */,
 				E57677952A847BA500B6F386 /* 0438.find-all-anagrams-in-a-string.swift */,
 				E5512CE02A7C9CA100602494 /* 0509.fibonacci-number.swift */,
+				E54FC5FA2A95F443001768B8 /* 0528.random-pick-with-weight.swift */,
 				E5512CDE2A7B875F00602494 /* 0543.diameter-of-binary-tree.swift */,
 				E57677932A838B4A00B6F386 /* 0567.permutation-in-string.swift */,
 				E57677B52A89C4F900B6F386 /* 0617.merge-two-binary-trees.swift */,
@@ -341,7 +358,9 @@
 				E54FC5D22A8F3CBA001768B8 /* 0798.smallest-rotation-with-highest-score.swift */,
 				E5A9B1442A8B29CE00099C3C /* 0833.find-and-replace-in-string.swift */,
 				E54FC5E62A946625001768B8 /* 0849.maximize-distance-to-closest-person.swift */,
+				E54FC5FC2A960EC5001768B8 /* 0875.koko-eating-bananas.swift */,
 				E5801B7F2A89FEA00088B018 /* 0876.middle-of-the-linked-list.swift */,
+				E54FC5FE2A96131A001768B8 /* 1011.capacity-to-ship-packages-within-d-days.swift */,
 				E54FC5CA2A8E1E29001768B8 /* 1094.car-pooling.swift */,
 				E54FC5CE2A8E22F3001768B8 /* 1109.corporate-flight-bookings.swift */,
 				E5512D202A8361EE00602494 /* 1281.subtract-the-product-and-sum-of-digits-of-an-integer.swift */,
@@ -349,6 +368,8 @@
 				E54FC5C62A8DBCB0001768B8 /* 1444.number-of-ways-of-cutting-a-pizza.swift */,
 				E57677B32A86302800B6F386 /* 1572.matrix-diagonal-sum.swift */,
 				E5512D1A2A82429A00602494 /* 1749.maximum-absolute-sum-of-any-subarray.swift */,
+				E54FC5F42A95AE47001768B8 /* 1782.count-pairs-of-nodes.swift */,
+				E54FC5F22A95A882001768B8 /* 2237.move-pieces-to-obtain-a-string.swift */,
 				E54FC5C02A8C9ADD001768B8 /* 2682.find-the-losers-of-the-circular-game.swift */,
 				E5512CD12A7A454400602494 /* Common */,
 			);
@@ -441,6 +462,7 @@
 				E5A9B1432A8B28C000099C3C /* 0025.reverse-nodes-in-k-group.swift in Sources */,
 				E5512D002A80E42F00602494 /* 0026.remove-duplicates-from-sorted-array.swift in Sources */,
 				E5512D022A80E46400602494 /* 0027.remove-element.swift in Sources */,
+				E54FC5F92A95E20C001768B8 /* 0028.find-the-index-of-the-first-occurrence-in-a-string:description.swift in Sources */,
 				E5512D232A8364E000602494 /* 0034.find-first-and-last-position-of-element-in-sorted-array.swift in Sources */,
 				E5512D042A80E4C600602494 /* 0035.search-insert-position.swift in Sources */,
 				E5512CEB2A808CDA00602494 /* 0037.sudoku-solver.swift in Sources */,
@@ -480,6 +502,7 @@
 				E54FC5D72A8F4D6D001768B8 /* 0151.reverse-words-in-a-string.swift in Sources */,
 				E5512D0A2A80E7AC00602494 /* 0160.intersection-of-two-linked-lists.swift in Sources */,
 				E5512D0C2A80E7E800602494 /* 0167.two-sum-ii-input-array-is-sorted.swift in Sources */,
+				E54FC5F72A95DA3A001768B8 /* 0187.repeated-dna-sequences.swift in Sources */,
 				E57677982A84BB1F00B6F386 /* 0188.best-time-to-buy-and-sell-stock-iv.swift in Sources */,
 				E5512D122A81EC8700602494 /* 0189.rotate-array.swift in Sources */,
 				E54FC5E92A94923A001768B8 /* 0198.house-robber.swift in Sources */,
@@ -498,6 +521,7 @@
 				E54FC5CD2A8E20AC001768B8 /* 0370.range-addition.swift in Sources */,
 				E57677962A847BA500B6F386 /* 0438.find-all-anagrams-in-a-string.swift in Sources */,
 				E5512CE12A7C9CA100602494 /* 0509.fibonacci-number.swift in Sources */,
+				E54FC5FB2A95F443001768B8 /* 0528.random-pick-with-weight.swift in Sources */,
 				E5512CDF2A7B875F00602494 /* 0543.diameter-of-binary-tree.swift in Sources */,
 				E57677942A838B4A00B6F386 /* 0567.permutation-in-string.swift in Sources */,
 				E57677B62A89C4F900B6F386 /* 0617.merge-two-binary-trees.swift in Sources */,
@@ -507,7 +531,9 @@
 				E54FC5D32A8F3CBA001768B8 /* 0798.smallest-rotation-with-highest-score.swift in Sources */,
 				E5A9B1452A8B29CE00099C3C /* 0833.find-and-replace-in-string.swift in Sources */,
 				E54FC5E72A946625001768B8 /* 0849.maximize-distance-to-closest-person.swift in Sources */,
+				E54FC5FD2A960EC5001768B8 /* 0875.koko-eating-bananas.swift in Sources */,
 				E5801B802A89FEA00088B018 /* 0876.middle-of-the-linked-list.swift in Sources */,
+				E54FC5FF2A96131A001768B8 /* 1011.capacity-to-ship-packages-within-d-days.swift in Sources */,
 				E54FC5CB2A8E1E29001768B8 /* 1094.car-pooling.swift in Sources */,
 				E54FC5CF2A8E22F3001768B8 /* 1109.corporate-flight-bookings.swift in Sources */,
 				E5512D212A8361EE00602494 /* 1281.subtract-the-product-and-sum-of-digits-of-an-integer.swift in Sources */,
@@ -515,6 +541,8 @@
 				E54FC5C72A8DBCB0001768B8 /* 1444.number-of-ways-of-cutting-a-pizza.swift in Sources */,
 				E57677B42A86302800B6F386 /* 1572.matrix-diagonal-sum.swift in Sources */,
 				E5512D1B2A82429A00602494 /* 1749.maximum-absolute-sum-of-any-subarray.swift in Sources */,
+				E54FC5F52A95AE47001768B8 /* 1782.count-pairs-of-nodes.swift in Sources */,
+				E54FC5F32A95A882001768B8 /* 2237.move-pieces-to-obtain-a-string.swift in Sources */,
 				E54FC5C12A8C9ADD001768B8 /* 2682.find-the-losers-of-the-circular-game.swift in Sources */,
 				E5801B7C2A89D4EA0088B018 /* Heap.swift in Sources */,
 				E5512CC62A78E6CD00602494 /* ListNode.swift in Sources */,
