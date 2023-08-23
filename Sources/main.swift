@@ -122,8 +122,17 @@ func testCase_23() {
     print("耗时: \(measureTime { print("示例1: \(s.mergeKLists([head1, head2, head3])?.toString ?? "")") }) ms")
 }
 
+func testCase_28() {
+    print("耗时: \(measureTime { print("示例1: \(s.strStr("sadbutsad", "sad"))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.strStr("leetcode", "leeto"))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.strStr("leetcaodeleetcbodeleetcode", "code"))") }) ms")
+    print("耗时: \(measureTime { print("示例4: \(s.strStr("misakaleetcodetao", "code"))") }) ms")
+}
+
 func testCase_34() {
-    print("耗时: \(measureTime { print("示例1: \(s.searchRange([2,2], 2))") }) ms")
+    print("耗时: \(measureTime { print("示例1: \(s.searchRange([5,7,7,8,8,10], 8))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.searchRange([5,7,7,8,8,10], 6))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.searchRange([], 0))") }) ms")
 }
 
 func testCase_39() {
@@ -329,6 +338,18 @@ func testCase_849() {
     print("耗时: \(measureTime { print("示例3: \(s.maxDistToClosest([0,1]))") }) ms")
 }
 
+func testCase_875() {
+    print("耗时: \(measureTime { print("示例1: \(s.minEatingSpeed([3,6,7,11], 8))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.minEatingSpeed([30,11,23,4,20], 5))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.minEatingSpeed([30,11,23,4,20], 6))") }) ms")
+}
+
+func testCase_1011() {
+    print("耗时: \(measureTime { print("示例1: \(s.shipWithinDays([1,2,3,4,5,6,7,8,9,10], 5))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.shipWithinDays([3,2,2,4,1,4], 3))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.shipWithinDays([1,2,3,1,1], 4))") }) ms")
+}
+
 func testCase_1094() {
     print("耗时: \(measureTime { print("示例1: \(s.carPooling([[2,1,5],[3,3,7]], 4))") }) ms")
     print("耗时: \(measureTime { print("示例2: \(s.carPooling([[2,1,5],[3,3,7]], 5))") }) ms")
@@ -364,6 +385,18 @@ func testCase_1749() {
     print("耗时: \(measureTime { print("示例2: \(s.maxAbsoluteSum([2,-5,1,-4,3,-2]))") }) ms")
 }
 
+func testCase_1782() {
+    print("耗时: \(measureTime { print("示例1: \(s.countPairs(4, [[1,2],[2,4],[1,3],[2,3],[2,1]], [2,3]))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.countPairs(5, [[1,5],[1,5],[3,4],[2,5],[1,3],[5,1],[2,3],[2,5]], [1,2,3,4,5]))") }) ms")
+}
+
+func testCase_2237() {
+    print("耗时: \(measureTime { print("示例1: \(s.canChange("_L__R__R_", "L______RR"))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.canChange("R_L_", "__LR"))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.canChange("_R", "R_"))") }) ms")
+    print("耗时: \(measureTime { print("示例4: \(s.canChange("_L__R__R_L", "L______RR_"))") }) ms")
+}
+
 func testCase_2682() {
     print("耗时: \(measureTime { print("示例1: \(s.circularGameLosers(5, 2))") }) ms")
     print("耗时: \(measureTime { print("示例2: \(s.circularGameLosers(4, 4))") }) ms")
@@ -376,8 +409,9 @@ func testCase_2682() {
 //testCase_6()
 //testCase_11()
 //testCase_15()
-testCase_18()
+//testCase_18()
 //testCase_23()
+//testCase_28()
 //testCase_34()
 //testCase_39()
 //testCase_40()
@@ -413,6 +447,8 @@ testCase_18()
 //testCase_798()
 //testCase_833()
 //testCase_849()
+//testCase_875()
+testCase_1011()
 //testCase_1094()
 //testCase_1109()
 //testCase_1281()
@@ -420,4 +456,6 @@ testCase_18()
 //testCase_1444()
 //testCase_1572()
 //testCase_1749()
+//testCase_1782()
+//testCase_2237()
 //testCase_2682()

@@ -18,16 +18,16 @@ extension Solution {
     func searchRange(_ nums: [Int], _ target: Int) -> [Int] {
         func leftBound() -> Int {
             var left: Int = 0
-            var right: Int = nums.count - 1
-            while left <= right {
+            var right: Int = nums.count
+            while left < right { // left = right 时终止
                 let mid = left + (right - left) / 2
                 if nums[mid] == target {
                     // 锁定左侧边界
-                    right = mid - 1
+                    right = mid
                 } else if nums[mid] < target {
                     left = mid + 1
                 } else if nums[mid] > target {
-                    right = mid - 1
+                    right = mid
                 }
             }
             if left < 0 || left >= nums.count {
@@ -39,7 +39,7 @@ extension Solution {
         func rightBound(_ l: Int) -> Int {
             var left: Int = l
             var right: Int = nums.count - 1
-            while left <= right {
+            while left <= right { // left = right + 1 时终止
                 let mid = left + (right - left) / 2
                 if nums[mid] == target {
                     // 锁定右侧边界
