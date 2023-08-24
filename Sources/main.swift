@@ -256,6 +256,11 @@ func testCase_309() {
     print("耗时: \(measureTime { print("示例3: \(s.maxProfit5(makeMaxProfits()))") }) ms")
 }
 
+func testCase_316() {
+    print("耗时: \(measureTime { print("示例1: \(s.removeDuplicateLetters("bcabc"))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.removeDuplicateLetters("cbacdcbc"))") }) ms")
+}
+
 func testCase_322() {
     print("耗时: \(measureTime { print("示例1: \(s.coinChange([186,419,83,408], 6249))") }) ms")
 }
@@ -282,6 +287,23 @@ func testCase_337() {
 
 func testCase_370() {
     print("耗时: \(measureTime { print("示例1: \(s.getModifiedArray(5, [[1,3,2], [2,4,3], [0,2,-2]]))") }) ms")
+}
+
+func testCase_380() {
+    let tmp = RandomizedSet()
+    print("耗时: \(measureTime { print("insert: \(tmp.insert(1))") }) ms")
+    print("耗时: \(measureTime { print("remove: \(tmp.remove(2))") }) ms")
+    print("耗时: \(measureTime { print("insert: \(tmp.insert(2))") }) ms")
+    print("耗时: \(measureTime { print("getRandom: \(tmp.getRandom())") }) ms")
+    print("耗时: \(measureTime { print("remove: \(tmp.remove(1))") }) ms")
+    print("耗时: \(measureTime { print("insert: \(tmp.insert(2))") }) ms")
+    print("耗时: \(measureTime { print("getRandom: \(tmp.getRandom())") }) ms")
+}
+
+func testCase_402() {
+    print("耗时: \(measureTime { print("示例1: \(s.removeKdigits("1432219", 3))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.removeKdigits("10200", 1))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.removeKdigits("10", 1))") }) ms")
 }
 
 func testCase_410() {
@@ -315,6 +337,17 @@ func testCase_543() {
 
 func testCase_567() {
     print("耗时: \(measureTime { print("示例1: \(s.checkInclusion("ab", "eidbaooo"))") }) ms")
+}
+
+func testCase_710() {
+    let tmp = BlackRandomSolution(7, [2, 3, 5])
+    print("耗时: \(measureTime { print("示例1: \(tmp.pick())") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(tmp.pick())") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(tmp.pick())") }) ms")
+    print("耗时: \(measureTime { print("示例4: \(tmp.pick())") }) ms")
+    print("耗时: \(measureTime { print("示例5: \(tmp.pick())") }) ms")
+    print("耗时: \(measureTime { print("示例6: \(tmp.pick())") }) ms")
+    print("耗时: \(measureTime { print("示例7: \(tmp.pick())") }) ms")
 }
 
 func testCase_714() {
@@ -451,20 +484,24 @@ func testCase_2682() {
 //testCase_198()
 //testCase_213()
 //testCase_309()
+testCase_316()
 //testCase_322()
 //testCase_337()
 //testCase_370()
+//testCase_380()
+//testCase_402()
 //testCase_410()
 //testCase_438()
 //testCase_509()
 //testCase_543()
 //testCase_567()
+//testCase_710()
 //testCase_714()
 //testCase_752()
 //testCase_798()
 //testCase_833()
 //testCase_849()
-testCase_870()
+//testCase_870()
 //testCase_875()
 //testCase_1011()
 //testCase_1094()
