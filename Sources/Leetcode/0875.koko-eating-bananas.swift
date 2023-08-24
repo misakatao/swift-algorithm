@@ -18,21 +18,23 @@ extension Solution {
      返回她可以在 h 小时内吃掉所有香蕉的最小速度 k（k 为整数）。
      */
     func minEatingSpeed(_ piles: [Int], _ h: Int) -> Int {
-        func f(_ nums: [Int], _ x: Int) -> Int {
+        /// - Parameter x: 吃香蕉的速度
+        /// - Returns: 需要多少小时吃完
+        func f(_ x: Int) -> Int {
             var time: Int = 0
-            for i in 0..<nums.count {
-                time += nums[i] / x
-                if nums[i] % x > 0 {
+            for i in 0..<piles.count {
+                time += piles[i] / x
+                if piles[i] % x > 0 {
                     time += 1
                 }
             }
             return time
         }
-        var mink: Int = 1
-        var maxk: Int = Int(1e9) + 1
+        var mink: Int = 1 // 最小吃香蕉速度
+        var maxk: Int = 1 + (piles.max() ?? 0) // Int(1e9) + 1 // 最大吃香蕉速度
         while mink < maxk {
             let mid = mink + (maxk - mink) / 2
-            if f(piles, mid) <= h {
+            if f(mid) <= h {
                 maxk = mid
             } else {
                 mink = mid + 1

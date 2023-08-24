@@ -16,6 +16,8 @@ extension Solution {
      返回能在 days 天内将传送带上的所有包裹送达的船的最低运载能力。
      */
     func shipWithinDays(_ weights: [Int], _ days: Int) -> Int {
+        /// - Parameter x: 船的运载能力
+        /// - Returns: 需要多少天
         func f(_ x: Int) -> Int {
             var day: Int = 0
             var i: Int = 0
@@ -33,8 +35,8 @@ extension Solution {
             }
             return day
         }
-        var minS: Int = weights.max() ?? 0
-        var maxS: Int = weights.reduce(1, +)
+        var minS: Int = weights.max() ?? 0 // 船的最小运载能力
+        var maxS: Int = weights.reduce(1, +) // 船的最大运载能力
 //        for weight in weights {
 //            minS = max(minS, weight)
 //            maxS += weight

@@ -284,6 +284,11 @@ func testCase_370() {
     print("耗时: \(measureTime { print("示例1: \(s.getModifiedArray(5, [[1,3,2], [2,4,3], [0,2,-2]]))") }) ms")
 }
 
+func testCase_410() {
+    print("耗时: \(measureTime { print("示例1: \(s.splitArray([7,2,5,10,8], 2))") }) ms")
+    print("耗时: \(measureTime { print("示例1: \(s.splitArray([1,2,3,4,5], 2))") }) ms")
+}
+
 func testCase_438() {
     print("耗时: \(measureTime { print("示例1: \(s.findAnagrams("cbaebabacd", "abc"))") }) ms")
 }
@@ -338,6 +343,11 @@ func testCase_849() {
     print("耗时: \(measureTime { print("示例3: \(s.maxDistToClosest([0,1]))") }) ms")
 }
 
+func testCase_870() {
+    print("耗时: \(measureTime { print("示例1: \(s.advantageCount([2,7,11,15], [1,10,4,11]))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.advantageCount([12,24,8,32], [13,25,32,11]))") }) ms")
+}
+
 func testCase_875() {
     print("耗时: \(measureTime { print("示例1: \(s.minEatingSpeed([3,6,7,11], 8))") }) ms")
     print("耗时: \(measureTime { print("示例2: \(s.minEatingSpeed([30,11,23,4,20], 5))") }) ms")
@@ -358,6 +368,12 @@ func testCase_1094() {
 func testCase_1109() {
     print("耗时: \(measureTime { print("示例1: \(s.corpFlightBookings([[1,2,10],[2,3,20],[2,5,25]], 5))") }) ms")
     print("耗时: \(measureTime { print("示例2: \(s.corpFlightBookings([[1,2,10],[2,2,15]], 2))") }) ms")
+}
+
+func testCase_1267() {
+    print("耗时: \(measureTime { print("示例1: \(s.countServers([[1,0],[0,1]]))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.countServers([[1,0],[1,1]]))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.countServers([[1,1,0,0],[0,0,1,0],[0,0,1,0],[0,0,0,1]]))") }) ms")
 }
 
 func testCase_1281() {
@@ -438,6 +454,7 @@ func testCase_2682() {
 //testCase_322()
 //testCase_337()
 //testCase_370()
+//testCase_410()
 //testCase_438()
 //testCase_509()
 //testCase_543()
@@ -447,10 +464,12 @@ func testCase_2682() {
 //testCase_798()
 //testCase_833()
 //testCase_849()
+testCase_870()
 //testCase_875()
-testCase_1011()
+//testCase_1011()
 //testCase_1094()
 //testCase_1109()
+//testCase_1267()
 //testCase_1281()
 //testCase_1388()
 //testCase_1444()
