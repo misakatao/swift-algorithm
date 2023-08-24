@@ -39,6 +39,9 @@
 		E54FC5FB2A95F443001768B8 /* 0528.random-pick-with-weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5FA2A95F443001768B8 /* 0528.random-pick-with-weight.swift */; };
 		E54FC5FD2A960EC5001768B8 /* 0875.koko-eating-bananas.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5FC2A960EC5001768B8 /* 0875.koko-eating-bananas.swift */; };
 		E54FC5FF2A96131A001768B8 /* 1011.capacity-to-ship-packages-within-d-days.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5FE2A96131A001768B8 /* 1011.capacity-to-ship-packages-within-d-days.swift */; };
+		E54FC6012A96FD15001768B8 /* 0410.split-array-largest-sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC6002A96FD15001768B8 /* 0410.split-array-largest-sum.swift */; };
+		E54FC6032A970A27001768B8 /* 1267.count-servers-that-communicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC6022A970A27001768B8 /* 1267.count-servers-that-communicate.swift */; };
+		E54FC6052A970E88001768B8 /* 0870.advantage-shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC6042A970E88001768B8 /* 0870.advantage-shuffle.swift */; };
 		E5512CC62A78E6CD00602494 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CC42A78E6CD00602494 /* ListNode.swift */; };
 		E5512CC72A78E6CD00602494 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CC52A78E6CD00602494 /* main.swift */; };
 		E5512CD02A7A451000602494 /* 0001.two-sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512CCF2A7A451000602494 /* 0001.two-sum.swift */; };
@@ -158,6 +161,9 @@
 		E54FC5FA2A95F443001768B8 /* 0528.random-pick-with-weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0528.random-pick-with-weight.swift"; sourceTree = "<group>"; };
 		E54FC5FC2A960EC5001768B8 /* 0875.koko-eating-bananas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0875.koko-eating-bananas.swift"; sourceTree = "<group>"; };
 		E54FC5FE2A96131A001768B8 /* 1011.capacity-to-ship-packages-within-d-days.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1011.capacity-to-ship-packages-within-d-days.swift"; sourceTree = "<group>"; };
+		E54FC6002A96FD15001768B8 /* 0410.split-array-largest-sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0410.split-array-largest-sum.swift"; sourceTree = "<group>"; };
+		E54FC6022A970A27001768B8 /* 1267.count-servers-that-communicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1267.count-servers-that-communicate.swift"; sourceTree = "<group>"; };
+		E54FC6042A970E88001768B8 /* 0870.advantage-shuffle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0870.advantage-shuffle.swift"; sourceTree = "<group>"; };
 		E5512CB82A78E67900602494 /* swift-algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "swift-algorithm"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5512CC42A78E6CD00602494 /* ListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		E5512CC52A78E6CD00602494 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -346,6 +352,7 @@
 				E54FC5EC2A949D92001768B8 /* 0337.house-robber-iii.swift */,
 				E57677A72A84C7D400B6F386 /* 0344.reverse-string.swift */,
 				E54FC5CC2A8E20AC001768B8 /* 0370.range-addition.swift */,
+				E54FC6002A96FD15001768B8 /* 0410.split-array-largest-sum.swift */,
 				E57677952A847BA500B6F386 /* 0438.find-all-anagrams-in-a-string.swift */,
 				E5512CE02A7C9CA100602494 /* 0509.fibonacci-number.swift */,
 				E54FC5FA2A95F443001768B8 /* 0528.random-pick-with-weight.swift */,
@@ -358,11 +365,13 @@
 				E54FC5D22A8F3CBA001768B8 /* 0798.smallest-rotation-with-highest-score.swift */,
 				E5A9B1442A8B29CE00099C3C /* 0833.find-and-replace-in-string.swift */,
 				E54FC5E62A946625001768B8 /* 0849.maximize-distance-to-closest-person.swift */,
+				E54FC6042A970E88001768B8 /* 0870.advantage-shuffle.swift */,
 				E54FC5FC2A960EC5001768B8 /* 0875.koko-eating-bananas.swift */,
 				E5801B7F2A89FEA00088B018 /* 0876.middle-of-the-linked-list.swift */,
 				E54FC5FE2A96131A001768B8 /* 1011.capacity-to-ship-packages-within-d-days.swift */,
 				E54FC5CA2A8E1E29001768B8 /* 1094.car-pooling.swift */,
 				E54FC5CE2A8E22F3001768B8 /* 1109.corporate-flight-bookings.swift */,
+				E54FC6022A970A27001768B8 /* 1267.count-servers-that-communicate.swift */,
 				E5512D202A8361EE00602494 /* 1281.subtract-the-product-and-sum-of-digits-of-an-integer.swift */,
 				E54FC5D02A8F02EA001768B8 /* 1388.pizza-with-3n-slices.swift */,
 				E54FC5C62A8DBCB0001768B8 /* 1444.number-of-ways-of-cutting-a-pizza.swift */,
@@ -519,6 +528,7 @@
 				E54FC5ED2A949D92001768B8 /* 0337.house-robber-iii.swift in Sources */,
 				E57677A82A84C7D400B6F386 /* 0344.reverse-string.swift in Sources */,
 				E54FC5CD2A8E20AC001768B8 /* 0370.range-addition.swift in Sources */,
+				E54FC6012A96FD15001768B8 /* 0410.split-array-largest-sum.swift in Sources */,
 				E57677962A847BA500B6F386 /* 0438.find-all-anagrams-in-a-string.swift in Sources */,
 				E5512CE12A7C9CA100602494 /* 0509.fibonacci-number.swift in Sources */,
 				E54FC5FB2A95F443001768B8 /* 0528.random-pick-with-weight.swift in Sources */,
@@ -531,11 +541,13 @@
 				E54FC5D32A8F3CBA001768B8 /* 0798.smallest-rotation-with-highest-score.swift in Sources */,
 				E5A9B1452A8B29CE00099C3C /* 0833.find-and-replace-in-string.swift in Sources */,
 				E54FC5E72A946625001768B8 /* 0849.maximize-distance-to-closest-person.swift in Sources */,
+				E54FC6052A970E88001768B8 /* 0870.advantage-shuffle.swift in Sources */,
 				E54FC5FD2A960EC5001768B8 /* 0875.koko-eating-bananas.swift in Sources */,
 				E5801B802A89FEA00088B018 /* 0876.middle-of-the-linked-list.swift in Sources */,
 				E54FC5FF2A96131A001768B8 /* 1011.capacity-to-ship-packages-within-d-days.swift in Sources */,
 				E54FC5CB2A8E1E29001768B8 /* 1094.car-pooling.swift in Sources */,
 				E54FC5CF2A8E22F3001768B8 /* 1109.corporate-flight-bookings.swift in Sources */,
+				E54FC6032A970A27001768B8 /* 1267.count-servers-that-communicate.swift in Sources */,
 				E5512D212A8361EE00602494 /* 1281.subtract-the-product-and-sum-of-digits-of-an-integer.swift in Sources */,
 				E54FC5D12A8F02EA001768B8 /* 1388.pizza-with-3n-slices.swift in Sources */,
 				E54FC5C72A8DBCB0001768B8 /* 1444.number-of-ways-of-cutting-a-pizza.swift in Sources */,
