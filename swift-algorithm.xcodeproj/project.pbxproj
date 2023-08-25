@@ -123,6 +123,7 @@
 		E5A9B1472A8B7A2200099C3C /* 0234.palindrome-linked-list.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A9B1462A8B7A2200099C3C /* 0234.palindrome-linked-list.swift */; };
 		E5FB8FF82A974A6E002891F8 /* 0402.remove-k-digits.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FB8FF72A974A6E002891F8 /* 0402.remove-k-digits.swift */; };
 		E5FB8FFA2A975DBE002891F8 /* 1081.smallest-subsequence-of-distinct-characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FB8FF92A975DBE002891F8 /* 1081.smallest-subsequence-of-distinct-characters.swift */; };
+		E5FB8FFC2A97609D002891F8 /* 0912.sort-an-array.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FB8FFB2A97609D002891F8 /* 0912.sort-an-array.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -256,6 +257,7 @@
 		E5A9B1462A8B7A2200099C3C /* 0234.palindrome-linked-list.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0234.palindrome-linked-list.swift"; sourceTree = "<group>"; };
 		E5FB8FF72A974A6E002891F8 /* 0402.remove-k-digits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0402.remove-k-digits.swift"; sourceTree = "<group>"; };
 		E5FB8FF92A975DBE002891F8 /* 1081.smallest-subsequence-of-distinct-characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1081.smallest-subsequence-of-distinct-characters.swift"; sourceTree = "<group>"; };
+		E5FB8FFB2A97609D002891F8 /* 0912.sort-an-array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0912.sort-an-array.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -418,6 +420,7 @@
 				E54FC6042A970E88001768B8 /* 0870.advantage-shuffle.swift */,
 				E54FC5FC2A960EC5001768B8 /* 0875.koko-eating-bananas.swift */,
 				E5801B7F2A89FEA00088B018 /* 0876.middle-of-the-linked-list.swift */,
+				E5FB8FFB2A97609D002891F8 /* 0912.sort-an-array.swift */,
 				E54FC5FE2A96131A001768B8 /* 1011.capacity-to-ship-packages-within-d-days.swift */,
 				E5FB8FF92A975DBE002891F8 /* 1081.smallest-subsequence-of-distinct-characters.swift */,
 				E54FC5CA2A8E1E29001768B8 /* 1094.car-pooling.swift */,
@@ -641,6 +644,7 @@
 				E54FC6052A970E88001768B8 /* 0870.advantage-shuffle.swift in Sources */,
 				E54FC5FD2A960EC5001768B8 /* 0875.koko-eating-bananas.swift in Sources */,
 				E5801B802A89FEA00088B018 /* 0876.middle-of-the-linked-list.swift in Sources */,
+				E5FB8FFC2A97609D002891F8 /* 0912.sort-an-array.swift in Sources */,
 				E54FC5FF2A96131A001768B8 /* 1011.capacity-to-ship-packages-within-d-days.swift in Sources */,
 				E5FB8FFA2A975DBE002891F8 /* 1081.smallest-subsequence-of-distinct-characters.swift in Sources */,
 				E54FC5CB2A8E1E29001768B8 /* 1094.car-pooling.swift in Sources */,
