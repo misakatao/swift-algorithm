@@ -60,6 +60,16 @@ func makeMaxRobbers() -> [Int] {
     }
 }
 
+func makeMaxSortArray() -> [Int] {
+    let filePath = "/Users/misaka/Developer/sort-array.json"
+    let data = readJSON(filePath)
+    if let prices = data as? Array<Int> {
+        return prices
+    } else {
+        return []
+    }
+}
+
 let s = Solution()
 
 func testCase_2() {
@@ -387,6 +397,12 @@ func testCase_875() {
     print("耗时: \(measureTime { print("示例3: \(s.minEatingSpeed([30,11,23,4,20], 6))") }) ms")
 }
 
+func testCase_912() {
+    print("耗时: \(measureTime { print("示例1: \(s.sortArray([5,2,3,1]))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.sortArray([5,1,1,2,0,0]))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.sortArray(makeMaxSortArray()))") }) ms")
+}
+
 func testCase_1011() {
     print("耗时: \(measureTime { print("示例1: \(s.shipWithinDays([1,2,3,4,5,6,7,8,9,10], 5))") }) ms")
     print("耗时: \(measureTime { print("示例2: \(s.shipWithinDays([3,2,2,4,1,4], 3))") }) ms")
@@ -484,7 +500,7 @@ func testCase_2682() {
 //testCase_198()
 //testCase_213()
 //testCase_309()
-testCase_316()
+//testCase_316()
 //testCase_322()
 //testCase_337()
 //testCase_370()
@@ -503,6 +519,7 @@ testCase_316()
 //testCase_849()
 //testCase_870()
 //testCase_875()
+testCase_912()
 //testCase_1011()
 //testCase_1094()
 //testCase_1109()
