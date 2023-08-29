@@ -8,13 +8,13 @@
 import Foundation
 
 public class ListNode {
-    var val: Int
-    var next: ListNode?
-    init(_ val: Int, _ next: ListNode? = nil) {
+    public var val: Int
+    public var next: ListNode?
+    public init(_ val: Int, _ next: ListNode? = nil) {
         self.val = val
         self.next = next
     }
-    var toString: String {
+    public var toString: String {
         var res: [String] = []
         var cur: ListNode? = self
         while cur != nil {

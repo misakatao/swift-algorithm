@@ -96,7 +96,7 @@ func testCase_4() {
 func testCase_6() {
     print("耗时: \(measureTime { print("示例1: \(s.convert("PAYPALISHIRING", 3))") }) ms")
     print("耗时: \(measureTime { print("示例2: \(s.convert("PAYPALISHIRING", 4))") }) ms")
-    print("耗时: \(measureTime { print("示例3: \(s.convert("A", 1))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.convert("AB", 1))") }) ms")
 }
 
 func testCase_11() {
@@ -209,6 +209,10 @@ func testCase_78() {
     print("耗时: \(measureTime { printJSON("示例1: \(s.subsets([1,2,3]))") }) ms")
 }
 
+func testCase_105() {
+    print("耗时: \(measureTime { print("示例1: \(s.buildTree([3,9,20,15,7], [9,3,15,20,7])?.toString ?? "")") }) ms")
+}
+
 func testCase_118() {
     print("耗时: \(measureTime { print("示例1: \(s.generate(5))") }) ms")
     print("耗时: \(measureTime { print("示例2: \(s.generate(1))") }) ms")
@@ -258,6 +262,12 @@ func testCase_213() {
     print("耗时: \(measureTime { print("示例2: \(s.rob2([1,2,3,1]))") }) ms")
     print("耗时: \(measureTime { print("示例3: \(s.rob2([1,2,3]))") }) ms")
     print("耗时: \(measureTime { print("示例4: \(s.rob2(makeMaxRobbers()))") }) ms")
+}
+
+func testCase_228() {
+    print("耗时: \(measureTime { print("示例1: \(s.summaryRanges([0,1,2,4,5,7]))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.summaryRanges([0,2,3,4,6,8,9]))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.summaryRanges([-1]))") }) ms")
 }
 
 func testCase_309() {
@@ -373,6 +383,11 @@ func testCase_752() {
 func testCase_798() {
     print("耗时: \(measureTime { print("示例1: \(s.bestRotation([2,3,1,4,0]))") }) ms")
     print("耗时: \(measureTime { print("示例2: \(s.bestRotation([1,3,0,2,4]))") }) ms")
+}
+
+func testCase_823() {
+    print("耗时: \(measureTime { print("示例1: \(s.numFactoredBinaryTrees([2, 4]))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.numFactoredBinaryTrees([2, 4, 5, 10]))") }) ms")
 }
 
 func testCase_833() {
@@ -491,6 +506,7 @@ func testCase_2682() {
 //testCase_76()
 //testCase_77()
 //testCase_78()
+testCase_105()
 //testCase_118()
 //testCase_121()
 //testCase_122()
@@ -499,6 +515,7 @@ func testCase_2682() {
 //testCase_188()
 //testCase_198()
 //testCase_213()
+//testCase_228()
 //testCase_309()
 //testCase_316()
 //testCase_322()
@@ -515,11 +532,12 @@ func testCase_2682() {
 //testCase_714()
 //testCase_752()
 //testCase_798()
+//testCase_823()
 //testCase_833()
 //testCase_849()
 //testCase_870()
 //testCase_875()
-testCase_912()
+//testCase_912()
 //testCase_1011()
 //testCase_1094()
 //testCase_1109()
