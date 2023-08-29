@@ -23,7 +23,17 @@ extension Solution {
      string convert(string s, int numRows);
      */
     func convert(_ s: String, _ numRows: Int) -> String {
-        // TODO: something
-        return ""
+        if numRows < 2 { return s }
+        var res: [String] = Array(repeating: "", count: numRows)
+        var i: Int = 0
+        var flag: Bool = false
+        for ch in Array(s) {
+            res[i] += String(ch)
+            if i == 0 || i == numRows - 1 {
+                flag = !flag
+            }
+            i += flag ? 1 : -1
+        }
+        return res.joined()
     }
 }
