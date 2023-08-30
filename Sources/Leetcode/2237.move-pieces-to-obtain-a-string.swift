@@ -36,16 +36,16 @@ extension Solution {
 //            }
 //            j += 1
 //        }
-        
+
         let len = start.count
         let starts: [Character] = Array(start)
         let targets: [Character] = Array(target)
-        var i: Int = 0
-        var j: Int = 0
+        var i = 0
+        var j = 0
         while i < len && j < len {
             while i < len && starts[i] == "_" { i += 1 }
             while j < len && targets[j] == "_" { j += 1 }
-            
+
             if i < len && j < len {
                 if starts[i] != targets[j] { return false }
                 if (starts[i] == "L" && i < j) || (starts[i] == "R" && i > j) {

@@ -13,14 +13,14 @@ extension Solution {
 
      candidates 中的每个数字在每个组合中只能使用 一次 。
 
-     注意：解集不能包含重复的组合。 
+     注意：解集不能包含重复的组合。
      */
     func combinationSum2(_ candidates: [Int], _ target: Int) -> [[Int]] {
         var res: [[Int]] = []
         var track: [Int] = []
         let candidates = candidates.sorted()
-        var trackSum: Int = 0
-        
+        var trackSum = 0
+
         func backtrack(_ index: Int) {
             if trackSum == target {
                 res.append(track)
@@ -29,8 +29,8 @@ extension Solution {
             if trackSum > target {
                 return
             }
-            for i in index..<candidates.count {
-                if i > index && candidates[i] == candidates[i - 1] {
+            for i in index ..< candidates.count {
+                if i > index, candidates[i] == candidates[i - 1] {
                     continue
                 }
                 track.append(candidates[i])
@@ -41,7 +41,7 @@ extension Solution {
             }
         }
         backtrack(0)
-        
+
 //        func backtrack(_ index: Int, _ target: Int) {
 //            if 0 == target {
 //                res.append(track)

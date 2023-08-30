@@ -13,10 +13,9 @@ extension Solution {
      如果字符串的反序与原始字符串相同，则该字符串称为回文字符串。
      */
     func longestPalindrome(_ s: String) -> String {
-        
         let chars: [Character] = Array(s)
         var char3: [Character] = []
-        
+
         func palindrome(_ chars: [Character], _ l: Int, _ r: Int) -> [Character] {
             var l = l
             var r = r
@@ -24,10 +23,10 @@ extension Solution {
                 l -= 1
                 r += 1
             }
-            return Array(chars[(l + 1)...r])
+            return Array(chars[(l + 1) ... r])
         }
-        
-        for i in 0..<chars.count {
+
+        for i in 0 ..< chars.count {
             let char1 = palindrome(chars, i, i)
             let char2 = palindrome(chars, i, i + 1)
             char3 = char3.count > char1.count ? char3 : char1

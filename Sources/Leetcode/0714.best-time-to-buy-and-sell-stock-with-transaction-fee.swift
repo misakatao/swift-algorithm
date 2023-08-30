@@ -26,7 +26,7 @@ extension Solution {
          var dp: [[[Int]]] = Array(repeating: Array(repeating: Array(repeating: 0, count: 2), count: count), count: count)
          dp[i][k][0] = max(dp[i - 1][k][0], dp[i - 1][k][1] + prices[i])
          dp[i][k][1] = max(dp[i - 1][k][1], dp[i - 1][k - 1][0] - prices[i])
-         
+
          手续费 free
                      = max(dp[i - 1][k][1], dp[i - 1][k - 1][0] - free - prices[i])
          */
@@ -41,10 +41,10 @@ extension Solution {
 //            dp[i][1] = max(dp[i - 1][1], dp[i - 1][0] - prices[i] - fee)
 //        }
 //        return dp[count - 1][0]
-        
-        var dp_i_0: Int = 0
-        var dp_i_1: Int = Int.min
-        for i in 0..<count {
+
+        var dp_i_0 = 0
+        var dp_i_1 = Int.min
+        for i in 0 ..< count {
             let tmp = dp_i_0
             dp_i_0 = max(dp_i_0, dp_i_1 + prices[i])
             dp_i_1 = max(dp_i_1, tmp - prices[i] - fee)

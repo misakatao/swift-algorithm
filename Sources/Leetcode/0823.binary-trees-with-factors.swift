@@ -10,9 +10,9 @@ import Foundation
 extension Solution {
     /*
      给出一个含有不重复整数元素的数组 arr ，每个整数 arr[i] 均大于 1。
-     
+
      用这些整数来构建二叉树，每个整数可以使用任意次数。其中：每个非叶结点的值应等于它的两个子结点的值的乘积。
-     
+
      满足条件的二叉树一共有多少个？答案可能很大，返回 对 109 + 7 取余 的结果。
      */
     func numFactoredBinaryTrees(_ arr: [Int]) -> Int {
@@ -40,7 +40,7 @@ extension Solution {
 //            res = (res + dp[i]) % module
 //        }
 //        return res
-        
+
 //        let module = Int(1e9 + 7)
 //        let arr = arr.sorted()
 //        var memo: [Int : Int] = [:]
@@ -66,7 +66,7 @@ extension Solution {
 //            res += v
 //        }
 //        return res % module
-        
+
 //        let module = Int(1e9 + 7)
 //        let arr = arr.sorted()
 //        var idx: [Int : Int] = [:]
@@ -95,19 +95,19 @@ extension Solution {
 //        }
 //
 //        return res % module
-        
+
         let module = Int(1e9 + 7)
         let arr = arr.sorted()
-        var idx: [Int : Int] = [:]
-        for i in 0..<arr.count {
+        var idx: [Int: Int] = [:]
+        for i in 0 ..< arr.count {
             idx[arr[i]] = i
         }
         var dp: [Int] = Array(repeating: 0, count: arr.count)
-        var res: Int = 0
-        for i in 0..<arr.count {
+        var res = 0
+        for i in 0 ..< arr.count {
             let val = arr[i]
             dp[i] = 1
-            for j in 0..<i {
+            for j in 0 ..< i {
                 let x = arr[j]
                 if x * x > val {
                     break

@@ -15,7 +15,7 @@ extension Solution {
      */
     func maxSubArray(_ nums: [Int]) -> Int {
         if nums.isEmpty { return 0 }
-        
+
 //        if nums.count < 2 {
 //            return nums[0]
 //        }
@@ -31,10 +31,10 @@ extension Solution {
 //            res = max(res, dp[i])
 //        }
 //        return res
-        
-        var pre: Int = 0
+
+        var pre = 0
         var res: Int = nums[0]
-        for i in 0..<nums.count {
+        for i in 0 ..< nums.count {
             pre = max(pre + nums[i], nums[i])
             res = max(res, pre)
         }

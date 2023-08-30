@@ -52,7 +52,7 @@ extension Solution {
 //            }
 //        }
 //        return root
-        
+
         func dfs(_ node: Node?) {
             guard let node = node else { return }
             let left = node.left

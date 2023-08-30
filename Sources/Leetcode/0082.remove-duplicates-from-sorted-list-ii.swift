@@ -13,14 +13,14 @@ extension Solution {
      */
     func deleteDuplicates2(_ head: ListNode?) -> ListNode? {
         guard let head = head else { return nil }
-        
+
         let dummy = ListNode(0, head)
         var pre: ListNode? = dummy
         var cur: ListNode? = dummy.next
-        while cur != nil && cur?.next != nil {
+        while cur != nil, cur?.next != nil {
             if cur?.val == cur?.next?.val {
                 let x = cur?.val
-                while cur != nil && cur?.val == x {
+                while cur != nil, cur?.val == x {
                     cur = cur?.next
                 }
                 pre?.next = cur

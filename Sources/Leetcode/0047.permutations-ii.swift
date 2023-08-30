@@ -16,18 +16,18 @@ extension Solution {
         var track: [Int] = []
         var used: [Bool] = Array(repeating: false, count: nums.count)
         let nums = nums.sorted()
-        
+
         func backtrack() {
             if track.count == nums.count {
                 res.append(track)
                 return
             }
 
-            for i in 0..<nums.count {
+            for i in 0 ..< nums.count {
                 if used[i] {
                     continue
                 }
-                if i > 0 && nums[i] == nums[i - 1] && !used[i - 1] {
+                if i > 0, nums[i] == nums[i - 1], !used[i - 1] {
                     continue
                 }
                 used[i] = true
@@ -37,9 +37,9 @@ extension Solution {
                 used[i] = false
             }
         }
-        
+
         backtrack()
-        
+
         return res
     }
 }

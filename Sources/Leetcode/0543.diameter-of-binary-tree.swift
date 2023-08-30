@@ -8,10 +8,9 @@
 import Foundation
 
 extension Solution {
-    
     func diameterOfBinaryTree(_ root: TreeNode?) -> Int {
         var maxDiameter = 0
-        
+
         func depth(_ node: TreeNode?) -> Int {
             guard let node = node else { return 0 }
 
@@ -23,6 +22,4 @@ extension Solution {
         _ = depth(root)
         return maxDiameter
     }
-    
-
 }

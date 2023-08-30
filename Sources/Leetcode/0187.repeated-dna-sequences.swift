@@ -43,18 +43,18 @@ extension Solution {
         }
         var seen: Set<Int> = []
         var res: Set<String> = []
-        let L: Int = 10
-        let R: Int = 4
-        let RL: Int = Int(pow(Double(R), Double(L - 1)))
-        var windowHash: Int = 0
-        var left: Int = 0
-        var right: Int = 0
+        let L = 10
+        let R = 4
+        let RL = Int(pow(Double(R), Double(L - 1)))
+        var windowHash = 0
+        var left = 0
+        var right = 0
         while right < chars.count {
             windowHash = R * windowHash + nums[right]
             right += 1
             while right - left == L {
                 if seen.contains(windowHash) {
-                    res.insert(String(chars[left..<right]))
+                    res.insert(String(chars[left ..< right]))
                 } else {
                     seen.insert(windowHash)
                 }

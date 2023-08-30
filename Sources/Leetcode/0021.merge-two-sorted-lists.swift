@@ -14,11 +14,11 @@ extension Solution {
     func mergeTwoLists(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {
         let dummy: ListNode? = ListNode(0)
         var cur: ListNode? = dummy
-        
+
         var ls1: ListNode? = list1
         var ls2: ListNode? = list2
-        
-        while ls1 != nil && ls2 != nil {
+
+        while ls1 != nil, ls2 != nil {
             if ls1!.val < ls2!.val {
                 cur?.next = ls1
                 ls1 = ls1?.next
@@ -29,7 +29,7 @@ extension Solution {
             cur = cur?.next
         }
         cur?.next = ls1 ?? ls2
-        
+
         return dummy?.next
     }
 }

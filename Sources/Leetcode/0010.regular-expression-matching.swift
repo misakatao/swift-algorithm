@@ -15,7 +15,7 @@ extension Solution {
      '*' 匹配零个或多个前面的那一个元素
      所谓匹配，是要涵盖 整个 字符串 s的，而不是部分字符串。
      */
-    func isMatch(_ s: String, _ p: String) -> Bool {
+    func isMatch(_: String, _: String) -> Bool {
         // TODO: something
         return false
     }

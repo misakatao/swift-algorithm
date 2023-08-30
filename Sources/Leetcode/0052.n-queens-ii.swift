@@ -14,63 +14,62 @@ extension Solution {
      给你一个整数 n ，返回 n 皇后问题 不同的解决方案的数量。
      */
     func totalNQueens(_ n: Int) -> Int {
-        var res: Int = 0
+        var res = 0
         var board: [[String]] = Array(repeating: Array(repeating: ".", count: n), count: n)
-        
+
         func isValid(_ board: [[String]], _ row: Int, _ column: Int) -> Bool {
             let n = board.count
-            for i in 0..<n {
+            for i in 0 ..< n {
                 if board[i][column] == "Q" {
                     return false
                 }
             }
-            
+
             var i = row - 1
             var j = column + 1
             while i >= 0 && j < n {
                 if board[i][j] == "Q" {
                     return false
                 }
-                
+
                 i -= 1
                 j += 1
             }
-            
+
             i = row - 1
             j = column - 1
             while i >= 0 && j >= 0 {
                 if board[i][j] == "Q" {
                     return false
                 }
-                
+
                 i -= 1
                 j -= 1
             }
             return true
         }
-        
+
         func backtrack(_ row: Int) {
-            
             if row == board.count {
                 res += 1
                 return
             }
-            
+
             var line = board[row]
-            for column in 0..<line.count {
+            for column in 0 ..< line.count {
                 if !isValid(board, row, column) {
                     continue
                 }
                 line[column] = "Q"
                 board[row] = line
-                
+
                 backtrack(row + 1)
-                
+
                 line[column] = "."
                 board[row] = line
             }
         }
-        
+
         backtrack(0)
         return res
     }

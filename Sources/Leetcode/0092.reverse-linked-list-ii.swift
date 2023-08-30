@@ -16,11 +16,11 @@ extension Solution {
          g       p
          ↓       ↓
          dummy --> _1_ --> _2_ --> 3 --> 4 --> 5
-         
+
          g         p
          ↓    3    ↓
          dummy --> _1_ ↗   ↘ _2_ --> 4 --> 5
-         
+
          g               p
          ↓    4          ↓
          dummy --> _1_ ↗   ↘ 3 --> _2_ --> 5
@@ -44,7 +44,7 @@ extension Solution {
 //            g?.next = removed
 //        }
 //        return dummy.next
-        
+
 //        var dummy = ListNode(0)
 //        dummy.next = head
 //
@@ -77,8 +77,8 @@ extension Solution {
 //        mNode?.next = suc
 //
 //        return dummy.next
-        
-        var suc: ListNode? = nil
+
+        var suc: ListNode?
         func reverseN(_ head: ListNode?, _ n: Int) -> ListNode? {
             if n == 1 { // head == nil || head?.next == nil
                 suc = head?.next
@@ -89,7 +89,7 @@ extension Solution {
             head?.next = suc
             return last
         }
-        
+
         if left == 1 {
             return reverseN(head, right)
         }

@@ -13,11 +13,11 @@ extension Solution {
      */
     func smallestSubsequence(_ s: String) -> String {
         let chars: [Character] = Array(s)
-        var count: [Character : Int] = [:]
+        var count: [Character: Int] = [:]
         for ch in chars {
             count[ch, default: 0] += 1
         }
-        var inStack: [Character : Bool] = [:]
+        var inStack: [Character: Bool] = [:]
         var stack: [Character] = []
         for ch in chars {
             count[ch]! -= 1

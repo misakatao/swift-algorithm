@@ -14,26 +14,26 @@ extension Solution {
     func trap(_ height: [Int]) -> Int {
         let count: Int = height.count
         if count < 3 { return 0 }
-        
-        var res: Int = 0
-        
+
+        var res = 0
+
         var dp: [[Int]] = Array(repeating: Array(repeating: 0, count: 2), count: count)
         dp[0][0] = 0
         dp[0][1] = 0
-        
-        for i in 1..<count - 1 {
+
+        for i in 1 ..< count - 1 {
             dp[i][0] = max(dp[i - 1][0], height[i])
             dp[i][1] = max(dp[i + 1][1], height[i])
-            
+
             let min = min(dp[i][0], dp[i][1])
-            
+
             print("左: \(dp[i][0]) | \(height[i]) | 右: \(dp[i][1])")
-            
+
             if min > height[i] {
                 res += min - height[i]
             }
         }
-        
+
 //        var leftMax: [Int] = Array(repeating: 0, count: count)
 //        leftMax[0] = height[0]
 //

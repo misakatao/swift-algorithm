@@ -13,9 +13,9 @@ extension Solution {
      */
     func removeDuplicates(_ nums: inout [Int]) -> Int {
         if nums.isEmpty { return 0 }
-        
-        var fast: Int = 0
-        var slow: Int = 0
+
+        var fast = 0
+        var slow = 0
         while fast < nums.count {
             if nums[fast] != nums[slow] {
                 slow += 1

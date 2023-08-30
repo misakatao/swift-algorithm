@@ -24,6 +24,7 @@
 		E52E1B372A9DCC16008DFCF8 /* 0105.construct-binary-tree-from-preorder-and-inorder-traversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52E1B362A9DCC16008DFCF8 /* 0105.construct-binary-tree-from-preorder-and-inorder-traversal.swift */; };
 		E52E1B392A9DD913008DFCF8 /* 0106.construct-binary-tree-from-inorder-and-postorder-traversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52E1B382A9DD913008DFCF8 /* 0106.construct-binary-tree-from-inorder-and-postorder-traversal.swift */; };
 		E52E1B3B2A9DDAC5008DFCF8 /* 0889.construct-binary-tree-from-preorder-and-postorder-traversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52E1B3A2A9DDAC5008DFCF8 /* 0889.construct-binary-tree-from-preorder-and-postorder-traversal.swift */; };
+		E52E1B3D2A9DF3AD008DFCF8 /* 0652.find-duplicate-subtrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52E1B3C2A9DF3AD008DFCF8 /* 0652.find-duplicate-subtrees.swift */; };
 		E54FC5C12A8C9ADD001768B8 /* 2682.find-the-losers-of-the-circular-game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5C02A8C9ADD001768B8 /* 2682.find-the-losers-of-the-circular-game.swift */; };
 		E54FC5C32A8CACA9001768B8 /* 0004.median-of-two-sorted-arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5C22A8CACA9001768B8 /* 0004.median-of-two-sorted-arrays.swift */; };
 		E54FC5C52A8CD1D1001768B8 /* 0303.range-sum-query-immutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FC5C42A8CD1D1001768B8 /* 0303.range-sum-query-immutable.swift */; };
@@ -173,6 +174,7 @@
 		E52E1B362A9DCC16008DFCF8 /* 0105.construct-binary-tree-from-preorder-and-inorder-traversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0105.construct-binary-tree-from-preorder-and-inorder-traversal.swift"; sourceTree = "<group>"; };
 		E52E1B382A9DD913008DFCF8 /* 0106.construct-binary-tree-from-inorder-and-postorder-traversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0106.construct-binary-tree-from-inorder-and-postorder-traversal.swift"; sourceTree = "<group>"; };
 		E52E1B3A2A9DDAC5008DFCF8 /* 0889.construct-binary-tree-from-preorder-and-postorder-traversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0889.construct-binary-tree-from-preorder-and-postorder-traversal.swift"; sourceTree = "<group>"; };
+		E52E1B3C2A9DF3AD008DFCF8 /* 0652.find-duplicate-subtrees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0652.find-duplicate-subtrees.swift"; sourceTree = "<group>"; };
 		E54FC5C02A8C9ADD001768B8 /* 2682.find-the-losers-of-the-circular-game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2682.find-the-losers-of-the-circular-game.swift"; sourceTree = "<group>"; };
 		E54FC5C22A8CACA9001768B8 /* 0004.median-of-two-sorted-arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0004.median-of-two-sorted-arrays.swift"; sourceTree = "<group>"; };
 		E54FC5C42A8CD1D1001768B8 /* 0303.range-sum-query-immutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0303.range-sum-query-immutable.swift"; sourceTree = "<group>"; };
@@ -457,6 +459,7 @@
 				E5512CDE2A7B875F00602494 /* 0543.diameter-of-binary-tree.swift */,
 				E57677932A838B4A00B6F386 /* 0567.permutation-in-string.swift */,
 				E57677B52A89C4F900B6F386 /* 0617.merge-two-binary-trees.swift */,
+				E52E1B3C2A9DF3AD008DFCF8 /* 0652.find-duplicate-subtrees.swift */,
 				E52E1B342A9DCB66008DFCF8 /* 0654.maximum-binary-tree.swift */,
 				E57677A92A84C8F100B6F386 /* 0704.binary-search.swift */,
 				E54FC6312A974043001768B8 /* 0710.random-pick-with-blacklist.swift */,
@@ -688,6 +691,7 @@
 				E54FC5ED2A949D92001768B8 /* 0337.house-robber-iii.swift in Sources */,
 				E57677A82A84C7D400B6F386 /* 0344.reverse-string.swift in Sources */,
 				E54FC5CD2A8E20AC001768B8 /* 0370.range-addition.swift in Sources */,
+				E52E1B3D2A9DF3AD008DFCF8 /* 0652.find-duplicate-subtrees.swift in Sources */,
 				E54FC62E2A973C39001768B8 /* 0380.insert-delete-getrandom-o1.swift in Sources */,
 				E5FB8FF82A974A6E002891F8 /* 0402.remove-k-digits.swift in Sources */,
 				E54FC6012A96FD15001768B8 /* 0410.split-array-largest-sum.swift in Sources */,

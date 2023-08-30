@@ -16,20 +16,20 @@ extension Solution {
     func checkInclusion(_ s1: String, _ s2: String) -> Bool {
         let chars1: [Character] = Array(s1)
         let chars2: [Character] = Array(s2)
-        
-        var window: [Character : Int] = [:]
-        
-        var needs: [Character : Int] = [:]
+
+        var window: [Character: Int] = [:]
+
+        var needs: [Character: Int] = [:]
         for c in chars1 {
             needs[c, default: 0] += 1
         }
         print("needs: \(needs)")
-        
-        var left: Int = 0
-        var right: Int = 0
-        
-        var valid: Int = 0 // 记录滑动窗口中已经包含了字符串t中字符的个数
-        
+
+        var left = 0
+        var right = 0
+
+        var valid = 0 // 记录滑动窗口中已经包含了字符串t中字符的个数
+
         while right < chars2.count {
             let rightValue = chars2[right]
             // 扩大右窗口
@@ -37,7 +37,7 @@ extension Solution {
             // 进行窗口内数据的一系列更新
             if let count = needs[rightValue] {
                 window[rightValue, default: 0] += 1
-                
+
                 if window[rightValue] == count {
                     valid += 1
                 }
@@ -49,7 +49,7 @@ extension Solution {
                 if valid == needs.count {
                     return true
                 }
-                
+
                 let leftValue = chars2[left]
                 // 缩小左窗口
                 left += 1
@@ -62,7 +62,7 @@ extension Solution {
                 }
             }
         }
-        
+
         return false
     }
 }

@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  ListNode.swift
 //  swift-algorithm
 //
 //  Created by Misaka on 2023/8/1.
@@ -14,6 +14,7 @@ public class ListNode {
         self.val = val
         self.next = next
     }
+
     public var toString: String {
         var res: [String] = []
         var cur: ListNode? = self
@@ -24,13 +25,13 @@ public class ListNode {
         return "[\(res.joined(separator: ","))]"
     }
     /*
-    public func hash(into hasher: inout Hasher) {
-        hasher.combine(val)
-        hasher.combine(next)
-    }
-    
-    public static func == (lhs: ListNode, rhs: ListNode) -> Bool {
-        return lhs.val == rhs.val && lhs.next == rhs.next
-    }
-     */
+     public func hash(into hasher: inout Hasher) {
+         hasher.combine(val)
+         hasher.combine(next)
+     }
+
+     public static func == (lhs: ListNode, rhs: ListNode) -> Bool {
+         return lhs.val == rhs.val && lhs.next == rhs.next
+     }
+      */
 }
