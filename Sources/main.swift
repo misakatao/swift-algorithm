@@ -210,7 +210,8 @@ func testCase_78() {
 }
 
 func testCase_105() {
-    print("耗时: \(measureTime { print("示例1: \(s.buildTree([3, 9, 20, 15, 7], [9, 3, 15, 20, 7])?.toString ?? "")") }) ms")
+    print("耗时: \(measureTime { print("示例1: \(s.buildTree([3, 9, 20, 15, 7], [9, 3, 15, 20, 7])?.preSerialize ?? "")") }) ms")
+    print("耗时: \(measureTime { print("示例1: \(s.buildTree([3, 9, 20, 15, 7], [9, 3, 15, 20, 7])?.postSerialize ?? "")") }) ms")
 }
 
 func testCase_118() {
@@ -268,6 +269,18 @@ func testCase_228() {
     print("耗时: \(measureTime { print("示例1: \(s.summaryRanges([0, 1, 2, 4, 5, 7]))") }) ms")
     print("耗时: \(measureTime { print("示例2: \(s.summaryRanges([0, 2, 3, 4, 6, 8, 9]))") }) ms")
     print("耗时: \(measureTime { print("示例3: \(s.summaryRanges([-1]))") }) ms")
+}
+
+func testCase_297() {
+    let ser = Codec()
+    let deser = Codec()
+    let root = TreeNode(1)
+    root.left = TreeNode(2)
+    root.right = TreeNode(3)
+    root.right?.left = TreeNode(4)
+    root.right?.right = TreeNode(5)
+    print("耗时: \(measureTime { print("示例1: \(ser.serialize(root))") }) ms")
+    print("耗时: \(measureTime { print("示例1: \(deser.deserialize(ser.serialize(root))?.toString ?? "")") }) ms")
 }
 
 func testCase_309() {
@@ -413,6 +426,8 @@ func testCase_875() {
 }
 
 func testCase_912() {
+    print("耗时: \(measureTime { print("示例0: \(s.sortArray([]))") }) ms")
+    print("耗时: \(measureTime { print("示例0: \(s.sortArray([1]))") }) ms")
     print("耗时: \(measureTime { print("示例1: \(s.sortArray([5, 2, 3, 1]))") }) ms")
     print("耗时: \(measureTime { print("示例2: \(s.sortArray([5, 1, 1, 2, 0, 0]))") }) ms")
     print("耗时: \(measureTime { print("示例3: \(s.sortArray(makeMaxSortArray()))") }) ms")
@@ -458,6 +473,12 @@ func testCase_1444() {
 func testCase_1572() {
     print("耗时: \(measureTime { print("示例1: \(s.diagonalSum([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))") }) ms")
     print("耗时: \(measureTime { print("示例2: \(s.diagonalSum([[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]]))") }) ms")
+}
+
+func testCase_1654() {
+    print("耗时: \(measureTime { print("示例1: \(s.minimumJumps([14, 4, 18, 1, 15], 3, 15, 9))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.minimumJumps([8, 3, 16, 6, 12, 20], 15, 13, 11))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.minimumJumps([1, 6, 2, 14, 5, 17, 4], 16, 9, 7))") }) ms")
 }
 
 func testCase_1749() {
@@ -506,7 +527,7 @@ func testCase_2682() {
 // testCase_76()
 // testCase_77()
 // testCase_78()
-testCase_105()
+// testCase_105()
 // testCase_118()
 // testCase_121()
 // testCase_122()
@@ -516,6 +537,7 @@ testCase_105()
 // testCase_198()
 // testCase_213()
 // testCase_228()
+// testCase_297()
 // testCase_309()
 // testCase_316()
 // testCase_322()
@@ -537,7 +559,7 @@ testCase_105()
 // testCase_849()
 // testCase_870()
 // testCase_875()
-// testCase_912()
+ testCase_912()
 // testCase_1011()
 // testCase_1094()
 // testCase_1109()
@@ -546,6 +568,7 @@ testCase_105()
 // testCase_1388()
 // testCase_1444()
 // testCase_1572()
+// testCase_1654()
 // testCase_1749()
 // testCase_1782()
 // testCase_2237()
