@@ -19,7 +19,7 @@ extension Solution {
 //            plusNums[(n + k) % n] = nums[i]
 //        }
 //        nums = plusNums
-        
+
         /* 环状替换 */
 //        let k = k % nums.count
 //
@@ -43,7 +43,7 @@ extension Solution {
 //
 //            start += 1
 //        }
-        
+
         /* 反转法 */
         /*
          零起始: [1 2 3 4 5 [6 7 8 9]]

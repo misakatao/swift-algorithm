@@ -15,10 +15,10 @@ extension Solution {
      */
     func diagonalSum(_ mat: [[Int]]) -> Int {
         if mat.isEmpty { return 0 }
-        
+
         let count = mat.count
-        var res: Int = 0
-        
+        var res = 0
+
 //        for i in 0..<count {
 //            for j in 0..<count {
 //                if j == i {
@@ -31,8 +31,8 @@ extension Solution {
 //            }
 //        }
 //        return res
-        
-        for i in 0..<count {
+
+        for i in 0 ..< count {
             res += mat[i][i] + mat[i][count - 1 - i]
         }
         if count % 2 != 0 {

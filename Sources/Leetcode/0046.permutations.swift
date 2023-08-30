@@ -15,15 +15,14 @@ extension Solution {
         var res: [[Int]] = []
         var track: [Int] = []
         var used: [Bool] = Array(repeating: false, count: nums.count)
-        
-        func backtrack() {
 
+        func backtrack() {
             if track.count == nums.count {
                 res.append(track)
                 return
             }
 
-            for i in 0..<nums.count {
+            for i in 0 ..< nums.count {
                 if used[i] {
                     continue
                 }
@@ -34,10 +33,8 @@ extension Solution {
                 used[i] = false
             }
         }
-        
+
         backtrack()
         return res
     }
-
-
 }

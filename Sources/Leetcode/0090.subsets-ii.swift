@@ -16,13 +16,13 @@ extension Solution {
     func subsetsWithDup(_ nums: [Int]) -> [[Int]] {
         var res: [[Int]] = []
         var track: [Int] = []
-        
+
         let nums = nums.sorted()
-        
+
         func backtrack(_ index: Int) {
             res.append(track)
-            for i in index..<nums.count {
-                if i > index && nums[i] == nums[i - 1] {
+            for i in index ..< nums.count {
+                if i > index, nums[i] == nums[i - 1] {
                     continue
                 }
                 track.append(nums[i])

@@ -15,7 +15,7 @@ extension Solution {
         if nums.count < 2 { return nums }
         let n: Int = nums.count
         var nums = nums
-        
+
         /* 冒泡排序（Bubble Sort） */
 //        for i in 0..<n - 1 {
 //            for j in 0..<(n - i - 1) {
@@ -25,7 +25,7 @@ extension Solution {
 //            }
 //        }
 //        return nums
-        
+
         /* 选择排序（Selection Sort） */
 //        // 循环不变量：[0, i) 有序，且该区间里所有元素就是最终排定的样子
 //        for i in 0..<n - 1 {
@@ -41,7 +41,7 @@ extension Solution {
 //            }
 //        }
 //        return nums
-        
+
         /* 插入排序（Insertion Sort） */
 //        // 循环不变量：将 nums[i] 插入到区间 [0, i) 使之成为有序数组
 //        for i in 1..<n {
@@ -55,7 +55,7 @@ extension Solution {
 //            nums[preIndex + 1] = cur
 //        }
 //        return nums
-        
+
         /* 希尔排序（Shell Sort） */
 //        var gap = n / 2
 //        while gap > 0 {
@@ -71,12 +71,12 @@ extension Solution {
 //            gap /= 2
 //        }
 //        return nums
-        
+
         /* 快速排序（Quick Sort） */
         func partition(_ arr: inout [Int], _ low: Int, _ high: Int) -> Int {
             let pivot = arr[high]
             var i = low
-            for j in low..<high {
+            for j in low ..< high {
                 if arr[j] < pivot {
                     arr.swapAt(i, j)
                     i += 1
@@ -86,7 +86,7 @@ extension Solution {
             return i
         }
         func random_partition(_ arr: inout [Int], _ low: Int, _ high: Int) -> Int {
-            let i = Int.random(in: low...high)
+            let i = Int.random(in: low ... high)
             arr.swapAt(i, high)
             return partition(&arr, low, high)
         }
@@ -98,7 +98,7 @@ extension Solution {
         }
         quickSort(&nums, 0, n - 1)
         return nums
-        
+
         /* 归并排序（Merge Sort） */
 //        func merge(_ left: [Int], _ right: [Int]) -> [Int] {
 //            var res: [Int] = []
@@ -131,7 +131,7 @@ extension Solution {
 //            return merge(left, right)
 //        }
 //        return mergeSort(nums)
-        
+
         /* 堆排序（Heap Sort） */
 //        func heapify(_ nums: inout [Int], _ n: Int, _ i: Int) {
 //            var largest = i
@@ -162,7 +162,7 @@ extension Solution {
 //            heapify(&nums, i, 0)
 //        }
 //        return nums
-        
+
         /* 桶排序（Bucket Sort） */
 //        // 找出数组的最大值和最小值
 //        var minValue: Int = 1 // nums.min() ?? 0
@@ -197,7 +197,7 @@ extension Solution {
 //            res.append(contentsOf: bucket)
 //        }
 //        return res
-        
+
         /* 计数排序 */
 //        // 找出数组的最大值和最小值
 //        var minValue: Int = 1 // nums.min() ?? 0
@@ -219,7 +219,7 @@ extension Solution {
 //            res.append(contentsOf: Array(repeating: cur, count: count))
 //        }
 //        return res
-        
+
         /* 基数排序（Radix Sort） */
 //        var minValue: Int = 1 // nums.min() ?? 0
 //        var maxValue: Int = -1 // nums.max() ?? 0

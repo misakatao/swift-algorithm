@@ -26,8 +26,8 @@ extension Solution {
         func buildNextArray(_ pattern: String) -> [Int] {
             let patterns: [Character] = Array(pattern)
             var next: [Int] = Array(repeating: 0, count: patterns.count)
-            var i: Int = 1
-            var j: Int = 0
+            var i = 1
+            var j = 0
             while i < patterns.count {
                 while j > 0 && patterns[i] != patterns[j] {
                     j = next[j - 1]
@@ -40,8 +40,8 @@ extension Solution {
             }
             return next
         }
-        var i: Int = 0
-        var j: Int = 0
+        var i = 0
+        var j = 0
         let next = buildNextArray(needle)
         while i < haystacks.count {
             while j > 0 && haystacks[i] != needles[j] {

@@ -33,26 +33,26 @@ extension Solution {
 //            inStack[ch] = true
 //        }
 //        return String(stack)
-        
+
         let chars: [Character] = Array(s)
-        var counter: [Character : Int] = [:]
+        var counter: [Character: Int] = [:]
         for ch in chars {
             counter[ch, default: 0] += 1
         }
-        var inStack: [Character : Bool] = [:]
+        var inStack: [Character: Bool] = [:]
         var stack: [Character] = []
         for ch in chars {
             counter[ch]! -= 1
-            
+
             if inStack[ch] == true {
                 continue
             }
-            
+
             while let last = stack.last, last > ch, let lastCount = counter[last], lastCount > 0 {
                 inStack[last] = false
                 _ = stack.popLast()
             }
-            
+
             stack.append(ch)
             inStack[ch] = true
         }

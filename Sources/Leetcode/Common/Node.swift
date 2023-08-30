@@ -14,8 +14,8 @@ public class Node {
     public var next: Node?
     public init(_ val: Int) {
         self.val = val
-        self.left = nil
-        self.right = nil
-        self.next = nil
+        left = nil
+        right = nil
+        next = nil
     }
 }

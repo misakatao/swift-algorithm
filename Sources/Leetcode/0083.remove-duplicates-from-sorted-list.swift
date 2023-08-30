@@ -13,7 +13,7 @@ extension Solution {
      */
     func deleteDuplicates(_ head: ListNode?) -> ListNode? {
         guard let head = head else { return nil }
-        
+
 //        var fast: ListNode? = head
 //        var slow: ListNode? = head
 //        while fast != nil {
@@ -25,9 +25,9 @@ extension Solution {
 //        }
 //        slow?.next = nil
 //        return head
-        
+
         var cur: ListNode? = head
-        while cur != nil && cur?.next != nil {
+        while cur != nil, cur?.next != nil {
             if cur?.val == cur?.next?.val {
                 cur?.next = cur?.next?.next
             } else {

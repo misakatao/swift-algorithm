@@ -15,7 +15,7 @@ extension Solution {
         if intervals.isEmpty { return [] }
         let intervals = intervals.sorted(by: { $0[0] < $1[0] })
         var res: [[Int]] = [intervals[0]]
-        for i in 1..<intervals.count {
+        for i in 1 ..< intervals.count {
             let cur = intervals[i]
             var last = res[res.count - 1]
             if cur[0] <= last[1] {

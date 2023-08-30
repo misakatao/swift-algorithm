@@ -7,6 +7,4 @@
 
 import XCTest
 
-final class TwoSumTests : XCTestCase {
-    
-}
+final class TwoSumTests: XCTestCase {}

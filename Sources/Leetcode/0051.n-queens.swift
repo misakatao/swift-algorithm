@@ -20,16 +20,16 @@ extension Solution {
     func solveNQueens(_ n: Int) -> [[String]] {
         var res: [[String]] = []
         var board: [[String]] = Array(repeating: Array(repeating: ".", count: n), count: n)
-        
+
         func isValid(_ board: [[String]], _ row: Int, _ column: Int) -> Bool {
             let n = board.count
             // 检查列是否有冲突
-            for i in 0..<n {
+            for i in 0 ..< n {
                 if board[i][column] == "Q" {
                     return false
                 }
             }
-            
+
             // 检查右上角是否有冲突
             var i = row - 1
             var j = column + 1
@@ -41,7 +41,7 @@ extension Solution {
                 i -= 1
                 j += 1
             }
-            
+
             // 检查左上角是否有冲突
             i = row - 1
             j = column - 1
@@ -49,23 +49,22 @@ extension Solution {
                 if board[i][j] == "Q" {
                     return false
                 }
-                
+
                 i -= 1
                 j -= 1
             }
             return true
         }
-        
+
         func backtrack(_ row: Int) {
-            
             if row == board.count {
                 // 触发结束条件
-                res.append(board.map({ $0.joined() }))
+                res.append(board.map { $0.joined() })
                 return
             }
-            
+
             var line = board[row]
-            for column in 0..<line.count {
+            for column in 0 ..< line.count {
                 // 剪枝
                 if !isValid(board, row, column) {
                     continue
@@ -73,9 +72,9 @@ extension Solution {
                 // 做选择
                 line[column] = "Q"
                 board[row] = line
-                
+
                 backtrack(row + 1)
-                
+
                 // 撤销选择
                 line[column] = "."
                 board[row] = line

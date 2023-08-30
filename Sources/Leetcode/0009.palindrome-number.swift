@@ -17,13 +17,13 @@ extension Solution {
         if x < 0 || (x % 10 == 0 && x != 0) {
             return false
         }
-        
+
         var revert = 0
         while x > revert {
             revert = revert * 10 + x % 10
             x /= 10
         }
-        
+
         return x == revert || x == revert / 10
     }
 }

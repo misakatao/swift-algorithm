@@ -10,7 +10,7 @@ import Foundation
 extension Solution {
     /*
      给你一个由 n 个整数组成的数组 nums ，和一个目标值 target 。请你找出并返回满足下述全部条件且不重复的四元组 [nums[a], nums[b], nums[c], nums[d]] （若两个四元组元素一一对应，则认为两个四元组重复）：
-     
+
      0 <= a, b, c, d < n
      a、b、c 和 d 互不相同
      nums[a] + nums[b] + nums[c] + nums[d] == target
@@ -30,19 +30,19 @@ extension Solution {
                     let leftS = nums[left]
                     let rightS = nums[right]
                     if sum < target {
-                        while left < right && nums[left] == leftS {
+                        while left < right, nums[left] == leftS {
                             left += 1
                         }
                     } else if sum > target {
-                        while left < right && nums[right] == rightS {
+                        while left < right, nums[right] == rightS {
                             right -= 1
                         }
                     } else {
                         res.append([leftS, rightS])
-                        while left < right && nums[left] == leftS {
+                        while left < right, nums[left] == leftS {
                             left += 1
                         }
-                        while left < right && nums[right] == rightS {
+                        while left < right, nums[right] == rightS {
                             right -= 1
                         }
                     }
@@ -51,11 +51,11 @@ extension Solution {
                 var i: Int = start
                 while i < nums.count {
                     var subs: [[Int]] = nSum(nums, n - 1, i + 1, target - nums[i])
-                    for j in 0..<subs.count {
+                    for j in 0 ..< subs.count {
                         subs[j].append(nums[i])
                         res.append(subs[j])
                     }
-                    while i < nums.count - 1 && nums[i] == nums[i + 1] {
+                    while i < nums.count - 1, nums[i] == nums[i + 1] {
                         i += 1
                     }
                     i += 1

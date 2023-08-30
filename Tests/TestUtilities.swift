@@ -9,7 +9,7 @@ import XCTest
 
 extension Sequence {
     func isSorted(by f: (Element, Element) -> Bool) -> Bool {
-        zip(self, self.dropFirst()).allSatisfy { !f($1, $0) }
+        zip(self, dropFirst()).allSatisfy { !f($1, $0) }
     }
 }
 
@@ -26,18 +26,18 @@ extension Numeric {
     }
 }
 
-struct SplitMix64 : RandomNumberGenerator {
+struct SplitMix64: RandomNumberGenerator {
     private var state: UInt64
-    
+
     init(seed: UInt64) {
-        self.state = seed
+        state = seed
     }
-    
+
     mutating func next() -> UInt64 {
-        self.state &+= 0x9e3779b97f4a7c15
-        var z: UInt64 = self.state
-        z = (z ^ (z &>> 30)) &* 0xbf58476d1ce4e5b9
-        z = (z ^ (z &>> 27)) &* 0x94d049bb133111eb
+        state &+= 0x9E37_79B9_7F4A_7C15
+        var z: UInt64 = state
+        z = (z ^ (z &>> 30)) &* 0xBF58_476D_1CE4_E5B9
+        z = (z ^ (z &>> 27)) &* 0x94D0_49BB_1331_11EB
         return z ^ (z &>> 31)
     }
 }
@@ -47,17 +47,17 @@ struct AnyMutableCollection<Base> where Base: MutableCollection {
     var base: Base
 }
 
-extension AnyMutableCollection : MutableCollection {
+extension AnyMutableCollection: MutableCollection {
     typealias Index = Base.Index
     typealias Element = Base.Element
-    
+
     var startIndex: Base.Index { base.startIndex }
     var endIndex: Base.Index { base.endIndex }
-    
+
     func index(after i: Index) -> Index {
         base.index(after: i)
     }
-    
+
     subscript(position: Base.Index) -> Base.Element {
         _read { yield base[position] }
         set { base[position] = newValue }
@@ -74,15 +74,17 @@ func XCTAssertEqualSequences<S1: Sequence, S2: Sequence>(_ expression1: @autoclo
                                                          _ expression2: @autoclosure () throws -> S2,
                                                          _ message: @autoclosure () -> String = "",
                                                          file: StaticString = #file,
-                                                         line: UInt = #line) rethrows where S1.Element: Equatable, S1.Element == S2.Element {
+                                                         line: UInt = #line) rethrows where S1.Element: Equatable, S1.Element == S2.Element
+{
     try XCTAssertEqualSequences(expression1(), expression2(), by: ==, message(), file: file, line: line)
 }
 
 // Two sequences contains exactly the same element but not necessarily in the same order.
 func XCTAssertUnorderedEqualSequences<S1: Sequence, S2: Sequence>(_ expression1: @autoclosure () throws -> S1,
                                                                   _ expression2: @autoclosure () throws -> S2,
-                                                                  file: StaticString = #file, line: UInt = #line) rethrows where S1.Element: Equatable, S1.Element == S2.Element {
-    var s1 = Array(try expression1())
+                                                                  file: StaticString = #file, line: UInt = #line) rethrows where S1.Element: Equatable, S1.Element == S2.Element
+{
+    var s1 = try Array(expression1())
     var missing: [S1.Element] = []
     for elt in try expression2() {
         guard let idx = s1.firstIndex(of: elt) else {
@@ -91,9 +93,9 @@ func XCTAssertUnorderedEqualSequences<S1: Sequence, S2: Sequence>(_ expression1:
         }
         s1.remove(at: idx)
     }
-    
+
     XCTAssertTrue(missing.isEmpty, "first sequence missing '\(missing)' elements from second sequence", file: file, line: line)
-    
+
     XCTAssertTrue(s1.isEmpty, "first sequence contains \(s1) missing from second sequence", file: file, line: line)
 }
 
@@ -101,12 +103,13 @@ func XCTAssertEqualSequences<S1: Sequence, S2: Sequence>(_ expression1: @autoclo
                                                          _ expression2: @autoclosure () throws -> S2,
                                                          by areEquivalent: (S1.Element, S1.Element) -> Bool,
                                                          _ message: @autoclosure () -> String = "",
-                                                         file: StaticString = #file, line: UInt = #line) rethrows where S1.Element == S2.Element {
+                                                         file: StaticString = #file, line: UInt = #line) rethrows where S1.Element == S2.Element
+{
     func fail(_ reason: String) {
         let message = message()
         XCTFail(message.isEmpty ? reason : "\(message) - \(reason)", file: file, line: line)
     }
-    
+
     var iter1 = try expression1().makeIterator()
     var iter2 = try expression2().makeIterator()
     var idx = 0
@@ -134,7 +137,8 @@ func XCTAssertLazyCollection<S: LazyCollectionProtocol>(_: S) {}
 func XCTAssertEqualCollections<C1: Collection, C2: Collection>(_ expression1: @autoclosure () throws -> C1,
                                                                _ expression2: @autoclosure () throws -> C2,
                                                                _ message: @autoclosure () -> String = "",
-                                                               file: StaticString = #file, line: UInt = #line) rethrows where C1.Element: Equatable, C1.Element == C2.Element {
+                                                               file: StaticString = #file, line: UInt = #line) rethrows where C1.Element: Equatable, C1.Element == C2.Element
+{
     let c1 = try expression1()
     let c2 = try expression2()
     XCTAssertEqual(c1.indices.count, c2.indices.count, message(), file: file, line: line)
@@ -146,7 +150,7 @@ func XCTAssertEqualCollections<C1: Collection, C2: Collection>(_ expression1: @a
 struct IndexValidator<C: Collection> {
     let testRandomAccess = true
     let indicesIncludingEnd: (C) -> [C.Index]
-    
+
     /// Creates a new instance of an index validator that can verify that indices
     /// of a collection behave correctly and consistently.
     ///
@@ -166,7 +170,7 @@ struct IndexValidator<C: Collection> {
     ///     Only use this parameter if you are able to compute the indices of the
     ///     collection independently of the `Collection` conformance, e.g. by
     ///     using the contents of the collection directly.
-    init(testRandomAccess: Bool = true, indicesIncludingEnd: @escaping (C) -> [C.Index] = { $0.indices + [$0.endIndex] }) {
+    init(testRandomAccess _: Bool = true, indicesIncludingEnd: @escaping (C) -> [C.Index] = { $0.indices + [$0.endIndex] }) {
         self.indicesIncludingEnd = indicesIncludingEnd
     }
 }
@@ -179,7 +183,7 @@ extension IndexValidator {
         let file: StaticString
         let line: UInt
     }
-    
+
     /// Verifies that all index traversal methods behave as expected.
     ///
     /// Verifies the correctness of the implementations of `startIndex`,
@@ -197,9 +201,9 @@ extension IndexValidator {
     func validate(_ collection: C, expectedCount: Int? = nil, file: StaticString = #file, line: UInt = #line) {
         let indicesIncludingEnd = self.indicesIncludingEnd(collection)
         let count = indicesIncludingEnd.count - 1
-        
+
         let validator = Validator(collection: collection, count: count, indicesIncludingEnd: indicesIncludingEnd, file: file, line: line)
-        
+
         validator.validateForward(testRandomAccess: testRandomAccess, expectedCount: expectedCount)
     }
 }
@@ -208,9 +212,9 @@ extension IndexValidator where C: BidirectionalCollection {
     func validate(_ collection: C, expectedCount: Int? = nil, file: StaticString = #file, line: UInt = #line) {
         let indicesIncludingEnd = self.indicesIncludingEnd(collection)
         let count = indicesIncludingEnd.count - 1
-        
+
         let validator = Validator(collection: collection, count: count, indicesIncludingEnd: indicesIncludingEnd, file: file, line: line)
-        
+
         validator.validateForward(testRandomAccess: testRandomAccess, expectedCount: expectedCount)
         validator.validateBackward(testRandomAccess: testRandomAccess)
     }
@@ -221,51 +225,51 @@ extension IndexValidator.Validator {
         if let expectedCount = expectedCount {
             XCTAssertEqual(expectedCount, count, "Count mismatch", file: file, line: line)
         }
-        
+
         XCTAssertEqual(collection.count, count, "Count mismatch", file: file, line: line)
         XCTAssertEqual(collection.isEmpty, count == 0, "Emptiness mismatch", file: file, line: line)
         XCTAssertEqual(collection.startIndex, indicesIncludingEnd.first, "`startIndex` does not equal the first index", file: file, line: line)
         XCTAssertEqual(collection.endIndex, indicesIncludingEnd.last, "`endIndex` does not equal the last index", file: file, line: line)
-        
+
         validateIndexAfter()
         validateIndices()
         validateIndexComparisons()
-        
+
         if testRandomAccess {
             validateDistanceFromTo()
             validateIndexOffsetBy()
             validateIndexOffsetByLimitedBy()
         }
     }
-    
+
     func validateIndexAfter() {
         var index = collection.startIndex
-        
+
         for (offset, expected) in indicesIncludingEnd.enumerated().dropFirst() {
             collection.formIndex(after: &index)
             XCTAssertEqual(index, expected, "`startIndex` incremented \(offset) times does not equal index at offset \(offset)", file: file, line: line)
         }
     }
-    
+
     func validateIndices() {
         XCTAssertEqual(collection.indices.count, count)
         for (offset, index) in collection.indices.enumerated() {
             XCTAssertEqual(index, indicesIncludingEnd[offset], "Index mismatch at offset \(offset) in `indices`", file: file, line: line)
         }
     }
-    
+
     func validateIndexComparisons() {
         for (offsetA, a) in indicesIncludingEnd.enumerated() {
             XCTAssertEqual(a, a, "Index at offset \(offsetA) does not equal itself", file: file, line: line)
             XCTAssertFalse(a < a, "Index at offset \(offsetA) is less than itself", file: file, line: line)
-            
+
             for (offsetB, b) in indicesIncludingEnd[..<offsetA].enumerated() {
                 XCTAssertNotEqual(a, b, "Index at offset \(offsetA) equals index at offset \(offsetB)", file: file, line: line)
                 XCTAssertLessThan(b, a, "Index at offset \(offsetB) is not less than index at offset \(offsetA)", file: file, line: line)
             }
         }
     }
-    
+
     func validateDistanceFromTo() {
         for (startOffset, start) in indicesIncludingEnd.enumerated() {
             for (endOffset, end) in indicesIncludingEnd.enumerated().dropFirst(startOffset) {
@@ -274,7 +278,7 @@ extension IndexValidator.Validator {
             }
         }
     }
-    
+
     func validateIndexOffsetBy() {
         for (startOffset, start) in indicesIncludingEnd.enumerated() {
             for (endOffset, end) in indicesIncludingEnd.enumerated().dropFirst(startOffset) {
@@ -283,7 +287,7 @@ extension IndexValidator.Validator {
             }
         }
     }
-    
+
     func validateIndexOffsetByLimitedBy() {
         for (startOffset, start) in indicesIncludingEnd.enumerated() {
             for (limitOffset, limit) in indicesIncludingEnd.enumerated() {
@@ -295,7 +299,7 @@ extension IndexValidator.Validator {
                     for targetOffset in range {
                         let distance = targetOffset - startOffset
                         let end = collection.index(start, offsetBy: distance, limitedBy: limit)
-                        
+
                         if pastLimit {
                             XCTAssertNil(end, "Index at offset \(startOffset) offset by \(distance) limited by index at offset \(limitOffset) does not equal `nil`", file: file, line: line)
                         } else {
@@ -303,14 +307,14 @@ extension IndexValidator.Validator {
                         }
                     }
                 }
-                
+
                 if limit >= start {
                     // the limit has an effect
-                    checkTargetRange(startOffset...limitOffset, pastLimit: false)
-                    checkTargetRange((limitOffset + 1)...(count + 1), pastLimit: true)
+                    checkTargetRange(startOffset ... limitOffset, pastLimit: false)
+                    checkTargetRange((limitOffset + 1) ... (count + 1), pastLimit: true)
                 } else {
                     // the limit has no effect
-                    checkTargetRange(startOffset...count, pastLimit: false)
+                    checkTargetRange(startOffset ... count, pastLimit: false)
                 }
             }
         }
@@ -320,23 +324,23 @@ extension IndexValidator.Validator {
 extension IndexValidator.Validator where C: BidirectionalCollection {
     func validateBackward(testRandomAccess: Bool) {
         validateIndexBefore()
-        
+
         if testRandomAccess {
             validateDistanceFromTo()
             validateIndexOffsetBy()
             validateIndexOffsetByLimitedBy()
         }
     }
-    
+
     func validateIndexBefore() {
         var index = collection.endIndex
-        
+
         for (offset, expected) in indicesIncludingEnd.enumerated().dropLast().reversed() {
             collection.formIndex(before: &index)
             XCTAssertEqual(index, expected, "`endIndex` decremented \(count - offset) times does not equal index at offset \(offset)", file: file, line: line)
         }
     }
-    
+
     func validateDistanceFromTo() {
         for (startOffset, start) in indicesIncludingEnd.enumerated() {
             for (endOffset, end) in indicesIncludingEnd.enumerated().prefix(startOffset) {
@@ -345,7 +349,7 @@ extension IndexValidator.Validator where C: BidirectionalCollection {
             }
         }
     }
-    
+
     func validateIndexOffsetBy() {
         for (startOffset, start) in indicesIncludingEnd.enumerated() {
             for (endOffset, end) in indicesIncludingEnd.enumerated().prefix(startOffset) {
@@ -354,7 +358,7 @@ extension IndexValidator.Validator where C: BidirectionalCollection {
             }
         }
     }
-    
+
     func validateIndexOffsetByLimitedBy() {
         for (startOffset, start) in indicesIncludingEnd.enumerated() {
             for (limitOffset, limit) in indicesIncludingEnd.enumerated() {
@@ -366,7 +370,7 @@ extension IndexValidator.Validator where C: BidirectionalCollection {
                     for targetOffset in range {
                         let distance = targetOffset - startOffset
                         let end = collection.index(start, offsetBy: distance, limitedBy: limit)
-                        
+
                         if pastLimit {
                             XCTAssertNil(end, "Index at offset \(startOffset) offset by \(distance) limited by index at offset \(limitOffset) does not equal `nil`", file: file, line: line)
                         } else {
@@ -374,14 +378,14 @@ extension IndexValidator.Validator where C: BidirectionalCollection {
                         }
                     }
                 }
-                
+
                 if limit <= start {
                     // the limit has an effect
-                    checkTargetRange(limitOffset...startOffset, pastLimit: false)
-                    checkTargetRange(-1...(limitOffset - 1), pastLimit: true)
+                    checkTargetRange(limitOffset ... startOffset, pastLimit: false)
+                    checkTargetRange(-1 ... (limitOffset - 1), pastLimit: true)
                 } else {
                     // the limit has no effect
-                    checkTargetRange(0...startOffset, pastLimit: false)
+                    checkTargetRange(0 ... startOffset, pastLimit: false)
                 }
             }
         }

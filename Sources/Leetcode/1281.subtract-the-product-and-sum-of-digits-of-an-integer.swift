@@ -12,16 +12,16 @@ extension Solution {
      给你一个整数 n，请你帮忙计算并返回该整数「各位数字之积」与「各位数字之和」的差。
      */
     func subtractProductAndSum(_ n: Int) -> Int {
-        var multiply: Int = 1
-        var add: Int = 0
-        
+        var multiply = 1
+        var add = 0
+
         var num: Int = n
         while num != 0 {
             let d = num % 10
-            
+
             multiply *= d
             add += d
-            
+
             num /= 10
         }
         return multiply - add

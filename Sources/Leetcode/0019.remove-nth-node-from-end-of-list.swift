@@ -15,7 +15,7 @@ extension Solution {
         let dummy = ListNode(0)
         dummy.next = head
         var fast: ListNode? = dummy
-        for _ in 0..<n + 1 {
+        for _ in 0 ..< n + 1 {
             fast = fast?.next
         }
         var slow: ListNode? = dummy

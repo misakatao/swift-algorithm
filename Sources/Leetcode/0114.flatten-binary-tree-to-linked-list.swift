@@ -29,13 +29,13 @@ extension Solution {
         guard let node = root else { return }
         flatten(node.left)
         flatten(node.right)
-        
+
         let left = node.left
         let right = node.right
-        
+
         node.left = nil
         node.right = left
-        
+
         var p: TreeNode? = node
         while p?.right != nil {
             p = p?.right

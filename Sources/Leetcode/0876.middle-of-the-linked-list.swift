@@ -19,7 +19,7 @@ extension Solution {
 
         var fast: ListNode? = dummy
         var slow: ListNode? = head
-        while fast != nil && fast?.next != nil {
+        while fast != nil, fast?.next != nil {
             fast = fast?.next?.next
             slow = slow?.next
         }

@@ -17,7 +17,7 @@ extension Solution {
      */
     func searchRange(_ nums: [Int], _ target: Int) -> [Int] {
         func leftBound() -> Int {
-            var left: Int = 0
+            var left = 0
             var right: Int = nums.count
             while left < right { // left = right 时终止
                 let mid = left + (right - left) / 2
@@ -35,7 +35,7 @@ extension Solution {
             }
             return nums[left] == target ? left : -1
         }
-        
+
         func rightBound(_ l: Int) -> Int {
             var left: Int = l
             var right: Int = nums.count - 1
@@ -55,7 +55,7 @@ extension Solution {
             }
             return nums[right] == target ? right : -1
         }
-        
+
         let left = leftBound()
         if left == -1 { return [-1, -1] }
         return [left, rightBound(left)]

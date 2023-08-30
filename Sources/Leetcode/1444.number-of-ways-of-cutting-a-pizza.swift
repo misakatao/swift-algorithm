@@ -16,15 +16,14 @@ extension Solution {
      请你返回确保每一块披萨包含 至少 一个苹果的切披萨方案数。由于答案可能是个很大的数字，请你返回它对 10^9 + 7 取余的结果。
      */
     func ways(_ pizza: [String], _ k: Int) -> Int {
-        
         let module = Int(1e9 + 7)
-        
+
         let rows: Int = pizza.count
         let cols: Int = pizza[0].count
-        
+
         // sumA[r][c] = pizza[r:,c:] 中的苹果数量。这种方法叫：二维前缀和
         var sumA: [[Int]] = Array(repeating: Array(repeating: 0, count: cols + 1), count: rows + 1)
-        
+
         // 记忆化递归 —— 记忆表（3个参数3维）
         var dp: [[[Int]]] = Array(repeating: Array(repeating: Array(repeating: -1, count: k), count: cols), count: rows)
 
@@ -40,11 +39,11 @@ extension Solution {
                 return dp[row][col][remain]
             }
             if remain == 0 {
-                //当前子 pizza 含有 apple 时算 1 种。否则无 apple 算 0 种
+                // 当前子 pizza 含有 apple 时算 1 种。否则无 apple 算 0 种
                 dp[row][col][remain] = (sumA[row][col] > 0 ? 1 : 0)
                 return dp[row][col][remain]
             }
-            var cnt: Int = 0
+            var cnt = 0
             // 定义FAR（first apple row）为当前子pizza中从上往下首个包含苹果的行（不存在🍎取inf 无穷大）
             // 定义FAC（first apple col）为当前子pizza中从左往右首个包含苹果的列（如 pizza[5:,5:]的FAR=FAC=inf）
             var nr = row
@@ -54,7 +53,7 @@ extension Solution {
                 nr += 1
             }
             // 递归 pizza[r:, c:] 切法结果
-            for i in nr..<rows { // 切为 [row, nr) 行和 [nr, rows) 行
+            for i in nr ..< rows { // 切为 [row, nr) 行和 [nr, rows) 行
                 cnt = (cnt + dfs(i, col, remain - 1)) % module
             }
 
@@ -62,7 +61,7 @@ extension Solution {
             while nc < cols && sumA[row][col] == sumA[row][nc] {
                 nc += 1
             }
-            for j in nc..<cols { // 切为 [col, nc) 列和 [nc, cols) 列
+            for j in nc ..< cols { // 切为 [col, nc) 列和 [nc, cols) 列
                 cnt = (cnt + dfs(row, j, remain - 1)) % module
             }
 
@@ -78,35 +77,35 @@ extension Solution {
         }
         return dfs(0, 0, k - 1)
     }
-    
+
     func ways2(_ pizza: [String], _ k: Int) -> Int {
         let module = Int(1e9 + 7)
-        
+
         let rows: Int = pizza.count
         let cols: Int = pizza[0].count
-        
+
         var sumA: [[Int]] = Array(repeating: Array(repeating: 0, count: cols + 1), count: rows + 1)
 
         var dp: [[[Int]]] = Array(repeating: Array(repeating: Array(repeating: 0, count: cols + 1), count: rows + 1), count: k + 1)
-        
-        for r in (0..<rows).reversed() {
-            for c in (0..<cols).reversed() {
+
+        for r in (0 ..< rows).reversed() {
+            for c in (0 ..< cols).reversed() {
                 sumA[r][c] = (Array(pizza[r])[c] == "A" ? 1 : 0) + sumA[r + 1][c] + sumA[r][c + 1] - sumA[r + 1][c + 1]
                 dp[1][r][c] = sumA[r][c] > 0 ? 1 : 0
             }
         }
-        
-        for ki in 2..<(k + 1) {
-            for r in 0..<rows {
-                for c in 0..<cols {
+
+        for ki in 2 ..< (k + 1) {
+            for r in 0 ..< rows {
+                for c in 0 ..< cols {
                     // 水平方向
-                    for nr in (r + 1)..<rows {
+                    for nr in (r + 1) ..< rows {
                         if sumA[r][c] > sumA[nr][c] {
                             dp[ki][r][c] = (dp[ki][r][c] + dp[ki - 1][nr][c]) % module
                         }
                     }
                     // 垂直方向
-                    for nc in (c + 1)..<cols {
+                    for nc in (c + 1) ..< cols {
                         if sumA[r][c] > sumA[r][nc] {
                             dp[ki][r][c] = (dp[ki][r][c] + dp[ki - 1][r][nc]) % module
                         }
@@ -114,8 +113,7 @@ extension Solution {
                 }
             }
         }
-        
+
         return dp[k][0][0]
     }
-    
 }

@@ -25,8 +25,8 @@ extension Solution {
     func convert(_ s: String, _ numRows: Int) -> String {
         if numRows < 2 { return s }
         var res: [String] = Array(repeating: "", count: numRows)
-        var i: Int = 0
-        var flag: Bool = false
+        var i = 0
+        var flag = false
         for ch in Array(s) {
             res[i] += String(ch)
             if i == 0 || i == numRows - 1 {

@@ -16,19 +16,19 @@ extension Solution {
     func subsets(_ nums: [Int]) -> [[Int]] {
         var res: [[Int]] = []
         var track: [Int] = []
-        
+
         func backtrack(_ index: Int) {
             res.append(track)
-            
-            for i in index..<nums.count {
+
+            for i in index ..< nums.count {
                 track.append(nums[i])
                 backtrack(i + 1)
                 track.removeLast()
             }
         }
-        
+
         backtrack(0)
-        
+
         return res
     }
 }

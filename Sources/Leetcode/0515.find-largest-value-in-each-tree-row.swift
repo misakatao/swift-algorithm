@@ -34,7 +34,7 @@ extension Solution {
 //        }
         func traverse(_ node: TreeNode?, _ depth: Int) {
             guard let node = node else { return }
-            
+
             if res.count <= depth {
                 res.append(node.val)
             } else {

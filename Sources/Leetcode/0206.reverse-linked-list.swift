@@ -21,7 +21,7 @@ extension Solution {
 //            cur = next
 //        }
 //        return pre
-        
+
         if head == nil || head?.next == nil { return nil }
         let last = reverseList(head?.next)
         head?.next?.next = head
