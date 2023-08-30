@@ -25,31 +25,50 @@ public class TreeNode: Hashable {
             let sz = queue.count
             for _ in 0 ..< sz {
                 let node = queue.removeFirst()
+                if node == nil {
+                    res.append("null")
+                    continue
+                }
                 if let val = node?.val {
                     res.append("\(val)")
-                } else {
-                    res.append("null")
                 }
-                if let left = node?.left {
-                    queue.append(left)
-                }
-                if let right = node?.right {
-                    queue.append(right)
-                }
+                queue.append(node?.left)
+                queue.append(node?.right)
             }
         }
         return "[\(res.joined(separator: ","))]"
     }
-
-    public var postSerialize: String {
-        return "[" + postSerialize(self) + "]"
+    
+    public var preSerialize: String {
+        var strings: [String] = []
+        preSerialize(self, &strings)
+        return "[" + strings.joined(separator: ",") + "]"
     }
 
-    private func postSerialize(_ node: TreeNode?) -> String {
-        guard let node = node else { return "null" }
-        let left = postSerialize(node.left)
-        let right = postSerialize(node.right)
-        return "\(left),\(right),\(node.val)"
+    public var postSerialize: String {
+        var strings: [String] = []
+        postSerialize(self, &strings)
+        return "[" + strings.joined(separator: ",") + "]"
+    }
+    
+    private func preSerialize(_ node: TreeNode?, _ strings: inout [String]) {
+        guard let node = node else {
+            strings.append("null")
+            return
+        }
+        strings.append("\(node.val)")
+        preSerialize(node.left, &strings)
+        preSerialize(node.right, &strings)
+    }
+
+    private func postSerialize(_ node: TreeNode?, _ strings: inout [String]) {
+        guard let node = node else {
+            strings.append("null")
+            return
+        }
+        postSerialize(node.left, &strings)
+        postSerialize(node.right, &strings)
+        strings.append("\(node.val)")
     }
 
     public func hash(into hasher: inout Hasher) {
