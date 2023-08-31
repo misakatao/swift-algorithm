@@ -52,7 +52,7 @@ class Codec {
     
     func deserialize(_ data: String) -> TreeNode? {
         if data.isEmpty { return nil }
-        var nodes = data.split(separator: ",")
+        let nodes = data.split(separator: ",")
 //        func traverse(_ nodes: inout [Substring]) -> TreeNode? {
 //            if nodes.isEmpty { return nil }
 //            // 前序遍历
