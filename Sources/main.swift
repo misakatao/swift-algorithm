@@ -289,6 +289,12 @@ func testCase_309() {
     print("耗时: \(measureTime { print("示例3: \(s.maxProfit5(makeMaxProfits()))") }) ms")
 }
 
+func testCase_315() {
+    print("耗时: \(measureTime { print("示例1: \(s.countSmaller([5, 2, 6, 1]))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.countSmaller([-1]))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.countSmaller([-1, -1]))") }) ms")
+}
+
 func testCase_316() {
     print("耗时: \(measureTime { print("示例1: \(s.removeDuplicateLetters("bcabc"))") }) ms")
     print("耗时: \(measureTime { print("示例2: \(s.removeDuplicateLetters("cbacdcbc"))") }) ms")
@@ -539,6 +545,7 @@ func testCase_2682() {
 // testCase_228()
 // testCase_297()
 // testCase_309()
+testCase_315()
 // testCase_316()
 // testCase_322()
 // testCase_337()
@@ -559,7 +566,7 @@ func testCase_2682() {
 // testCase_849()
 // testCase_870()
 // testCase_875()
- testCase_912()
+// testCase_912()
 // testCase_1011()
 // testCase_1094()
 // testCase_1109()
