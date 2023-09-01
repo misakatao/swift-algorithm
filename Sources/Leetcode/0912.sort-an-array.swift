@@ -231,10 +231,6 @@ class MergeSort {
             let mid = lo + (hi - lo) / 2
             sort(&nums, lo, mid)
             sort(&nums, mid + 1, hi)
-            merge(&nums, lo, mid, hi)
-        }
-        
-        func merge(_ nums: inout [Int], _ lo: Int, _ mid: Int, _ hi: Int) {
             
             for i in lo ... hi {
                 temp[i] = nums[i]
@@ -258,7 +254,6 @@ class MergeSort {
                 }
             }
         }
-        
         sort(&nums, 0, nums.count - 1)
     }
     
