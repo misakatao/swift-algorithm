@@ -26,9 +26,7 @@ extension Solution {
             let mid = lo + (hi - lo) / 2
             sort(lo, mid)
             sort(mid + 1, hi)
-            merge(lo, mid, hi)
-        }
-        func merge(_ lo: Int, _ mid: Int, _ hi: Int) {
+            
             for i in lo ... hi {
                 temp[i] = pairs[i]
             }

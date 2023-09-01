@@ -504,6 +504,11 @@ func testCase_2237() {
     print("耗时: \(measureTime { print("示例4: \(s.canChange("_L__R__R_L", "L______RR_"))") }) ms")
 }
 
+func testCase_2240() {
+    print("耗时: \(measureTime { print("示例1: \(s.waysToBuyPensPencils(20, 10, 5))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.waysToBuyPensPencils(5, 10, 10))") }) ms")
+}
+
 func testCase_2682() {
     print("耗时: \(measureTime { print("示例1: \(s.circularGameLosers(5, 2))") }) ms")
     print("耗时: \(measureTime { print("示例2: \(s.circularGameLosers(4, 4))") }) ms")
@@ -545,7 +550,7 @@ func testCase_2682() {
 // testCase_228()
 // testCase_297()
 // testCase_309()
-testCase_315()
+// testCase_315()
 // testCase_316()
 // testCase_322()
 // testCase_337()
@@ -580,3 +585,4 @@ testCase_315()
 // testCase_1782()
 // testCase_2237()
 // testCase_2682()
+testCase_2240()
