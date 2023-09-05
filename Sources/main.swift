@@ -153,6 +153,12 @@ func testCase_40() {
     print("耗时: \(measureTime { printJSON("示例1: \(s.combinationSum2([10, 1, 2, 7, 6, 1, 5], 8))") }) ms")
 }
 
+func testCase_41() {
+    print("耗时: \(measureTime { print("示例1: \(s.firstMissingPositive([1, 2, 0]))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.firstMissingPositive([3, 4, -1, 1]))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.firstMissingPositive([7, 8, 9, 11, 12]))") }) ms")
+}
+
 func testCase_42() {
     print("耗时: \(measureTime { print("示例1: \(s.trap([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]))") }) ms")
     print("耗时: \(measureTime { print("示例2: \(s.trap([4, 2, 0, 3, 2, 5]))") }) ms")
@@ -527,6 +533,7 @@ func testCase_2682() {
 // testCase_34()
 // testCase_39()
 // testCase_40()
+testCase_41()
 // testCase_42()
 // testCase_46()
 // testCase_48()
@@ -585,4 +592,4 @@ func testCase_2682() {
 // testCase_1782()
 // testCase_2237()
 // testCase_2682()
-testCase_2240()
+// testCase_2240()
