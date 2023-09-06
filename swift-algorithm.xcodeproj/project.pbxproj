@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E50607E32AA5DF660083311B /* 0041.first-missing-positive.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50607E22AA5DF660083311B /* 0041.first-missing-positive.swift */; };
+		E50608122AA876A90083311B /* 0865.smallest-subtree-with-all-the-deepest-nodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50608112AA876A90083311B /* 0865.smallest-subtree-with-all-the-deepest-nodes.swift */; };
 		E52E1B1B2A9C38CE008DFCF8 /* 0228.summary-ranges.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52E1B1A2A9C38CE008DFCF8 /* 0228.summary-ranges.swift */; };
 		E52E1B1D2A9C7082008DFCF8 /* 0056.merge-intervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52E1B1C2A9C7082008DFCF8 /* 0056.merge-intervals.swift */; };
 		E52E1B1F2A9C73B3008DFCF8 /* 0057.insert-interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52E1B1E2A9C73B3008DFCF8 /* 0057.insert-interval.swift */; };
@@ -176,6 +177,7 @@
 
 /* Begin PBXFileReference section */
 		E50607E22AA5DF660083311B /* 0041.first-missing-positive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0041.first-missing-positive.swift"; sourceTree = "<group>"; };
+		E50608112AA876A90083311B /* 0865.smallest-subtree-with-all-the-deepest-nodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0865.smallest-subtree-with-all-the-deepest-nodes.swift"; sourceTree = "<group>"; };
 		E52E1B1A2A9C38CE008DFCF8 /* 0228.summary-ranges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0228.summary-ranges.swift"; sourceTree = "<group>"; };
 		E52E1B1C2A9C7082008DFCF8 /* 0056.merge-intervals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0056.merge-intervals.swift"; sourceTree = "<group>"; };
 		E52E1B1E2A9C73B3008DFCF8 /* 0057.insert-interval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0057.insert-interval.swift"; sourceTree = "<group>"; };
@@ -518,6 +520,7 @@
 				E52E1B2C2A9D858D008DFCF8 /* 0823.binary-trees-with-factors.swift */,
 				E5A9B1442A8B29CE00099C3C /* 0833.find-and-replace-in-string.swift */,
 				E54FC5E62A946625001768B8 /* 0849.maximize-distance-to-closest-person.swift */,
+				E50608112AA876A90083311B /* 0865.smallest-subtree-with-all-the-deepest-nodes.swift */,
 				E54FC6042A970E88001768B8 /* 0870.advantage-shuffle.swift */,
 				E54FC5FC2A960EC5001768B8 /* 0875.koko-eating-bananas.swift */,
 				E5801B7F2A89FEA00088B018 /* 0876.middle-of-the-linked-list.swift */,
@@ -733,6 +736,7 @@
 				E57677982A84BB1F00B6F386 /* 0188.best-time-to-buy-and-sell-stock-iv.swift in Sources */,
 				E5512D122A81EC8700602494 /* 0189.rotate-array.swift in Sources */,
 				E54FC5E92A94923A001768B8 /* 0198.house-robber.swift in Sources */,
+				E50608122AA876A90083311B /* 0865.smallest-subtree-with-all-the-deepest-nodes.swift in Sources */,
 				E5801B882A8A1CDA0088B018 /* 0206.reverse-linked-list.swift in Sources */,
 				E54FC5EB2A949BD9001768B8 /* 0213.house-robber-ii.swift in Sources */,
 				E52E1B252A9C9838008DFCF8 /* 0226.invert-binary-tree.swift in Sources */,
