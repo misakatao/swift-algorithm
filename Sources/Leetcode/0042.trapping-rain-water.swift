@@ -17,22 +17,22 @@ extension Solution {
 
         var res = 0
 
-        var dp: [[Int]] = Array(repeating: Array(repeating: 0, count: 2), count: count)
-        dp[0][0] = 0
-        dp[0][1] = 0
-
-        for i in 1 ..< count - 1 {
-            dp[i][0] = max(dp[i - 1][0], height[i])
-            dp[i][1] = max(dp[i + 1][1], height[i])
-
-            let min = min(dp[i][0], dp[i][1])
-
-            print("左: \(dp[i][0]) | \(height[i]) | 右: \(dp[i][1])")
-
-            if min > height[i] {
-                res += min - height[i]
-            }
-        }
+//        var dp: [[Int]] = Array(repeating: Array(repeating: 0, count: 2), count: count)
+//        dp[0][0] = 0
+//        dp[0][1] = 0
+//
+//        for i in 1 ..< count - 1 {
+//            dp[i][0] = max(dp[i - 1][0], height[i])
+//            dp[i][1] = max(dp[i + 1][1], height[i])
+//
+//            let min = min(dp[i][0], dp[i][1])
+//
+//            // print("左: \(dp[i][0]) | \(height[i]) | 右: \(dp[i][1])")
+//
+//            if min > height[i] {
+//                res += min - height[i]
+//            }
+//        }
 
 //        var leftMax: [Int] = Array(repeating: 0, count: count)
 //        leftMax[0] = height[0]
@@ -40,16 +40,13 @@ extension Solution {
 //        var rightMax: [Int] = Array(repeating: 0, count: count)
 //        rightMax[count - 1] = height[count - 1]
 //
-//        for i in 1..<count - 1 {
+//        for i in 1 ..< count - 1 {
 //            leftMax[i] = max(leftMax[i - 1], height[i - 1])
 //        }
-//        print(leftMax)
 //
-//        for i in stride(from: count - 2, through: 0, by: -1) {
+//        for i in (0 ..< count - 1).reversed() {
 //            rightMax[i] = max(rightMax[i + 1], height[i + 1])
 //        }
-//        print(rightMax)
-//
 //
 //        for i in 1..<count - 1 {
 //            let min = min(leftMax[i], rightMax[i])
@@ -57,6 +54,24 @@ extension Solution {
 //                res += min - height[i]
 //            }
 //        }
+        
+        var left = 1
+        var lMax = height[0]
+        var right = height.count - 2
+        var rMax = height[height.count - 1]
+
+        while left <= right {
+            if lMax < rMax {
+                res += max(0, lMax - height[left])
+                lMax = max(lMax, height[left])
+                left += 1
+            } else {
+                res += max(0, rMax - height[right])
+                rMax = max(rMax, height[right])
+                right -= 1
+            }
+        }
+        
         return res
     }
 }
