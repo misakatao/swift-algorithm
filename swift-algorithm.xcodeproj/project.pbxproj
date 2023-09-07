@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		E50607E32AA5DF660083311B /* 0041.first-missing-positive.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50607E22AA5DF660083311B /* 0041.first-missing-positive.swift */; };
 		E50608122AA876A90083311B /* 0865.smallest-subtree-with-all-the-deepest-nodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50608112AA876A90083311B /* 0865.smallest-subtree-with-all-the-deepest-nodes.swift */; };
+		E50608142AA965CF0083311B /* 2594.minimum-time-to-repair-cars.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50608132AA965CF0083311B /* 2594.minimum-time-to-repair-cars.swift */; };
+		E50608162AA973E40083311B /* 2439.minimize-maximum-of-array.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50608152AA973E40083311B /* 2439.minimize-maximum-of-array.swift */; };
+		E50608182AA97CF60083311B /* 2226.maximum-candies-allocated-to-k-children.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50608172AA97CF60083311B /* 2226.maximum-candies-allocated-to-k-children.swift */; };
+		E506081A2AA980BA0083311B /* 2187.minimum-time-to-complete-trips.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50608192AA980BA0083311B /* 2187.minimum-time-to-complete-trips.swift */; };
 		E52E1B1B2A9C38CE008DFCF8 /* 0228.summary-ranges.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52E1B1A2A9C38CE008DFCF8 /* 0228.summary-ranges.swift */; };
 		E52E1B1D2A9C7082008DFCF8 /* 0056.merge-intervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52E1B1C2A9C7082008DFCF8 /* 0056.merge-intervals.swift */; };
 		E52E1B1F2A9C73B3008DFCF8 /* 0057.insert-interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52E1B1E2A9C73B3008DFCF8 /* 0057.insert-interval.swift */; };
@@ -178,6 +182,10 @@
 /* Begin PBXFileReference section */
 		E50607E22AA5DF660083311B /* 0041.first-missing-positive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0041.first-missing-positive.swift"; sourceTree = "<group>"; };
 		E50608112AA876A90083311B /* 0865.smallest-subtree-with-all-the-deepest-nodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0865.smallest-subtree-with-all-the-deepest-nodes.swift"; sourceTree = "<group>"; };
+		E50608132AA965CF0083311B /* 2594.minimum-time-to-repair-cars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2594.minimum-time-to-repair-cars.swift"; sourceTree = "<group>"; };
+		E50608152AA973E40083311B /* 2439.minimize-maximum-of-array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2439.minimize-maximum-of-array.swift"; sourceTree = "<group>"; };
+		E50608172AA97CF60083311B /* 2226.maximum-candies-allocated-to-k-children.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2226.maximum-candies-allocated-to-k-children.swift"; sourceTree = "<group>"; };
+		E50608192AA980BA0083311B /* 2187.minimum-time-to-complete-trips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2187.minimum-time-to-complete-trips.swift"; sourceTree = "<group>"; };
 		E52E1B1A2A9C38CE008DFCF8 /* 0228.summary-ranges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0228.summary-ranges.swift"; sourceTree = "<group>"; };
 		E52E1B1C2A9C7082008DFCF8 /* 0056.merge-intervals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0056.merge-intervals.swift"; sourceTree = "<group>"; };
 		E52E1B1E2A9C73B3008DFCF8 /* 0057.insert-interval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0057.insert-interval.swift"; sourceTree = "<group>"; };
@@ -541,8 +549,12 @@
 				E5F07A3E2AA0318D00CFA6BD /* 1761.minimum-degree-of-a-connected-trio-in-a-graph:description.swift */,
 				E54FC5F42A95AE47001768B8 /* 1782.count-pairs-of-nodes.swift */,
 				E580B8702AA583D300020F4D /* 1921.eliminate-maximum-number-of-monsters.swift */,
+				E50608192AA980BA0083311B /* 2187.minimum-time-to-complete-trips.swift */,
+				E50608172AA97CF60083311B /* 2226.maximum-candies-allocated-to-k-children.swift */,
 				E54FC5F22A95A882001768B8 /* 2237.move-pieces-to-obtain-a-string.swift */,
 				E580B85E2AA1BCE400020F4D /* 2240.number-of-ways-to-buy-pens-and-pencils.swift */,
+				E50608152AA973E40083311B /* 2439.minimize-maximum-of-array.swift */,
+				E50608132AA965CF0083311B /* 2594.minimum-time-to-repair-cars.swift */,
 				E54FC5C02A8C9ADD001768B8 /* 2682.find-the-losers-of-the-circular-game.swift */,
 				E5512CD12A7A454400602494 /* Common */,
 			);
@@ -736,7 +748,6 @@
 				E57677982A84BB1F00B6F386 /* 0188.best-time-to-buy-and-sell-stock-iv.swift in Sources */,
 				E5512D122A81EC8700602494 /* 0189.rotate-array.swift in Sources */,
 				E54FC5E92A94923A001768B8 /* 0198.house-robber.swift in Sources */,
-				E50608122AA876A90083311B /* 0865.smallest-subtree-with-all-the-deepest-nodes.swift in Sources */,
 				E5801B882A8A1CDA0088B018 /* 0206.reverse-linked-list.swift in Sources */,
 				E54FC5EB2A949BD9001768B8 /* 0213.house-robber-ii.swift in Sources */,
 				E52E1B252A9C9838008DFCF8 /* 0226.invert-binary-tree.swift in Sources */,
@@ -782,6 +793,7 @@
 				E52E1B2D2A9D858D008DFCF8 /* 0823.binary-trees-with-factors.swift in Sources */,
 				E5A9B1452A8B29CE00099C3C /* 0833.find-and-replace-in-string.swift in Sources */,
 				E54FC5E72A946625001768B8 /* 0849.maximize-distance-to-closest-person.swift in Sources */,
+				E50608122AA876A90083311B /* 0865.smallest-subtree-with-all-the-deepest-nodes.swift in Sources */,
 				E54FC6052A970E88001768B8 /* 0870.advantage-shuffle.swift in Sources */,
 				E54FC5FD2A960EC5001768B8 /* 0875.koko-eating-bananas.swift in Sources */,
 				E5801B802A89FEA00088B018 /* 0876.middle-of-the-linked-list.swift in Sources */,
@@ -802,8 +814,12 @@
 				E5F07A3F2AA0318D00CFA6BD /* 1761.minimum-degree-of-a-connected-trio-in-a-graph:description.swift in Sources */,
 				E54FC5F52A95AE47001768B8 /* 1782.count-pairs-of-nodes.swift in Sources */,
 				E580B8712AA583D300020F4D /* 1921.eliminate-maximum-number-of-monsters.swift in Sources */,
+				E506081A2AA980BA0083311B /* 2187.minimum-time-to-complete-trips.swift in Sources */,
+				E50608182AA97CF60083311B /* 2226.maximum-candies-allocated-to-k-children.swift in Sources */,
 				E54FC5F32A95A882001768B8 /* 2237.move-pieces-to-obtain-a-string.swift in Sources */,
 				E580B85F2AA1BCE400020F4D /* 2240.number-of-ways-to-buy-pens-and-pencils.swift in Sources */,
+				E50608162AA973E40083311B /* 2439.minimize-maximum-of-array.swift in Sources */,
+				E50608142AA965CF0083311B /* 2594.minimum-time-to-repair-cars.swift in Sources */,
 				E54FC5C12A8C9ADD001768B8 /* 2682.find-the-losers-of-the-circular-game.swift in Sources */,
 				E54FC6302A973C94001768B8 /* Difference.swift in Sources */,
 				E5801B7C2A89D4EA0088B018 /* Heap.swift in Sources */,
