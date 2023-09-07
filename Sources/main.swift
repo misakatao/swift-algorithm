@@ -503,6 +503,13 @@ func testCase_1782() {
     print("耗时: \(measureTime { print("示例2: \(s.countPairs(5, [[1, 5], [1, 5], [3, 4], [2, 5], [1, 3], [5, 1], [2, 3], [2, 5]], [1, 2, 3, 4, 5]))") }) ms")
 }
 
+func testCase_2187() {
+    print("耗时: \(measureTime { print("示例1: \(s.minimumTime([1, 2, 3], 5))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.minimumTime([2], 1))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.minimumTime([5, 10, 10], 9))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.minimumTime([9, 3, 10, 5], 2))") }) ms")
+}
+
 func testCase_2237() {
     print("耗时: \(measureTime { print("示例1: \(s.canChange("_L__R__R_", "L______RR"))") }) ms")
     print("耗时: \(measureTime { print("示例2: \(s.canChange("R_L_", "__LR"))") }) ms")
@@ -513,6 +520,17 @@ func testCase_2237() {
 func testCase_2240() {
     print("耗时: \(measureTime { print("示例1: \(s.waysToBuyPensPencils(20, 10, 5))") }) ms")
     print("耗时: \(measureTime { print("示例2: \(s.waysToBuyPensPencils(5, 10, 10))") }) ms")
+}
+
+func testCase_2439() {
+    print("耗时: \(measureTime { print("示例1: \(s.minimizeArrayValue([3, 7, 1, 6]))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.minimizeArrayValue([10, 1]))") }) ms")
+}
+
+func testCase_2594() {
+    print("耗时: \(measureTime { print("示例1: \(s.repairCars([4, 2, 3, 1], 10))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.repairCars([5, 1, 8], 6))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.repairCars([31, 31, 5, 19, 19, 10, 31, 18, 19, 3, 16, 20, 4, 16, 2, 25, 10, 16, 23, 18, 21, 23, 28, 6, 7, 29, 11, 11, 19, 20, 24, 19, 26, 12, 29, 29, 1, 14, 17, 26, 24, 7, 11, 28, 22, 14, 31, 12, 3, 19, 16, 26, 11], 736185))") }) ms")
 }
 
 func testCase_2682() {
@@ -534,7 +552,7 @@ func testCase_2682() {
 // testCase_39()
 // testCase_40()
 // testCase_41()
-testCase_42()
+// testCase_42()
 // testCase_46()
 // testCase_48()
 // testCase_51()
@@ -590,6 +608,9 @@ testCase_42()
 // testCase_1654()
 // testCase_1749()
 // testCase_1782()
+testCase_2187()
 // testCase_2237()
-// testCase_2682()
 // testCase_2240()
+// testCase_2439()
+// testCase_2594()
+// testCase_2682()
