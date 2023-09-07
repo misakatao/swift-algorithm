@@ -16,8 +16,8 @@ extension Solution {
      满足条件的二叉树一共有多少个？答案可能很大，返回 对 109 + 7 取余 的结果。
      */
     func numFactoredBinaryTrees(_ arr: [Int]) -> Int {
-//        let module = Int(1e9 + 7)
-//        let arr = arr.sorted()
+        let mod = Int(1e9 + 7)
+        let arr = arr.sorted()
 //        var dp: [Int] = Array(repeating: 0, count: arr.count)
 //        var res: Int = 0
 //        for i in 0..<arr.count {
@@ -30,19 +30,17 @@ extension Solution {
 //                }
 //                if right >= left && (arr[left] * arr[right]) == arr[i] {
 //                    if right != left {
-//                        dp[i] = (dp[i] + dp[left] * dp[right] * 2) % module
+//                        dp[i] = (dp[i] + dp[left] * dp[right] * 2) % mod
 //                    } else {
-//                        dp[i] = (dp[i] + dp[left] * dp[right]) % module
+//                        dp[i] = (dp[i] + dp[left] * dp[right]) % mod
 //                    }
 //                }
 //                left += 1
 //            }
-//            res = (res + dp[i]) % module
+//            res = (res + dp[i]) % mod
 //        }
 //        return res
 
-//        let module = Int(1e9 + 7)
-//        let arr = arr.sorted()
 //        var memo: [Int : Int] = [:]
 //        for i in 0..<arr.count {
 //            memo[arr[i]] = 1
@@ -65,10 +63,8 @@ extension Solution {
 //        for (_, v) in memo {
 //            res += v
 //        }
-//        return res % module
+//        return res % mod
 
-//        let module = Int(1e9 + 7)
-//        let arr = arr.sorted()
 //        var idx: [Int : Int] = [:]
 //        for i in 0..<arr.count {
 //            idx[arr[i]] = i
@@ -94,10 +90,8 @@ extension Solution {
 //            return res
 //        }
 //
-//        return res % module
+//        return res % mod
 
-        let module = Int(1e9 + 7)
-        let arr = arr.sorted()
         var idx: [Int: Int] = [:]
         for i in 0 ..< arr.count {
             idx[arr[i]] = i
@@ -122,6 +116,6 @@ extension Solution {
             }
             res += dp[i]
         }
-        return res % module
+        return res % mod
     }
 }

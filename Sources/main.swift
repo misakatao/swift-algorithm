@@ -437,6 +437,12 @@ func testCase_875() {
     print("耗时: \(measureTime { print("示例3: \(s.minEatingSpeed([30, 11, 23, 4, 20], 6))") }) ms")
 }
 
+func testCase_878() {
+    print("耗时: \(measureTime { print("示例1: \(s.nthMagicalNumber(1, 2, 3))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.nthMagicalNumber(4, 2, 3))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.nthMagicalNumber(6, 2, 3))") }) ms")
+}
+
 func testCase_912() {
     print("耗时: \(measureTime { print("示例0: \(s.sortArray([]))") }) ms")
     print("耗时: \(measureTime { print("示例0: \(s.sortArray([1]))") }) ms")
@@ -596,6 +602,7 @@ func testCase_2682() {
 // testCase_849()
 // testCase_870()
 // testCase_875()
+testCase_878()
 // testCase_912()
 // testCase_1011()
 // testCase_1094()
@@ -608,7 +615,7 @@ func testCase_2682() {
 // testCase_1654()
 // testCase_1749()
 // testCase_1782()
-testCase_2187()
+// testCase_2187()
 // testCase_2237()
 // testCase_2240()
 // testCase_2439()
