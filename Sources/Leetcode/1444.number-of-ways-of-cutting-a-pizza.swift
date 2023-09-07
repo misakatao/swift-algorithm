@@ -16,7 +16,7 @@ extension Solution {
      请你返回确保每一块披萨包含 至少 一个苹果的切披萨方案数。由于答案可能是个很大的数字，请你返回它对 10^9 + 7 取余的结果。
      */
     func ways(_ pizza: [String], _ k: Int) -> Int {
-        let module = Int(1e9 + 7)
+        let mod = Int(1e9 + 7)
 
         let rows: Int = pizza.count
         let cols: Int = pizza[0].count
@@ -54,7 +54,7 @@ extension Solution {
             }
             // 递归 pizza[r:, c:] 切法结果
             for i in nr ..< rows { // 切为 [row, nr) 行和 [nr, rows) 行
-                cnt = (cnt + dfs(i, col, remain - 1)) % module
+                cnt = (cnt + dfs(i, col, remain - 1)) % mod
             }
 
             // 要保证 row 行及以下 [col, nc) 列有苹果，跳出循环后 nc == FAC + 1
@@ -62,7 +62,7 @@ extension Solution {
                 nc += 1
             }
             for j in nc ..< cols { // 切为 [col, nc) 列和 [nc, cols) 列
-                cnt = (cnt + dfs(row, j, remain - 1)) % module
+                cnt = (cnt + dfs(row, j, remain - 1)) % mod
             }
 
             // 记忆化递归 —— 记录结果
@@ -79,7 +79,7 @@ extension Solution {
     }
 
     func ways2(_ pizza: [String], _ k: Int) -> Int {
-        let module = Int(1e9 + 7)
+        let mod = Int(1e9 + 7)
 
         let rows: Int = pizza.count
         let cols: Int = pizza[0].count
@@ -101,13 +101,13 @@ extension Solution {
                     // 水平方向
                     for nr in (r + 1) ..< rows {
                         if sumA[r][c] > sumA[nr][c] {
-                            dp[ki][r][c] = (dp[ki][r][c] + dp[ki - 1][nr][c]) % module
+                            dp[ki][r][c] = (dp[ki][r][c] + dp[ki - 1][nr][c]) % mod
                         }
                     }
                     // 垂直方向
                     for nc in (c + 1) ..< cols {
                         if sumA[r][c] > sumA[r][nc] {
-                            dp[ki][r][c] = (dp[ki][r][c] + dp[ki - 1][r][nc]) % module
+                            dp[ki][r][c] = (dp[ki][r][c] + dp[ki - 1][r][nc]) % mod
                         }
                     }
                 }
