@@ -179,6 +179,13 @@ func testCase_48() {
     print("耗时: \(measureTime { print("示例1: \(matrix2)") }) ms")
 }
 
+func testCase_49() {
+    print("耗时: \(measureTime { print("示例1: \(s.groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.groupAnagrams([]))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.groupAnagrams(["a"]))") }) ms")
+    print("耗时: \(measureTime { print("示例4: \(s.groupAnagrams(["bdddddddddd", "bbbbbbbbbbc"]))") }) ms")
+}
+
 func testCase_51() {
     print("耗时: \(measureTime { printJSON("示例1: \(s.solveNQueens(8))") }) ms")
 }
@@ -215,6 +222,12 @@ func testCase_78() {
     print("耗时: \(measureTime { printJSON("示例1: \(s.subsets([1, 2, 3]))") }) ms")
 }
 
+func testCase_97() {
+    print("耗时: \(measureTime { print("示例1: \(s.isInterleave("aabcc", "dbbca", "aadbbcbcac"))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.isInterleave("aabcc", "dbbca", "aadbbbaccc"))") }) ms")
+    print("耗时: \(measureTime { print("示例3: \(s.isInterleave("", "", ""))") }) ms")
+}
+
 func testCase_105() {
     print("耗时: \(measureTime { print("示例1: \(s.buildTree([3, 9, 20, 15, 7], [9, 3, 15, 20, 7])?.preSerialize ?? "")") }) ms")
     print("耗时: \(measureTime { print("示例1: \(s.buildTree([3, 9, 20, 15, 7], [9, 3, 15, 20, 7])?.postSerialize ?? "")") }) ms")
@@ -243,6 +256,11 @@ func testCase_123() {
     print("耗时: \(measureTime { print("示例2: \(s.maxProfit3([1, 2, 3, 4, 5]))") }) ms")
     print("耗时: \(measureTime { print("示例3: \(s.maxProfit3([7, 6, 4, 3, 1]))") }) ms")
     print("耗时: \(measureTime { print("示例4: \(s.maxProfit3(makeMaxProfits()))") }) ms")
+}
+
+func testCase_128() {
+    print("耗时: \(measureTime { print("示例1: \(s.longestConsecutive([100, 4, 200, 1, 3, 2]))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.longestConsecutive([0, 3, 7, 2, 5, 8, 4, 6, 0, 1]))") }) ms")
 }
 
 func testCase_151() {
@@ -561,6 +579,7 @@ func testCase_2682() {
 // testCase_42()
 // testCase_46()
 // testCase_48()
+// testCase_49()
 // testCase_51()
 // testCase_54()
 // testCase_55()
@@ -569,11 +588,13 @@ func testCase_2682() {
 // testCase_76()
 // testCase_77()
 // testCase_78()
+testCase_97()
 // testCase_105()
 // testCase_118()
 // testCase_121()
 // testCase_122()
 // testCase_123()
+// testCase_128()
 // testCase_151()
 // testCase_188()
 // testCase_198()
@@ -602,7 +623,7 @@ func testCase_2682() {
 // testCase_849()
 // testCase_870()
 // testCase_875()
-testCase_878()
+// testCase_878()
 // testCase_912()
 // testCase_1011()
 // testCase_1094()
