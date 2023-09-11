@@ -116,6 +116,11 @@
 		E5512D1F2A8246D400602494 /* 0752.open-the-lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512D1E2A8246D400602494 /* 0752.open-the-lock.swift */; };
 		E5512D212A8361EE00602494 /* 1281.subtract-the-product-and-sum-of-digits-of-an-integer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512D202A8361EE00602494 /* 1281.subtract-the-product-and-sum-of-digits-of-an-integer.swift */; };
 		E5512D232A8364E000602494 /* 0034.find-first-and-last-position-of-element-in-sorted-array.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5512D222A8364E000602494 /* 0034.find-first-and-last-position-of-element-in-sorted-array.swift */; };
+		E56C94162AAAB7A60081133F /* 0049.group-anagrams.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56C94152AAAB7A60081133F /* 0049.group-anagrams.swift */; };
+		E56C94182AAAC07E0081133F /* 0128.longest-consecutive-sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56C94172AAAC07E0081133F /* 0128.longest-consecutive-sequence.swift */; };
+		E56C941A2AAAC76C0081133F /* 0560.subarray-sum-equals-k.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56C94192AAAC76C0081133F /* 0560.subarray-sum-equals-k.swift */; };
+		E56C941C2AAB14950081133F /* 0097.interleaving-string.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56C941B2AAB14950081133F /* 0097.interleaving-string.swift */; };
+		E56C941E2AAB21990081133F /* 0032.longest-valid-parentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56C941D2AAB21990081133F /* 0032.longest-valid-parentheses.swift */; };
 		E57677922A837C2D00B6F386 /* 0076.minimum-window-substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57677912A837C2D00B6F386 /* 0076.minimum-window-substring.swift */; };
 		E57677942A838B4A00B6F386 /* 0567.permutation-in-string.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57677932A838B4A00B6F386 /* 0567.permutation-in-string.swift */; };
 		E57677962A847BA500B6F386 /* 0438.find-all-anagrams-in-a-string.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57677952A847BA500B6F386 /* 0438.find-all-anagrams-in-a-string.swift */; };
@@ -292,6 +297,11 @@
 		E5512D1E2A8246D400602494 /* 0752.open-the-lock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0752.open-the-lock.swift"; sourceTree = "<group>"; };
 		E5512D202A8361EE00602494 /* 1281.subtract-the-product-and-sum-of-digits-of-an-integer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1281.subtract-the-product-and-sum-of-digits-of-an-integer.swift"; sourceTree = "<group>"; };
 		E5512D222A8364E000602494 /* 0034.find-first-and-last-position-of-element-in-sorted-array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0034.find-first-and-last-position-of-element-in-sorted-array.swift"; sourceTree = "<group>"; };
+		E56C94152AAAB7A60081133F /* 0049.group-anagrams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0049.group-anagrams.swift"; sourceTree = "<group>"; };
+		E56C94172AAAC07E0081133F /* 0128.longest-consecutive-sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0128.longest-consecutive-sequence.swift"; sourceTree = "<group>"; };
+		E56C94192AAAC76C0081133F /* 0560.subarray-sum-equals-k.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0560.subarray-sum-equals-k.swift"; sourceTree = "<group>"; };
+		E56C941B2AAB14950081133F /* 0097.interleaving-string.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0097.interleaving-string.swift"; sourceTree = "<group>"; };
+		E56C941D2AAB21990081133F /* 0032.longest-valid-parentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0032.longest-valid-parentheses.swift"; sourceTree = "<group>"; };
 		E57677912A837C2D00B6F386 /* 0076.minimum-window-substring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0076.minimum-window-substring.swift"; sourceTree = "<group>"; };
 		E57677932A838B4A00B6F386 /* 0567.permutation-in-string.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0567.permutation-in-string.swift"; sourceTree = "<group>"; };
 		E57677952A847BA500B6F386 /* 0438.find-all-anagrams-in-a-string.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0438.find-all-anagrams-in-a-string.swift"; sourceTree = "<group>"; };
@@ -431,6 +441,7 @@
 				E5512CFF2A80E42F00602494 /* 0026.remove-duplicates-from-sorted-array.swift */,
 				E5512D012A80E46400602494 /* 0027.remove-element.swift */,
 				E54FC5F82A95E20C001768B8 /* 0028.find-the-index-of-the-first-occurrence-in-a-string:description.swift */,
+				E56C941D2AAB21990081133F /* 0032.longest-valid-parentheses.swift */,
 				E5512D222A8364E000602494 /* 0034.find-first-and-last-position-of-element-in-sorted-array.swift */,
 				E5512D032A80E4C600602494 /* 0035.search-insert-position.swift */,
 				E5512CEA2A808CDA00602494 /* 0037.sudoku-solver.swift */,
@@ -441,6 +452,7 @@
 				E5512CE82A7CF9CF00602494 /* 0046.permutations.swift */,
 				E5512CF92A80E27A00602494 /* 0047.permutations-ii.swift */,
 				E54FC5D42A8F4C19001768B8 /* 0048.rotate-image.swift */,
+				E56C94152AAAB7A60081133F /* 0049.group-anagrams.swift */,
 				E5512CEC2A808CFB00602494 /* 0051.n-queens.swift */,
 				E5512D052A80E59500602494 /* 0052.n-queens-ii.swift */,
 				E5512D1C2A82434E00602494 /* 0053.maximum-subarray.swift */,
@@ -462,6 +474,7 @@
 				E57677A12A84C5DE00B6F386 /* 0094.binary-tree-inorder-traversal.swift */,
 				E580B86E2AA1E7F900020F4D /* 0095.unique-binary-search-trees-ii.swift */,
 				E580B86C2AA1E7CD00020F4D /* 0096.unique-binary-search-trees.swift */,
+				E56C941B2AAB14950081133F /* 0097.interleaving-string.swift */,
 				E580B8642AA1C58600020F4D /* 0098.validate-binary-search-tree.swift */,
 				E5512CDA2A7B401000602494 /* 0104.maximum-depth-of-binary-tree.swift */,
 				E52E1B362A9DCC16008DFCF8 /* 0105.construct-binary-tree-from-preorder-and-inorder-traversal.swift */,
@@ -474,6 +487,7 @@
 				E5512D152A8238B400602494 /* 0122.best-time-to-buy-and-sell-stock-ii.swift */,
 				E57677992A84BB7100B6F386 /* 0123.best-time-to-buy-and-sell-stock-iii.swift */,
 				E52E1B202A9C812F008DFCF8 /* 0124.binary-tree-maximum-path-sum.swift */,
+				E56C94172AAAC07E0081133F /* 0128.longest-consecutive-sequence.swift */,
 				E5801B832A8A00260088B018 /* 0141.linked-list-cycle.swift */,
 				E5801B812A89FFE40088B018 /* 0142.linked-list-cycle-ii.swift */,
 				E5512CDC2A7B472D00602494 /* 0144.binary-tree-preorder-traversal.swift */,
@@ -516,6 +530,7 @@
 				E54FC5FA2A95F443001768B8 /* 0528.random-pick-with-weight.swift */,
 				E580B8602AA1C1A300020F4D /* 0538.convert-bst-to-greater-tree.swift */,
 				E5512CDE2A7B875F00602494 /* 0543.diameter-of-binary-tree.swift */,
+				E56C94192AAAC76C0081133F /* 0560.subarray-sum-equals-k.swift */,
 				E57677932A838B4A00B6F386 /* 0567.permutation-in-string.swift */,
 				E57677B52A89C4F900B6F386 /* 0617.merge-two-binary-trees.swift */,
 				E52E1B3C2A9DF3AD008DFCF8 /* 0652.find-duplicate-subtrees.swift */,
@@ -697,6 +712,7 @@
 				E5512D002A80E42F00602494 /* 0026.remove-duplicates-from-sorted-array.swift in Sources */,
 				E5512D022A80E46400602494 /* 0027.remove-element.swift in Sources */,
 				E54FC5F92A95E20C001768B8 /* 0028.find-the-index-of-the-first-occurrence-in-a-string:description.swift in Sources */,
+				E56C941E2AAB21990081133F /* 0032.longest-valid-parentheses.swift in Sources */,
 				E5512D232A8364E000602494 /* 0034.find-first-and-last-position-of-element-in-sorted-array.swift in Sources */,
 				E5512D042A80E4C600602494 /* 0035.search-insert-position.swift in Sources */,
 				E5512CEB2A808CDA00602494 /* 0037.sudoku-solver.swift in Sources */,
@@ -707,6 +723,7 @@
 				E5512CE92A7CF9CF00602494 /* 0046.permutations.swift in Sources */,
 				E5512CFA2A80E27A00602494 /* 0047.permutations-ii.swift in Sources */,
 				E54FC5D52A8F4C19001768B8 /* 0048.rotate-image.swift in Sources */,
+				E56C94162AAAB7A60081133F /* 0049.group-anagrams.swift in Sources */,
 				E5512CED2A808CFB00602494 /* 0051.n-queens.swift in Sources */,
 				E5512D062A80E59500602494 /* 0052.n-queens-ii.swift in Sources */,
 				E5512D1D2A82434E00602494 /* 0053.maximum-subarray.swift in Sources */,
@@ -728,6 +745,7 @@
 				E57677A22A84C5DE00B6F386 /* 0094.binary-tree-inorder-traversal.swift in Sources */,
 				E580B86F2AA1E7F900020F4D /* 0095.unique-binary-search-trees-ii.swift in Sources */,
 				E580B86D2AA1E7CD00020F4D /* 0096.unique-binary-search-trees.swift in Sources */,
+				E56C941C2AAB14950081133F /* 0097.interleaving-string.swift in Sources */,
 				E580B8652AA1C58600020F4D /* 0098.validate-binary-search-tree.swift in Sources */,
 				E5512CDB2A7B401000602494 /* 0104.maximum-depth-of-binary-tree.swift in Sources */,
 				E52E1B372A9DCC16008DFCF8 /* 0105.construct-binary-tree-from-preorder-and-inorder-traversal.swift in Sources */,
@@ -740,6 +758,7 @@
 				E5512D162A8238B400602494 /* 0122.best-time-to-buy-and-sell-stock-ii.swift in Sources */,
 				E576779A2A84BB7100B6F386 /* 0123.best-time-to-buy-and-sell-stock-iii.swift in Sources */,
 				E52E1B212A9C812F008DFCF8 /* 0124.binary-tree-maximum-path-sum.swift in Sources */,
+				E56C94182AAAC07E0081133F /* 0128.longest-consecutive-sequence.swift in Sources */,
 				E5801B842A8A00260088B018 /* 0141.linked-list-cycle.swift in Sources */,
 				E5801B822A89FFE40088B018 /* 0142.linked-list-cycle-ii.swift in Sources */,
 				E5512CDD2A7B472D00602494 /* 0144.binary-tree-preorder-traversal.swift in Sources */,
@@ -782,6 +801,7 @@
 				E54FC5FB2A95F443001768B8 /* 0528.random-pick-with-weight.swift in Sources */,
 				E580B8612AA1C1A300020F4D /* 0538.convert-bst-to-greater-tree.swift in Sources */,
 				E5512CDF2A7B875F00602494 /* 0543.diameter-of-binary-tree.swift in Sources */,
+				E56C941A2AAAC76C0081133F /* 0560.subarray-sum-equals-k.swift in Sources */,
 				E57677942A838B4A00B6F386 /* 0567.permutation-in-string.swift in Sources */,
 				E57677B62A89C4F900B6F386 /* 0617.merge-two-binary-trees.swift in Sources */,
 				E52E1B3D2A9DF3AD008DFCF8 /* 0652.find-duplicate-subtrees.swift in Sources */,

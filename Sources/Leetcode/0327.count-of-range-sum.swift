@@ -1,5 +1,4 @@
 //
-//  0327.count-of-range-sum.swift
 //  swift-algorithm
 //
 //  Created by Misaka on 2023/9/1.
