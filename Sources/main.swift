@@ -289,6 +289,11 @@ func testCase_213() {
     print("耗时: \(measureTime { print("示例4: \(s.rob2(makeMaxRobbers()))") }) ms")
 }
 
+func testCase_215() {
+    print("耗时: \(measureTime { print("示例1: \(s.findKthLargest([3, 2, 1, 5, 6, 4], 2))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.findKthLargest([3, 2, 3, 1, 2, 4, 5, 5, 6], 4))") }) ms")
+}
+
 func testCase_228() {
     print("耗时: \(measureTime { print("示例1: \(s.summaryRanges([0, 1, 2, 4, 5, 7]))") }) ms")
     print("耗时: \(measureTime { print("示例2: \(s.summaryRanges([0, 2, 3, 4, 6, 8, 9]))") }) ms")
@@ -462,11 +467,11 @@ func testCase_878() {
 }
 
 func testCase_912() {
-    print("耗时: \(measureTime { print("示例0: \(s.sortArray([]))") }) ms")
-    print("耗时: \(measureTime { print("示例0: \(s.sortArray([1]))") }) ms")
-    print("耗时: \(measureTime { print("示例1: \(s.sortArray([5, 2, 3, 1]))") }) ms")
-    print("耗时: \(measureTime { print("示例2: \(s.sortArray([5, 1, 1, 2, 0, 0]))") }) ms")
-    print("耗时: \(measureTime { print("示例3: \(s.sortArray(makeMaxSortArray()))") }) ms")
+//    print("耗时: \(measureTime { print("示例0: \(s.sortArray([]))") }) ms")
+    print("耗时: \(measureTime { print("示例0: \(s.sortArray([2, 8, 3, 9, 4, 8, 4]))") }) ms")
+//    print("耗时: \(measureTime { print("示例1: \(s.sortArray([5, 2, 3, 1]))") }) ms")
+//    print("耗时: \(measureTime { print("示例2: \(s.sortArray([5, 1, 1, 2, 0, 0]))") }) ms")
+//    print("耗时: \(measureTime { print("示例3: \(s.sortArray(makeMaxSortArray()))") }) ms")
 }
 
 func testCase_1011() {
@@ -588,7 +593,7 @@ func testCase_2682() {
 // testCase_76()
 // testCase_77()
 // testCase_78()
-testCase_97()
+// testCase_97()
 // testCase_105()
 // testCase_118()
 // testCase_121()
@@ -599,6 +604,7 @@ testCase_97()
 // testCase_188()
 // testCase_198()
 // testCase_213()
+testCase_215()
 // testCase_228()
 // testCase_297()
 // testCase_309()
@@ -624,7 +630,7 @@ testCase_97()
 // testCase_870()
 // testCase_875()
 // testCase_878()
-// testCase_912()
+ testCase_912()
 // testCase_1011()
 // testCase_1094()
 // testCase_1109()

@@ -12,11 +12,28 @@ extension Solution {
      给你一棵二叉树的根节点 root ，返回其节点值的 后序遍历 。
      */
     func postorderTraversal(_ root: TreeNode?) -> [Int] {
+//        var res: [Int] = []
+//        guard let root = root else { return res }
+//        res.append(contentsOf: postorderTraversal(root.left))
+//        res.append(contentsOf: postorderTraversal(root.right))
+//        res.append(root.val)
+//        return res
+        
         var res: [Int] = []
-        guard let root = root else { return res }
-        res.append(contentsOf: postorderTraversal(root.left))
-        res.append(contentsOf: postorderTraversal(root.right))
-        res.append(root.val)
-        return res
+        var stack: [TreeNode?] = []
+        stack.append(root)
+        while !stack.isEmpty {
+            let top = stack.removeLast()
+            if top != nil {
+                res.append(top!.val)
+            }
+            if let left = top?.left {
+                stack.append(left)
+            }
+            if let right = top?.right {
+                stack.append(right)
+            }
+        }
+        return res.reversed()
     }
 }

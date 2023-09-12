@@ -25,12 +25,16 @@ public struct Heap<T> {
     }
 
     // MARK: - Public
-
+    mutating func offer(_ element: T) {
+        append(element)
+    }
     mutating func append(_ element: T) {
         elements.append(element)
         siftUp(elements.count - 1)
     }
-
+    mutating func poll() -> T? {
+        return pop()
+    }
     mutating func pop() -> T? {
         guard !isEmpty else { return nil }
 
@@ -42,6 +46,10 @@ public struct Heap<T> {
             siftDown(0)
             return root
         }
+    }
+    
+    func peek() -> T? {
+        return elements.first
     }
 
     // MARK: - Private

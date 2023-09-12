@@ -27,10 +27,10 @@ extension Solution {
 //        ShellSort.sort(&nums)
 
         /* 快速排序（Quick Sort） */
-//        QuickSort.sort(&nums)
+        QuickSort.sort(&nums)
 
         /* 归并排序（Merge Sort） */
-        MergeSort.sort(&nums)
+//        MergeSort.sort(&nums)
 
         /* 堆排序（Heap Sort） */
 //        HeapSort.sort(&nums)
