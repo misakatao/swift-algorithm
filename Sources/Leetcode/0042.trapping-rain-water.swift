@@ -55,20 +55,45 @@ extension Solution {
 //            }
 //        }
         
-        var left = 1
-        var lMax = height[0]
-        var right = height.count - 2
-        var rMax = height[height.count - 1]
-
-        while left <= right {
-            if lMax < rMax {
-                res += max(0, lMax - height[left])
-                lMax = max(lMax, height[left])
-                left += 1
+//        var left = 1
+//        var lMax = height[0]
+//        var right = height.count - 2
+//        var rMax = height[height.count - 1]
+//
+//        while left <= right {
+//            if lMax < rMax {
+//                res += max(0, lMax - height[left])
+//                lMax = max(lMax, height[left])
+//                left += 1
+//            } else {
+//                res += max(0, rMax - height[right])
+//                rMax = max(rMax, height[right])
+//                right -= 1
+//            }
+//        }
+        
+        var stack: [Int] = [0]
+        for i in 1 ..< height.count {
+            
+            if height[i] < height[stack.last!] {
+                
+                stack.append(i)
+                
+            } else if height[i] == height[stack.last!] {
+                
+                _ = stack.removeLast()
+                stack.append(i)
+                
             } else {
-                res += max(0, rMax - height[right])
-                rMax = max(rMax, height[right])
-                right -= 1
+                while !stack.isEmpty && height[i] > height[stack.last!] {
+                    let mid = stack.removeLast()
+                    if !stack.isEmpty {
+                        let h = min(height[stack.last!], height[i]) - height[mid]
+                        let w = i - stack.last! - 1
+                        res += h * w
+                    }
+                }
+                stack.append(i)
             }
         }
         
