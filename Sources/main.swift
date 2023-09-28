@@ -222,6 +222,11 @@ func testCase_78() {
     print("耗时: \(measureTime { printJSON("示例1: \(s.subsets([1, 2, 3]))") }) ms")
 }
 
+func testCase_84() {
+    print("耗时: \(measureTime { print("示例1: \(s.largestRectangleArea([2, 1, 5, 6, 2, 3]))") }) ms")
+    print("耗时: \(measureTime { print("示例2: \(s.largestRectangleArea([2, 4]))") }) ms")
+}
+
 func testCase_97() {
     print("耗时: \(measureTime { print("示例1: \(s.isInterleave("aabcc", "dbbca", "aadbbcbcac"))") }) ms")
     print("耗时: \(measureTime { print("示例2: \(s.isInterleave("aabcc", "dbbca", "aadbbbaccc"))") }) ms")
@@ -593,6 +598,7 @@ func testCase_2682() {
 // testCase_76()
 // testCase_77()
 // testCase_78()
+testCase_84()
 // testCase_97()
 // testCase_105()
 // testCase_118()
@@ -604,7 +610,7 @@ func testCase_2682() {
 // testCase_188()
 // testCase_198()
 // testCase_213()
-testCase_215()
+// testCase_215()
 // testCase_228()
 // testCase_297()
 // testCase_309()
@@ -630,7 +636,7 @@ testCase_215()
 // testCase_870()
 // testCase_875()
 // testCase_878()
- testCase_912()
+// testCase_912()
 // testCase_1011()
 // testCase_1094()
 // testCase_1109()

@@ -20,15 +20,16 @@ extension Solution {
     typealias Matrix = [[UInt64]]
 
     func matrixMultiply(_ a: Matrix, _ b: Matrix) -> Matrix {
-        let n = a.count
-        let m = b[0].count
-        let p = b.count
+        let rowsA = a.count
+        let colsA = a[0].count
+        let rowsB = b.count
+        let colsB = b[0].count
 
-        var res = Matrix(repeating: Array(repeating: 0, count: m), count: n)
+        var res = Matrix(repeating: Array(repeating: 0, count: colsB), count: rowsA)
 
-        for i in 0 ..< n {
-            for j in 0 ..< m {
-                for k in 0 ..< p {
+        for i in 0 ..< rowsA {
+            for j in 0 ..< colsB {
+                for k in 0 ..< colsA {
                     res[i][j] += a[i][k] * b[k][j]
                 }
             }
