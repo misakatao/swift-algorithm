@@ -53,8 +53,5 @@ class Solution {
         printTime {
             print("示例2: \(s.findKthLargest([3,2,3,1,2,4,5,5,6], 4))")
         }
-        
-        let y: Int8 = 100 &+ 121
-        print(y)
     }
 }
