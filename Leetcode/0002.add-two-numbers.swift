@@ -6,8 +6,10 @@
 //  两数相加
 
 import Foundation
+import Utils
 
-extension Solution {
+@main
+class Solution {
     /*
      给你两个 非空 的链表，表示两个非负的整数。它们每位数字都是按照 逆序 的方式存储的，并且每个节点只能存储 一位 数字。
 
@@ -39,5 +41,20 @@ extension Solution {
             cur = cur?.next
         }
         return dummy.next
+    }
+    
+    static func main() {
+        
+        let s = Solution()
+
+        let head1 = ListNode(2)
+        head1.next = ListNode(4)
+        head1.next?.next = ListNode(3)
+
+        let head2 = ListNode(5)
+        head2.next = ListNode(6)
+        head2.next?.next = ListNode(4)
+
+        print("耗时: \(Utils.measureTime { print("示例1: \(s.addTwoNumbers(head1, head2)?.toString ?? "")") }) ms")
     }
 }

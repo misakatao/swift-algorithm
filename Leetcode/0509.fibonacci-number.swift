@@ -22,7 +22,7 @@ extension Solution {
     func matrixMultiply(_ a: Matrix, _ b: Matrix) -> Matrix {
         let rowsA = a.count
         let colsA = a[0].count
-        let rowsB = b.count
+        let _ = b.count
         let colsB = b[0].count
 
         var res = Matrix(repeating: Array(repeating: 0, count: colsB), count: rowsA)
