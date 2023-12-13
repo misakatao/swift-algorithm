@@ -1,1 +1,3 @@
-# swift-algorithm
+# MyLibrary
+
+A description of this package.
