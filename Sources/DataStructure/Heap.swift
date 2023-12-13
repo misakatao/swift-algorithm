@@ -20,7 +20,7 @@ public class Heap<T: Comparable> {
     init(_ nums: [T] = [], _ priorityFunction: @escaping ((T, T) -> Bool)) {
         self.elements = nums
         self.priorityFunction = priorityFunction
-        for i in stride(from: parent(size() - 1), through: 0, by: -1) {
+        for i in stride(from: parent(size - 1), through: 0, by: -1) {
             siftDown(i)
         }
     }
@@ -66,10 +66,10 @@ public class Heap<T: Comparable> {
             let left = left(i)
             let right = right(i)
             var ma = i
-            if left < size(), priorityFunction(elements[left], elements[ma]) {
+            if left < size, priorityFunction(elements[left], elements[ma]) {
                 ma = left
             }
-            if right < size(), priorityFunction(elements[right], elements[ma]) {
+            if right < size, priorityFunction(elements[right], elements[ma]) {
                 ma = right
             }
             // 若节点 i 最大或索引 left, right 越界，则无须继续堆化，跳出
@@ -84,18 +84,18 @@ public class Heap<T: Comparable> {
     /// 元素入堆
     public func push(_ val: T) {
         elements.append(val)
-        siftUp(size() - 1)
+        siftUp(size - 1)
     }
     
     /// 元素出堆
     public func pop() -> T {
-        if isEmpty() {
+        if isEmpty {
             fatalError("Heap is empty.")
         }
         // 交换根节点与最右叶节点（交换首元素与尾元素）
-        swap(0, size() - 1)
+        swap(0, size - 1)
         // 删除节点
-        let val = elements.remove(at: size() - 1)
+        let val = elements.remove(at: size - 1)
         // 从顶至底堆化
         siftDown(0)
         return val
@@ -107,16 +107,16 @@ public class Heap<T: Comparable> {
     }
     
     /// 获取堆大小
-    public func size() -> Int {
+    public var size: Int {
         elements.count
     }
     
     /// 判断堆是否为空
-    public func isEmpty() -> Bool {
-        size() == 0
+    public var isEmpty: Bool {
+        size == 0
     }
     
-    public func unordered() -> [T] {
+    public var unordered: [T] {
         Array(elements)
     }
     
@@ -150,11 +150,9 @@ class Solution {
         maxHeap.print()
 
         /* 获取堆大小 */
-        let size = maxHeap.size()
-        print("\n堆元素数量为 \(size)")
+        print("\n堆元素数量为 \(maxHeap.size)")
 
         /* 判断堆是否为空 */
-        let isEmpty = maxHeap.isEmpty()
-        print("\n堆是否为空 \(isEmpty)")
+        print("\n堆是否为空 \(maxHeap.isEmpty)")
     }
 }

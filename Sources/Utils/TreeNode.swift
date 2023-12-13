@@ -104,7 +104,7 @@ public class TreeNode {
     }
     
     /// 将二叉树序列化为列表：递归
-    private static func treeToListDFS(root: TreeNode?, i: Int, res: inout [Int?]) {
+    private static func treeToListDFS(_ root: TreeNode?, i: Int, res: inout [Int?]) {
         if root == nil {
             return
         }
@@ -112,14 +112,14 @@ public class TreeNode {
             res.append(nil)
         }
         res[i] = root?.val
-        treeToListDFS(root: root?.left, i: 2 * i + 1, res: &res)
-        treeToListDFS(root: root?.right, i: 2 * i + 2, res: &res)
+        treeToListDFS(root?.left, i: 2 * i + 1, res: &res)
+        treeToListDFS(root?.right, i: 2 * i + 2, res: &res)
     }
     
     /// 将二叉树序列化为列表
-    public static func treeToList(root: TreeNode?) -> [Int?] {
+    public static func treeToList(_ root: TreeNode?) -> [Int?] {
         var res: [Int?] = []
-        treeToListDFS(root: root, i: 0, res: &res)
+        treeToListDFS(root, i: 0, res: &res)
         return res
     }
 }
