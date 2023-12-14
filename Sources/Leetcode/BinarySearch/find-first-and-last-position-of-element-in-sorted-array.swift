@@ -1,20 +1,25 @@
 //
-//  swift-algorithm
+//  find-first-and-last-position-of-element-in-sorted-array.swift
+//
 //
 //  Created by Misaka on 2023/8/9.
 //
-//  在排序数组中查找元素的第一个和最后一个位置
 
-import Foundation
+/**
+ 34. 在排序数组中查找元素的第一个和最后一个位置
+ 
+ 给你一个按照非递减顺序排列的整数数组 nums，和一个目标值 target。请你找出给定目标值在数组中的开始位置和结束位置。
 
-extension Solution {
-    /*
-     给你一个按照非递减顺序排列的整数数组 nums，和一个目标值 target。请你找出给定目标值在数组中的开始位置和结束位置。
+ 如果数组中不存在目标值 target，返回 [-1, -1]。
 
-     如果数组中不存在目标值 target，返回 [-1, -1]。
+ 你必须设计并实现时间复杂度为 O(log n) 的算法解决此问题。
+ */
 
-     你必须设计并实现时间复杂度为 O(log n) 的算法解决此问题。
-     */
+import Utils
+
+@main
+class Solution {
+    
     func searchRange(_ nums: [Int], _ target: Int) -> [Int] {
         func leftBound() -> Int {
             var left = 0
@@ -59,5 +64,18 @@ extension Solution {
         let left = leftBound()
         if left == -1 { return [-1, -1] }
         return [left, rightBound(left)]
+    }
+    
+    static func main() {
+        let s = Solution()
+        printTime {
+            print("示例1: \(s.searchRange([5, 7, 7, 8, 8, 10], 8))")
+        }
+        printTime {
+            print("示例2: \(s.searchRange([5, 7, 7, 8, 8, 10], 6))")
+        }
+        printTime {
+            print("示例3: \(s.searchRange([], 0))")
+        }
     }
 }

@@ -39,8 +39,16 @@ let myfiles: [String] = [
     
     // Leetcode
     /// BinarySearch
+    "./Sources/Leetcode/BinarySearch/binary-search.swift",
+    "./Sources/Leetcode/BinarySearch/find-first-and-last-position-of-element-in-sorted-array.swift",
     "./Sources/Leetcode/BinarySearch/two-sum-ii-input-array-is-sorted.swift",
     
+    "./Sources/Leetcode/binary-search-tree-to-greater-sum-tree.swift",
+    "./Sources/Leetcode/insert-into-a-binary-search-tree.swift",
+    "./Sources/Leetcode/search-in-a-binary-search-tree.swift",
+    "./Sources/Leetcode/unique-binary-search-trees-ii.swift",
+    "./Sources/Leetcode/unique-binary-search-trees.swift",
+    "./Sources/Leetcode/validate-binary-search-tree.swift",
     "./Sources/Leetcode/kth-largest-element-in-an-array.swift",
     "./Sources/Leetcode/partition-equal-subset-sum.swift",
     "./Sources/Leetcode/two-sum.swift",
