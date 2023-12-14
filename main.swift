@@ -62,12 +62,6 @@ func testCase_28() {
     print("耗时: \(measureTime { print("示例4: \(s.strStr("misakaleetcodetao", "code"))") }) ms")
 }
 
-func testCase_34() {
-    print("耗时: \(measureTime { print("示例1: \(s.searchRange([5, 7, 7, 8, 8, 10], 8))") }) ms")
-    print("耗时: \(measureTime { print("示例2: \(s.searchRange([5, 7, 7, 8, 8, 10], 6))") }) ms")
-    print("耗时: \(measureTime { print("示例3: \(s.searchRange([], 0))") }) ms")
-}
-
 func testCase_39() {
     print("耗时: \(measureTime { printJSON("示例1: \(s.combinationSum([10, 1, 2, 7, 6, 1, 5], 8))") }) ms")
 }
