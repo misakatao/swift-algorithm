@@ -12,7 +12,7 @@ public func measureTime(_ closure: @escaping (() -> Void)) -> TimeInterval {
     let startTime = DispatchTime.now().uptimeNanoseconds
     closure()
     let elapsedNanoSeconds = DispatchTime.now().uptimeNanoseconds - startTime
-    return TimeInterval(Double(elapsedNanoSeconds) / 1_000_000)
+    return TimeInterval(Double(elapsedNanoSeconds) / 1e6)
 }
 
 public func printTime(_ closure: @escaping (() -> Void)) {
