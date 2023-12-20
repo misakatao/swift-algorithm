@@ -21,28 +21,29 @@ import Utils
 class Solution {
     
     func findKthLargest(_ nums: [Int], _ k: Int) -> Int {
-        func sort(_ nums: inout [Int], _ lo: Int, _ hi: Int, _ k: Int) -> Int {
-            if lo == hi {
-                return nums[k]
-            }
-            let x = nums[lo]
-            var i = lo - 1
-            var j = hi + 1
-            while i < j {
-                repeat { i += 1 } while nums[i] < x
-                repeat { j -= 1 } while nums[j] > x
-                if i < j {
-                    nums.swapAt(i, j)
-                }
-            }
-            if k <= j {
-                return sort(&nums, lo, j, k)
-            } else {
-                return sort(&nums, j + 1, hi, k)
-            }
-        }
         var nums = nums
         return sort(&nums, 0, nums.count - 1, nums.count - k)
+    }
+    
+    func sort(_ nums: inout [Int], _ lo: Int, _ hi: Int, _ k: Int) -> Int {
+        if lo == hi {
+            return nums[k]
+        }
+        let x = nums[lo]
+        var i = lo - 1
+        var j = hi + 1
+        while i < j {
+            repeat { i += 1 } while nums[i] < x
+            repeat { j -= 1 } while nums[j] > x
+            if i < j {
+                nums.swapAt(i, j)
+            }
+        }
+        if k <= j {
+            return sort(&nums, lo, j, k)
+        } else {
+            return sort(&nums, j + 1, hi, k)
+        }
     }
     
     static func main() {

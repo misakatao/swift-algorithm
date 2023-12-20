@@ -16,7 +16,7 @@ public class Difference {
     private var diff: [Int]
 
     /// 输入一个初始数组，区间操作将在这个数组上进行
-    init(_ nums: [Int]) {
+    public init(_ nums: [Int]) {
         diff = Array(repeating: 0, count: nums.count)
         // 根据初始数组构造差分数组
         for i in 1 ..< nums.count {

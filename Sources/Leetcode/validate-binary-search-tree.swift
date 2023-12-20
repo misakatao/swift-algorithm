@@ -23,13 +23,14 @@ import Utils
 class Solution {
     
     func isValidBST(_ root: TreeNode?) -> Bool {
-        func isValidBST(_ root: TreeNode?, _ min: TreeNode?, _ max: TreeNode?) -> Bool {
-            guard let root = root else { return true }
-            if let min = min, min.val >= root.val { return false }
-            if let max = max, max.val <= root.val { return false }
-            return isValidBST(root.left, min, root) && isValidBST(root.right, root, max)
-        }
         return isValidBST(root, nil, nil)
+    }
+    
+    func isValidBST(_ root: TreeNode?, _ min: TreeNode?, _ max: TreeNode?) -> Bool {
+        guard let root = root else { return true }
+        if let min = min, min.val >= root.val { return false }
+        if let max = max, max.val <= root.val { return false }
+        return isValidBST(root.left, min, root) && isValidBST(root.right, root, max)
     }
     
     static func main() {
