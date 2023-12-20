@@ -438,12 +438,6 @@ func testCase_1572() {
     print("耗时: \(measureTime { print("示例2: \(s.diagonalSum([[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]]))") }) ms")
 }
 
-func testCase_1654() {
-    print("耗时: \(measureTime { print("示例1: \(s.minimumJumps([14, 4, 18, 1, 15], 3, 15, 9))") }) ms")
-    print("耗时: \(measureTime { print("示例2: \(s.minimumJumps([8, 3, 16, 6, 12, 20], 15, 13, 11))") }) ms")
-    print("耗时: \(measureTime { print("示例3: \(s.minimumJumps([1, 6, 2, 14, 5, 17, 4], 16, 9, 7))") }) ms")
-}
-
 func testCase_1749() {
     print("耗时: \(measureTime { print("示例1: \(s.maxAbsoluteSum([1, -3, 2, 3, -4]))") }) ms")
     print("耗时: \(measureTime { print("示例2: \(s.maxAbsoluteSum([2, -5, 1, -4, 3, -2]))") }) ms")

@@ -17,27 +17,28 @@ import Utils
 class Solution {
     
     func generateTrees(_ n: Int) -> [TreeNode?] {
-        func build(_ lo: Int, _ hi: Int) -> [TreeNode?] {
-            var res: [TreeNode?] = []
-            if lo > hi {
-                res.append(nil)
-                return res
-            }
-            for i in lo ... hi {
-                let lefts = build(lo, i - 1)
-                let rights = build(i + 1, hi)
-                for left in lefts {
-                    for right in rights {
-                        let root = TreeNode(i)
-                        root.left = left
-                        root.right = right
-                        res.append(root)
-                    }
-                }
-            }
+        return build(1, n)
+    }
+    
+    func build(_ lo: Int, _ hi: Int) -> [TreeNode?] {
+        var res: [TreeNode?] = []
+        if lo > hi {
+            res.append(nil)
             return res
         }
-        return build(1, n)
+        for i in lo ... hi {
+            let lefts = build(lo, i - 1)
+            let rights = build(i + 1, hi)
+            for left in lefts {
+                for right in rights {
+                    let root = TreeNode(i)
+                    root.left = left
+                    root.right = right
+                    res.append(root)
+                }
+            }
+        }
+        return res
     }
     
     static func main() {

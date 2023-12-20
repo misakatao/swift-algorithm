@@ -21,58 +21,58 @@ import Utils
 class Solution {
     
     func searchRange(_ nums: [Int], _ target: Int) -> [Int] {
-        func leftBound() -> Int {
-            var left = 0
-            var right: Int = nums.count
-            while left < right { // left = right 时终止
-                let mid = left + (right - left) / 2
-                if nums[mid] == target {
-                    // 锁定左侧边界
-                    right = mid
-                } else if nums[mid] < target {
-                    left = mid + 1
-                } else if nums[mid] > target {
-                    right = mid
-                }
-            }
-            if left < 0 || left >= nums.count {
-                return -1
-            }
-            return nums[left] == target ? left : -1
-        }
-
-        func rightBound(_ l: Int) -> Int {
-            var left: Int = l
-            var right: Int = nums.count - 1
-            while left <= right { // left = right + 1 时终止
-                let mid = left + (right - left) / 2
-                if nums[mid] == target {
-                    // 锁定右侧边界
-                    left = mid + 1
-                } else if nums[mid] < target {
-                    left = mid + 1
-                } else if nums[mid] > target {
-                    right = mid - 1
-                }
-            }
-            if right < 0 || right >= nums.count {
-                return -1
-            }
-            return nums[right] == target ? right : -1
-        }
-
-        let left = leftBound()
+        let left = leftBound(nums, target)
         if left == -1 { return [-1, -1] }
-        return [left, rightBound(left)]
+        return [left, rightBound(nums, target, left)]
+    }
+    
+    func leftBound(_ nums: [Int], _ target: Int) -> Int {
+        var left = 0
+        var right: Int = nums.count
+        while left < right { // left = right 时终止
+            let mid = left + (right - left) / 2
+            if nums[mid] == target {
+                // 锁定左侧边界
+                right = mid
+            } else if nums[mid] < target {
+                left = mid + 1
+            } else if nums[mid] > target {
+                right = mid
+            }
+        }
+        if left < 0 || left >= nums.count {
+            return -1
+        }
+        return nums[left] == target ? left : -1
+    }
+
+    func rightBound(_ nums: [Int], _ target: Int, _ l: Int) -> Int {
+        var left: Int = l
+        var right: Int = nums.count - 1
+        while left <= right { // left = right + 1 时终止
+            let mid = left + (right - left) / 2
+            if nums[mid] == target {
+                // 锁定右侧边界
+                left = mid + 1
+            } else if nums[mid] < target {
+                left = mid + 1
+            } else if nums[mid] > target {
+                right = mid - 1
+            }
+        }
+        if right < 0 || right >= nums.count {
+            return -1
+        }
+        return nums[right] == target ? right : -1
     }
     
     static func main() {
         let s = Solution()
         printTime {
-            print("示例1: \(s.searchRange([5, 7, 7, 8, 8, 10], 8))")
+            print("示例1: \(s.searchRange([5,7,7,8,8,10], 8))")
         }
         printTime {
-            print("示例2: \(s.searchRange([5, 7, 7, 8, 8, 10], 6))")
+            print("示例2: \(s.searchRange([5,7,7,8,8,10], 6))")
         }
         printTime {
             print("示例3: \(s.searchRange([], 0))")

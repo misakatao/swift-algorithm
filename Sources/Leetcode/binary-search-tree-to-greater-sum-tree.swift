@@ -24,15 +24,16 @@ class Solution {
     
     func bstToGst(_ root: TreeNode?) -> TreeNode? {
         var sum = 0
-        func traverse(_ node: TreeNode?) {
-            guard let node = node else { return }
-            traverse(node.right)
-            sum += node.val
-            node.val = sum
-            traverse(node.left)
-        }
-        traverse(root)
+        traverse(root, &sum)
         return root
+    }
+    
+    func traverse(_ node: TreeNode?, _ sum: inout Int) {
+        guard let node = node else { return }
+        traverse(node.right, &sum)
+        sum += node.val
+        node.val = sum
+        traverse(node.left, &sum)
     }
     
     static func main() {

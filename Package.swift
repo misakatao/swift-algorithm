@@ -47,6 +47,8 @@ let myfiles: [String] = [
     "./Sources/Leetcode/binary-search-tree-to-greater-sum-tree.swift",
     "./Sources/Leetcode/insert-into-a-binary-search-tree.swift",
     "./Sources/Leetcode/kth-largest-element-in-an-array.swift",
+    "./Sources/Leetcode/maximum-binary-tree.swift",
+    "./Sources/Leetcode/minimum-jumps-to-reach-home.swift",
     "./Sources/Leetcode/partition-equal-subset-sum.swift",
     "./Sources/Leetcode/search-in-a-binary-search-tree.swift",
     "./Sources/Leetcode/two-sum.swift",
