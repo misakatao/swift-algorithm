@@ -1,16 +1,21 @@
 //
-//  swift-algorithm
+//  sort-an-array.swift
+//
 //
 //  Created by Misaka on 2023/8/24.
 //
-//  排序数组
 
-import Foundation
+/**
+ 912. 排序数组
+ 
+ 给你一个整数数组 nums，请你将该数组升序排列。
+ */
 
-extension Solution {
-    /*
-     给你一个整数数组 nums，请你将该数组升序排列。
-     */
+import Utils
+
+@main
+class Solution {
+    
     func sortArray(_ nums: [Int]) -> [Int] {
         var nums = nums
 
@@ -27,10 +32,10 @@ extension Solution {
 //        ShellSort.sort(&nums)
 
         /* 快速排序（Quick Sort） */
-        QuickSort.sort(&nums)
+//        QuickSort.sort(&nums)
 
         /* 归并排序（Merge Sort） */
-//        MergeSort.sort(&nums)
+        MergeSort.sort(&nums)
 
         /* 堆排序（Heap Sort） */
 //        HeapSort.sort(&nums)
@@ -45,6 +50,24 @@ extension Solution {
 //        RadixSort.sort(&nums)
         
         return nums
+    }
+    
+    static func main() {
+        let s = Solution()
+        printTime {
+            print("示例0: \(s.sortArray([2, 8, 3, 9, 4, 8, 4]))")
+        }
+        printTime {
+            print("示例1: \(s.sortArray([5, 2, 3, 1]))")
+        }
+        printTime {
+            print("示例2: \(s.sortArray([5, 1, 1, 2, 0, 0]))")
+        }
+        printTime {
+            if let test = readJSON("/Users/misaka/Developer/sort-array.json") as? [Int] {
+                print("示例3: \(s.sortArray(test))")
+            }
+        }
     }
 }
 
