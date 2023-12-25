@@ -48,10 +48,13 @@ let myfiles: [String] = [
     
     "./Sources/Leetcode/add-two-numbers.swift",
     "./Sources/Leetcode/binary-search-tree-to-greater-sum-tree.swift",
+    "./Sources/Leetcode/binary-tree-maximum-path-sum.swift",
     "./Sources/Leetcode/insert-into-a-binary-search-tree.swift",
+    "./Sources/Leetcode/diameter-of-binary-tree.swift",
     "./Sources/Leetcode/kth-largest-element-in-an-array.swift",
     "./Sources/Leetcode/lowest-common-ancestor-of-a-binary-tree.swift",
     "./Sources/Leetcode/maximum-binary-tree.swift",
+    "./Sources/Leetcode/maximum-depth-of-binary-tree.swift",
     "./Sources/Leetcode/minimum-jumps-to-reach-home.swift",
     "./Sources/Leetcode/partition-equal-subset-sum.swift",
     "./Sources/Leetcode/search-in-a-binary-search-tree.swift",
