@@ -46,7 +46,7 @@ class Solution {
     static func main() {
         let s = Solution()
         printTime {
-            
+            print("示例1: \(s.constructMaximumBinaryTree([14, 4, 18, 1, 15, 3, 15, 9])?.preSerialize ?? "")")
         }
     }
 }
