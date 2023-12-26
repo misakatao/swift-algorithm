@@ -15,6 +15,7 @@
  你必须设计并实现时间复杂度为 O(n) 的算法解决此问题。
  */
 
+import Foundation
 import Utils
 
 @main

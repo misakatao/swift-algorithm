@@ -9,6 +9,7 @@
  最大/小 堆
  */
 
+import Foundation
 import Utils
 
 public class Heap<T: Comparable> {

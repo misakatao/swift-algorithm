@@ -9,6 +9,7 @@
  AVL 树
  */
 
+import Foundation
 import Utils
 
 public class AVLTree {

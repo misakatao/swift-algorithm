@@ -15,6 +15,7 @@
  两节点之间路径的 长度 由它们之间边数表示。
  */
 
+import Foundation
 import Utils
 
 @main

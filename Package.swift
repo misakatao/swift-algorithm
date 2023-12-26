@@ -33,6 +33,9 @@ let myfiles: [String] = [
     "./Sources/DataStructure/GraphAdjacencyMatrix.swift",
     "./Sources/DataStructure/Heap.swift",
     
+    // LCP
+    "./Sources/LCP/na-ying-bi.swift",
+    
     // LCR
     "./Sources/LCR/NUPfPr.swift",
     "./Sources/LCR/xx4gT2.swift",
@@ -56,7 +59,11 @@ let myfiles: [String] = [
     "./Sources/Leetcode/maximum-binary-tree.swift",
     "./Sources/Leetcode/maximum-depth-of-binary-tree.swift",
     "./Sources/Leetcode/minimum-jumps-to-reach-home.swift",
+    "./Sources/Leetcode/n-queens-ii.swift",
+    "./Sources/Leetcode/n-queens.swift",
     "./Sources/Leetcode/partition-equal-subset-sum.swift",
+    "./Sources/Leetcode/reverse-linked-list-ii.swift",
+    "./Sources/Leetcode/reverse-linked-list.swift",
     "./Sources/Leetcode/search-in-a-binary-search-tree.swift",
     "./Sources/Leetcode/sort-an-array.swift",
     "./Sources/Leetcode/super-egg-drop.swift",

@@ -17,6 +17,7 @@
  请你计算并返回要确定 f 确切的值 的 最小操作次数 是多少？
  */
 
+import Foundation
 import Utils
 
 @main
