@@ -9,6 +9,7 @@
  二叉搜索树
  */
 
+import Foundation
 import Utils
 
 public class BinarySearchTree {

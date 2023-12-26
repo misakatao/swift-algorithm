@@ -6,17 +6,19 @@
 //
 
 import Foundation
+import QuartzCore
 import Collections
 
-public func measureTime(_ closure: @escaping (() -> Void)) -> TimeInterval {
-    let startTime = DispatchTime.now().uptimeNanoseconds
+public func measureTime(_ closure: @escaping (() -> Void)) -> Double {
+    let startTime = CACurrentMediaTime()
     closure()
-    let elapsedNanoSeconds = DispatchTime.now().uptimeNanoseconds - startTime
-    return TimeInterval(Double(elapsedNanoSeconds) / 1e6)
+    return CACurrentMediaTime() - startTime
 }
 
 public func printTime(_ closure: @escaping (() -> Void)) {
-    print("耗时: \(measureTime(closure)) ms")
+    //NSLog("耗时: %f ms", measureTime(closure) * 1000)
+    print(String(format: "耗时: %f ms", measureTime(closure) * 1000))
+    
 }
 
 public func readJSON(_ filePath: String) -> Any? {

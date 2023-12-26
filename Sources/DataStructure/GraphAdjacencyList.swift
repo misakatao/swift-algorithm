@@ -9,6 +9,7 @@
  基于邻接表实现的无向图类
  */
 
+import Foundation
 import Utils
 
 public class GraphAdjacencyList {

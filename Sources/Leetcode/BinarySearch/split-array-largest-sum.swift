@@ -13,6 +13,7 @@
  设计一个算法使得这 k 个子数组各自和的最大值最小。
  */
 
+import Foundation
 import Utils
 
 @main

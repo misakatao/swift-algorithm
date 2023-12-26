@@ -17,6 +17,7 @@
  返回她可以在 h 小时内吃掉所有香蕉的最小速度 k（k 为整数）。
  */
 
+import Foundation
 import Utils
 
 @main

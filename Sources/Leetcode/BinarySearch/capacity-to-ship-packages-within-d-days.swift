@@ -15,6 +15,7 @@
  返回能在 days 天内将传送带上的所有包裹送达的船的最低运载能力。
  */
 
+import Foundation
 import Utils
 
 @main

@@ -17,6 +17,7 @@
  左右子树也必须是二叉搜索树。
  */
 
+import Foundation
 import Utils
 
 @main
