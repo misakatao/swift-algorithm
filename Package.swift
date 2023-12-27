@@ -43,6 +43,19 @@ let myfiles: [String] = [
     "./Sources/LCR/xx4gT2.swift",
     
     // Leetcode
+    
+    /// BackTracking
+    "./Sources/Leetcode/BackTracking/combination-sum-ii.swift",
+    "./Sources/Leetcode/BackTracking/combination-sum.swift",
+    "./Sources/Leetcode/BackTracking/combinations.swift",
+    "./Sources/Leetcode/BackTracking/generalized-abbreviation.swift",
+    "./Sources/Leetcode/BackTracking/n-queens-ii.swift",
+    "./Sources/Leetcode/BackTracking/n-queens.swift",
+    "./Sources/Leetcode/BackTracking/permutations-ii.swift",
+    "./Sources/Leetcode/BackTracking/permutations.swift",
+    "./Sources/Leetcode/BackTracking/subsets-ii.swift",
+    "./Sources/Leetcode/BackTracking/subsets.swift",
+    
     /// BinarySearch
     "./Sources/Leetcode/BinarySearch/binary-search.swift",
     "./Sources/Leetcode/BinarySearch/capacity-to-ship-packages-within-d-days.swift",
@@ -51,6 +64,21 @@ let myfiles: [String] = [
     "./Sources/Leetcode/BinarySearch/split-array-largest-sum.swift",
     "./Sources/Leetcode/BinarySearch/two-sum-ii-input-array-is-sorted.swift",
     
+    /// DynamicProgramming
+    "./Sources/Leetcode/DynamicProgramming/best-time-to-buy-and-sell-stock-iii.swift",
+    "./Sources/Leetcode/DynamicProgramming/best-time-to-buy-and-sell-stock-ii.swift",
+    "./Sources/Leetcode/DynamicProgramming/best-time-to-buy-and-sell-stock-iv.swift",
+    "./Sources/Leetcode/DynamicProgramming/best-time-to-buy-and-sell-stock-with-cooldown.swift",
+    "./Sources/Leetcode/DynamicProgramming/best-time-to-buy-and-sell-stock-with-transaction-fee.swift",
+    "./Sources/Leetcode/DynamicProgramming/best-time-to-buy-and-sell-stock.swift",
+    "./Sources/Leetcode/DynamicProgramming/climbing-stairs.swift",
+    "./Sources/Leetcode/DynamicProgramming/coin-change.swift",
+    "./Sources/Leetcode/DynamicProgramming/fibonacci-number.swift",
+    "./Sources/Leetcode/DynamicProgramming/house-robber-ii.swift",
+    "./Sources/Leetcode/DynamicProgramming/house-robber-iii.swift",
+    "./Sources/Leetcode/DynamicProgramming/house-robber.swift",
+    
+    /// root
     "./Sources/Leetcode/add-two-numbers.swift",
     "./Sources/Leetcode/binary-search-tree-to-greater-sum-tree.swift",
     "./Sources/Leetcode/binary-tree-maximum-path-sum.swift",
@@ -63,9 +91,8 @@ let myfiles: [String] = [
     "./Sources/Leetcode/merge-k-sorted-lists.swift",
     "./Sources/Leetcode/merge-two-sorted-lists.swift",
     "./Sources/Leetcode/minimum-jumps-to-reach-home.swift",
-    "./Sources/Leetcode/n-queens-ii.swift",
-    "./Sources/Leetcode/n-queens.swift",
     "./Sources/Leetcode/partition-equal-subset-sum.swift",
+    "./Sources/Leetcode/remove-nth-node-from-end-of-list.swift",
     "./Sources/Leetcode/reverse-linked-list-ii.swift",
     "./Sources/Leetcode/reverse-linked-list.swift",
     "./Sources/Leetcode/search-in-a-binary-search-tree.swift",

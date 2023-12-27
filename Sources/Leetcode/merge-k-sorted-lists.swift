@@ -22,8 +22,13 @@ class Solution {
     func mergeKLists(_ lists: [ListNode?]) -> ListNode? {
         
         let dummy = ListNode(0)
-        var head: ListNode? = dummy
         
+        for head in lists {
+            var p: ListNode? = head
+            while p != nil {
+                p = p?.next
+            }
+        }
         return dummy.next
     }
     
