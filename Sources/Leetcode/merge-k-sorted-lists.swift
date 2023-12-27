@@ -47,7 +47,9 @@ class Solution {
             head2.next?.next?.next = ListNode(8)
             head2.next?.next?.next?.next = ListNode(10)
             
-            print("示例1: \(s.mergeKLists([head, head2])?.toString ?? "")")
+            let res = s.mergeKLists([head, head2])
+            PrintUtil.printLinkedList(res)
+            print("示例1: \(res?.toString ?? "")")
         }
     }
 }

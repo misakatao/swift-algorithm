@@ -48,19 +48,19 @@ class Solution {
     }
     
     static func main() {
-        
         let s = Solution()
-
-        let head1 = ListNode(2)
-        head1.next = ListNode(4)
-        head1.next?.next = ListNode(3)
-
-        let head2 = ListNode(5)
-        head2.next = ListNode(6)
-        head2.next?.next = ListNode(4)
-        
         printTime {
-            print("示例1: \(s.addTwoNumbers(head1, head2)?.toString ?? "")")
+            let head1 = ListNode(2)
+            head1.next = ListNode(4)
+            head1.next?.next = ListNode(3)
+
+            let head2 = ListNode(5)
+            head2.next = ListNode(6)
+            head2.next?.next = ListNode(4)
+            
+            let res = s.addTwoNumbers(head1, head2)
+            PrintUtil.printLinkedList(res)
+            print("示例1: \(res?.toString ?? "")")
         }
     }
 }

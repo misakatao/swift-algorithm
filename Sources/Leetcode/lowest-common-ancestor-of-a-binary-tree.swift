@@ -44,7 +44,9 @@ class Solution {
             let node = TreeNode(0)
             let p = TreeNode(0)
             let q = TreeNode(0)
-            print("示例1: \(s.lowestCommonAncestor(node, p, q)?.toString ?? "")")
+            let res = s.lowestCommonAncestor(node, p, q)
+            PrintUtil.printTree(res)
+            print("示例1: \(res?.toString ?? "")")
         }
     }
 }

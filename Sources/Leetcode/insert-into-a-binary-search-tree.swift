@@ -30,7 +30,9 @@ class Solution {
         let s = Solution()
         printTime {
             let node = TreeNode(0)
-            print("示例1: \(s.insertIntoBST(node, 0)?.toString ?? "")")
+            let res = s.insertIntoBST(node, 0)
+            PrintUtil.printTree(res)
+            print("示例1: \(res?.toString ?? "")")
         }
     }
 }

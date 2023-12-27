@@ -40,13 +40,12 @@ class Solution {
     static func main() {
         let s = Solution()
         printTime {
-            print("示例1: \(s.bstToGst(TreeNode(0))?.toString ?? "")")
-        }
-        printTime {
-            print("示例2: \(s.bstToGst(TreeNode(0))?.toString ?? "")")
-        }
-        printTime {
-            print("示例3: \(s.bstToGst(TreeNode(0))?.toString ?? "")")
+            let node = TreeNode(3)
+            node.left = TreeNode(4)
+            node.right = TreeNode(5)
+            let res = s.bstToGst(node)
+            PrintUtil.printTree(res)
+            print("示例1: \(res?.toString ?? "")")
         }
     }
 }
