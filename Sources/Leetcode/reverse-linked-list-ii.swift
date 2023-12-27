@@ -16,16 +16,28 @@ import Utils
 
 @main
 class Solution {
-    
+    /*
+       g        p
+       ↓        ↓
+     dummy --> _1_ --> _2_ --> 3 --> 4 --> 5
+
+                g         p
+                ↓    3    ↓
+     dummy --> _1_ ↗   ↘ _2_ --> 4 --> 5
+
+                g               p
+                ↓    4          ↓
+     dummy --> _1_ ↗   ↘ 3 --> _2_ --> 5
+     */
     func reverseBetween(_ head: ListNode?, _ left: Int, _ right: Int) -> ListNode? {
         if head == nil {
             return head
         }
-        let dump = ListNode(0)
-        dump.next = head
+        let dummy = ListNode(0)
+        dummy.next = head
         
-        var g: ListNode? = dump
-        var p: ListNode? = dump.next
+        var g: ListNode? = dummy
+        var p: ListNode? = dummy.next
         
         for _ in 0 ..< left - 1 {
             g = g?.next
@@ -39,7 +51,7 @@ class Solution {
             g?.next = next
         }
         
-        return dump.next
+        return dummy.next
     }
     
     static func main() {
