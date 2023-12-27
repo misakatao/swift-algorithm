@@ -28,6 +28,9 @@ class Solution {
     }
     
     static func main() {
-        
+        let s = Solution()
+        printTime {
+            print("示例1: \(s.superEggDrop(0, 0))")
+        }
     }
 }

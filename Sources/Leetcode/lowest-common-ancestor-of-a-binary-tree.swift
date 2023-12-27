@@ -39,6 +39,12 @@ class Solution {
     }
     
     static func main() {
-        
+        let s = Solution()
+        printTime {
+            let node = TreeNode(0)
+            let p = TreeNode(0)
+            let q = TreeNode(0)
+            print("示例1: \(s.lowestCommonAncestor(node, p, q)?.toString ?? "")")
+        }
     }
 }

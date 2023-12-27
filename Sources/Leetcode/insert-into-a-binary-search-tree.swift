@@ -27,6 +27,10 @@ class Solution {
     }
     
     static func main() {
-        
+        let s = Solution()
+        printTime {
+            let node = TreeNode(0)
+            print("示例1: \(s.insertIntoBST(node, 0)?.toString ?? "")")
+        }
     }
 }
