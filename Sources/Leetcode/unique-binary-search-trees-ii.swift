@@ -43,6 +43,9 @@ class Solution {
     }
     
     static func main() {
-        
+        let s = Solution()
+        printTime {
+            print("示例1: \(s.generateTrees(0))")
+        }
     }
 }

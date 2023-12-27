@@ -19,15 +19,19 @@
  */
 
 import Foundation
+import Utils
 
 @main
 class Solution {
     
     func divide(_ a: Int, _ b: Int) -> Int {
-
+        return 0
     }
     
     static func main() {
-        
+        let s = Solution()
+        printTime {
+            print("示例1: \(s.divide(1, 2))")
+        }
     }
 }
