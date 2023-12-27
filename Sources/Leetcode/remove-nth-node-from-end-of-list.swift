@@ -41,7 +41,10 @@ class Solution {
             head.next?.next = ListNode(5)
             head.next?.next?.next = ListNode(7)
             head.next?.next?.next?.next = ListNode(9)
-            print("示例1: \(s.removeNthFromEnd(head, 3)?.toString ?? "")")
+            
+            let res = s.removeNthFromEnd(head, 3)
+            PrintUtil.printLinkedList(res)
+            print("示例1: \(res?.toString ?? "")")
         }
     }
 }

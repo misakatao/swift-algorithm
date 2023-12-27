@@ -62,7 +62,10 @@ class Solution {
             head.next?.next = ListNode(3)
             head.next?.next?.next = ListNode(4)
             head.next?.next?.next?.next = ListNode(5)
-            print("示例1: \(s.reverseBetween(head, 2, 4)?.toString ?? "")")
+            
+            let res = s.reverseBetween(head, 2, 4)
+            PrintUtil.printLinkedList(res)
+            print("示例1: \(res?.toString ?? "")")
         }
     }
 }

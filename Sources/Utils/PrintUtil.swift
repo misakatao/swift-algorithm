@@ -19,7 +19,7 @@ public enum PrintUtil {
         }
     }
     
-    public static func printLinkedList(_ head: ListNode) {
+    public static func printLinkedList(_ head: ListNode?) {
         var head: ListNode? = head
         var list: [String] = []
         while head != nil {
