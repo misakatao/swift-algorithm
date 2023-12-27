@@ -34,10 +34,12 @@ let myfiles: [String] = [
     "./Sources/DataStructure/Heap.swift",
     
     // LCP
+    "./Sources/LCP/guess-numbers.swift",
     "./Sources/LCP/na-ying-bi.swift",
     
     // LCR
     "./Sources/LCR/NUPfPr.swift",
+    "./Sources/LCR/xoh6Oh.swift",
     "./Sources/LCR/xx4gT2.swift",
     
     // Leetcode
@@ -58,6 +60,8 @@ let myfiles: [String] = [
     "./Sources/Leetcode/lowest-common-ancestor-of-a-binary-tree.swift",
     "./Sources/Leetcode/maximum-binary-tree.swift",
     "./Sources/Leetcode/maximum-depth-of-binary-tree.swift",
+    "./Sources/Leetcode/merge-k-sorted-lists.swift",
+    "./Sources/Leetcode/merge-two-sorted-lists.swift",
     "./Sources/Leetcode/minimum-jumps-to-reach-home.swift",
     "./Sources/Leetcode/n-queens-ii.swift",
     "./Sources/Leetcode/n-queens.swift",
