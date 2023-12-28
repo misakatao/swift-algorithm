@@ -17,10 +17,26 @@ import Utils
 @main
 class Solution {
     func buildTree(_ preorder: [Int], _ inorder: [Int]) -> TreeNode? {
-        
-        return nil
+        var valToIndex: [Int : Int] = [:]
+        for i in 0 ..< inorder.count {
+            valToIndex[inorder[i]] = i
+        }
+        return build(preorder, inorder, &valToIndex, 0, preorder.count - 1, 0, inorder.count - 1)
     }
- 
+    
+    func build(_ preorder: [Int], _ inorder: [Int], _ valToIndex: inout [Int : Int], _ preLeft: Int, _ preRight: Int, _ inLeft: Int, _ inRight: Int) -> TreeNode? {
+        if preLeft > preRight {
+            return nil
+        }
+        let val = preorder[preLeft]
+        let index = valToIndex[val, default: 0]
+        let root = TreeNode(val)
+        let leftSize = index - inLeft
+        root.left = build(preorder, inorder, &valToIndex, preLeft + 1, preLeft + leftSize, inLeft, index - 1)
+        root.right = build(preorder, inorder, &valToIndex, preLeft + leftSize + 1, preRight, index + 1, inRight)
+        return root
+    }
+    
     static func main() {
         let s = Solution()
         printTime {

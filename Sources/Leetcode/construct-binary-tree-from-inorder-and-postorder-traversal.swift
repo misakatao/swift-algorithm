@@ -17,8 +17,24 @@ import Utils
 @main
 class Solution {
     func buildTree(_ inorder: [Int], _ postorder: [Int]) -> TreeNode? {
-        
-        return nil
+        var valToIndex: [Int : Int] = [:]
+        for i in 0 ..< inorder.count {
+            valToIndex[inorder[i]] = i
+        }
+        return build(inorder, postorder, &valToIndex, 0, inorder.count - 1, 0, postorder.count - 1)
+    }
+    
+    func build(_ inorder: [Int], _ postorder: [Int], _ valToIndex: inout [Int : Int], _ inLeft: Int, _ inRight: Int, _ postLeft: Int, _ postRight: Int) -> TreeNode? {
+        if postLeft > postRight {
+            return nil
+        }
+        let val = postorder[postRight]
+        let index = valToIndex[val, default: 0]
+        let root = TreeNode(val)
+        let leftSize = index - inLeft
+        root.left = build(inorder, postorder, &valToIndex, inLeft, index - 1, postLeft, postLeft + leftSize - 1)
+        root.right = build(inorder, postorder, &valToIndex, index + 1, inRight, postLeft + leftSize, postRight - 1)
+        return root
     }
  
     static func main() {
