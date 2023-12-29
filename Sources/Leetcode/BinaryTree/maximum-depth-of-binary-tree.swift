@@ -20,10 +20,35 @@ import Utils
 class Solution {
     
     func maxDepth(_ root: TreeNode?) -> Int {
-        var res = 0
-        var depth = 0
-        traverse(root, &res, &depth)
-        return res
+        guard let root = root else {
+            return 0
+        }
+//        var depth: Int = 0
+//        var queue: [TreeNode] = []
+//        queue.append(root)
+//        while !queue.isEmpty {
+//            let size = queue.count
+//            for _ in 0 ..< size {
+//                let tmp = queue.removeFirst()
+//                if let left = tmp.left {
+//                    queue.append(left)
+//                }
+//                if let right = tmp.right {
+//                    queue.append(right)
+//                }
+//            }
+//            depth += 1
+//        }
+//        return depth
+        
+//        var res = 0
+//        var depth = 0
+//        traverse(root, &res, &depth)
+//        return res
+        
+        let left = maxDepth(root.left)
+        let right = maxDepth(root.right)
+        return max(left, right) + 1
     }
     
     func traverse(_ node: TreeNode?, _ res: inout Int, _ depth: inout Int) {
