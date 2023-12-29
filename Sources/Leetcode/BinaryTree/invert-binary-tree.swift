@@ -41,5 +41,14 @@ class Solution {
             print("示例1: \(newNode?.toString ?? "")")
             PrintUtil.printTree(newNode)
         }
+        printTime {
+            let node = TreeNode(2)
+            node.left = TreeNode(1)
+            node.right = TreeNode(3)
+            PrintUtil.printTree(node)
+            let newNode = s.invertTree(node)
+            print("示例2: \(newNode?.toString ?? "")")
+            PrintUtil.printTree(newNode)
+        }
     }
 }
