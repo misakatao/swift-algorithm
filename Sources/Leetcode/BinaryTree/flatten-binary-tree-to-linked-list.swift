@@ -21,8 +21,26 @@ import Utils
 class Solution {
     
     func flatten(_ root: TreeNode?) {
-        var pre: TreeNode?
-        dfs(root, &pre)
+        guard let root = root else {
+            return
+        }
+        flatten(root.left)
+        flatten(root.right)
+        
+        let left = root.left
+        let right = root.right
+        
+        root.left = nil
+        root.right = left
+        
+        var p: TreeNode? = root
+        while p?.right != nil {
+            p = p?.right
+        }
+        p?.right = right
+        
+//        var pre: TreeNode?
+//        dfs(root, &pre)
     }
     
     func dfs(_ node: TreeNode?, _ pre: inout TreeNode?) {
