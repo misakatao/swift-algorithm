@@ -116,6 +116,8 @@ let myfiles: [String] = [
     
     /// root
     "./Sources/Leetcode/add-two-numbers.swift",
+    "./Sources/Leetcode/buildings-with-an-ocean-view.swift",
+    "./Sources/Leetcode/form-array-by-concatenating-subarrays-of-another-array.swift",
     "./Sources/Leetcode/kth-largest-element-in-an-array.swift",
     "./Sources/Leetcode/merge-k-sorted-lists.swift",
     "./Sources/Leetcode/merge-two-sorted-lists.swift",
