@@ -39,4 +39,8 @@ class Solution {
         res = max(res, seats.count - pre - 1)
         return res
     }
+    
+    static func main() {
+        
+    }
 }

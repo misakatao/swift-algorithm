@@ -32,4 +32,8 @@ class Solution {
         merged.right = mergeTrees(root1.right, root2.right)
         return merged
     }
+    
+    static func main() {
+        
+    }
 }

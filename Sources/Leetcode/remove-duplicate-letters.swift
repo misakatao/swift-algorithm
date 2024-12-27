@@ -64,4 +64,8 @@ class Solution {
         }
         return String(stack)
     }
+    
+    static func main() {
+        
+    }
 }

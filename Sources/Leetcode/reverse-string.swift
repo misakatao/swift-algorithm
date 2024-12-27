@@ -31,4 +31,8 @@ class Solution {
             right -= 1
         }
     }
+    
+    static func main() {
+        
+    }
 }

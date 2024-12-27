@@ -71,4 +71,8 @@ class Solution {
         }
         return nSum(nums.sorted(), 4, 0, target)
     }
+    
+    static func main() {
+        
+    }
 }

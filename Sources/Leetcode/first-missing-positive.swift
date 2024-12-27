@@ -41,4 +41,8 @@ class Solution {
         }
         return nums.count + 1
     }
+    
+    static func main() {
+        
+    }
 }

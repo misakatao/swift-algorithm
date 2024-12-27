@@ -40,4 +40,8 @@ class Solution {
         }
         return String(char3)
     }
+    
+    static func main() {
+        
+    }
 }

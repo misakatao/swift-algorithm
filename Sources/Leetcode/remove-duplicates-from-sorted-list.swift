@@ -42,4 +42,8 @@ class Solution {
         }
         return head
     }
+    
+    static func main() {
+        
+    }
 }

@@ -93,4 +93,8 @@ class Solution {
 //
 //        return Double(res[left] + res[right]) / 2.0
     }
+    
+    static func main() {
+        
+    }
 }

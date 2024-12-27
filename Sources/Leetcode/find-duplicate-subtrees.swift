@@ -40,4 +40,8 @@ class Solution {
         _ = serialize(root)
         return res
     }
+    
+    static func main() {
+        
+    }
 }

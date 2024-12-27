@@ -32,4 +32,8 @@ class Solution {
 
         return x == revert || x == revert / 10
     }
+    
+    static func main() {
+        
+    }
 }

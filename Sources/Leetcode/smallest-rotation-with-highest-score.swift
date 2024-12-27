@@ -58,4 +58,8 @@ class Solution {
         }
         return best
     }
+    
+    static func main() {
+        
+    }
 }

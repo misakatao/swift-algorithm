@@ -36,4 +36,8 @@ class Solution {
         }
         return currA
     }
+    
+    static func main() {
+        
+    }
 }

@@ -62,4 +62,8 @@ class Solution {
         }
         return ans
     }
+    
+    static func main() {
+        
+    }
 }

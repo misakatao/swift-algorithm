@@ -36,4 +36,8 @@ class Solution {
         }
         return stack.isEmpty ? "0" : String(stack)
     }
+    
+    static func main() {
+        
+    }
 }

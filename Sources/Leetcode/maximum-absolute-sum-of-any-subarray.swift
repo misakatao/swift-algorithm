@@ -42,4 +42,8 @@ class Solution {
         }
         return max(positiveRes, -negativeRes)
     }
+    
+    static func main() {
+        
+    }
 }

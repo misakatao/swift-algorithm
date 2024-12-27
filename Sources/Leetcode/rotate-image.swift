@@ -58,4 +58,8 @@ class Solution {
             }
         }
     }
+    
+    static func main() {
+        
+    }
 }

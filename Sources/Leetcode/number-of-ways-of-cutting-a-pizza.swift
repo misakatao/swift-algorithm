@@ -122,4 +122,8 @@ class Solution {
 
         return dp[k][0][0]
     }
+    
+    static func main() {
+        
+    }
 }

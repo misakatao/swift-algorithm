@@ -43,4 +43,8 @@ class Solution {
         }
         return left % mod
     }
+    
+    static func main() {
+        
+    }
 }

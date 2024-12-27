@@ -44,4 +44,8 @@ class Solution {
         }
         return res
     }
+    
+    static func main() {
+        
+    }
 }
