@@ -13,6 +13,32 @@ public class TreeNode {
     public var right: TreeNode? // 右子节点引用
     public var height: Int = 0 // 节点高度
     
+    public static func serialize(_ root: TreeNode?) -> [Int?] {
+        guard let root = root else { return [] }
+        
+        var result: [Int?] = []
+        var queue: [TreeNode?] = [root]
+        
+        while !queue.isEmpty {
+            let node = queue.removeFirst()
+            
+            if let node = node {
+                result.append(node.val)
+                queue.append(node.left)
+                queue.append(node.right)
+            } else {
+                result.append(nil)
+            }
+        }
+        
+        // 移除末尾的nil
+        while let last = result.last, last == nil {
+            result.removeLast()
+        }
+        
+        return result
+    }
+
     public static func fromArray(_ array: [Any?]) -> TreeNode? {
         guard !array.isEmpty, let firstVal = array[0] as? Int else { return nil }
         
