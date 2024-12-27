@@ -50,31 +50,16 @@ class Solution {
     
     static func main() {
         let solution = Solution()
-        printTime {
-            print("示例1: \(solution.diagonalSum([[1,2,3],
-                                                [4,5,6],
-                                                [7,8,9]]))")
-            // 输出: 25
-            // 解释: 对角线为: 1 + 5 + 9 + 3 + 7 = 25
-            // 注意: 5 只会被计算一次
-        }
+        let testCases = [
+            [[1,2,3],[4,5,6],[7,8,9]],
+            [[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]],
+            [[5]]
+        ]
         
-        printTime {
-            print("示例2: \(solution.diagonalSum([[1,1,1,1],
-                                                [1,1,1,1],
-                                                [1,1,1,1],
-                                                [1,1,1,1]]))")
-            // 输出: 8
-        }
-        
-        printTime {
-            print("示例3: \(solution.diagonalSum([[5]]))")
-            // 输出: 5
-        }
-        
-        printTime {
-            print("示例4: \(solution.diagonalSum([]))")
-            // 输出: 0
+        for mat in testCases {
+            printTime {
+                print("示例: Output: \(solution.diagonalSum(mat))")
+            }
         }
     }
 }
