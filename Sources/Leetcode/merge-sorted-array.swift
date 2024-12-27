@@ -42,4 +42,8 @@ class Solution {
             p -= 1
         }
     }
+    
+    static func main() {
+        
+    }
 }

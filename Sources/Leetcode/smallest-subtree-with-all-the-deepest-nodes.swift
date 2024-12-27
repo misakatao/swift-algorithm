@@ -42,4 +42,8 @@ class Solution {
         let result: (TreeNode?, Int) = maxDepth(root)
         return result.0
     }
+    
+    static func main() {
+        
+    }
 }

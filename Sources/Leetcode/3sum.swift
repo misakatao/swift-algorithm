@@ -70,4 +70,8 @@ class Solution {
         }
         return nSum(nums.sorted(), 3, 0, 0)
     }
+    
+    static func main() {
+        
+    }
 }

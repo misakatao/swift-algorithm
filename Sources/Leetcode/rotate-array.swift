@@ -71,4 +71,8 @@ class Solution {
         reverse(k, nums.count - 1)
         reverse(0, k - 1)
     }
+    
+    static func main() {
+        
+    }
 }

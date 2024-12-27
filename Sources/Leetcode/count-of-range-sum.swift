@@ -70,4 +70,8 @@ class Solution {
         sort(0, preSum.count - 1)
         return res
     }
+    
+    static func main() {
+        
+    }
 }

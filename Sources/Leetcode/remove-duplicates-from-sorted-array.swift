@@ -31,4 +31,8 @@ class Solution {
         }
         return slow + 1
     }
+    
+    static func main() {
+        
+    }
 }

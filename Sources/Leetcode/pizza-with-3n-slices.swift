@@ -43,4 +43,8 @@ class Solution {
         let count = slices.count
         return max(maxSizeSlices(slices, 0, count - 2), maxSizeSlices(slices, 1, count - 1))
     }
+    
+    static func main() {
+        
+    }
 }

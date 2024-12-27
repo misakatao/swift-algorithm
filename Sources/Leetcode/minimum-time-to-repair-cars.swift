@@ -52,4 +52,8 @@ class Solution {
         }
         return right
     }
+    
+    static func main() {
+        
+    }
 }

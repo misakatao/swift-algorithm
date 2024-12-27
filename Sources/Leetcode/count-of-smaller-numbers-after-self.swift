@@ -58,4 +58,8 @@ class Solution {
         sort(0, len - 1)
         return res
     }
+    
+    static func main() {
+        
+    }
 }

@@ -77,4 +77,8 @@ class Solution {
         if start + len > chars.count { return "" }
         return String(chars[start ... (start + len - 1)])
     }
+    
+    static func main() {
+        
+    }
 }

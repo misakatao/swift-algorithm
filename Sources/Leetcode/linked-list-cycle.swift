@@ -35,4 +35,8 @@ class Solution {
         }
         return false
     }
+    
+    static func main() {
+        
+    }
 }

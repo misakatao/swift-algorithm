@@ -44,4 +44,8 @@ class Solution {
         smaller?.next = dummyGreaterOrEqual.next
         return dummySmaller.next
     }
+    
+    static func main() {
+        
+    }
 }

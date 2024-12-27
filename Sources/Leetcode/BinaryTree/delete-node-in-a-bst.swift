@@ -45,4 +45,8 @@ class Solution {
         }
         return node
     }
+    
+    static func main() {
+        
+    }
 }

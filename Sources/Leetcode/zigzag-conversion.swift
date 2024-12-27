@@ -42,4 +42,8 @@ class Solution {
         }
         return res.joined()
     }
+    
+    static func main() {
+        
+    }
 }

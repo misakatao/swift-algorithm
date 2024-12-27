@@ -32,4 +32,8 @@ class Solution {
         }
         return multiply - add
     }
+    
+    static func main() {
+        
+    }
 }

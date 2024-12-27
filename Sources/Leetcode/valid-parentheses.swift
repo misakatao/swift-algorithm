@@ -55,4 +55,8 @@ class Solution {
         }
         return stack.isEmpty
     }
+    
+    static func main() {
+        
+    }
 }

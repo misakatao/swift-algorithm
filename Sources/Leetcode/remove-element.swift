@@ -46,4 +46,8 @@ class Solution {
 //        }
 //        return slow
     }
+    
+    static func main() {
+        
+    }
 }

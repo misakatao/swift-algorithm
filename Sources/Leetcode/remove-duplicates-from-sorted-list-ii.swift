@@ -37,4 +37,8 @@ class Solution {
         }
         return dummy.next
     }
+    
+    static func main() {
+        
+    }
 }

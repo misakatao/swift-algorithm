@@ -115,4 +115,8 @@ class Solution {
 
         return -1
     }
+    
+    static func main() {
+        
+    }
 }

@@ -48,4 +48,8 @@ class Solution {
         a?.next = reverseKGroup(b, k)
         return last
     }
+    
+    static func main() {
+        
+    }
 }

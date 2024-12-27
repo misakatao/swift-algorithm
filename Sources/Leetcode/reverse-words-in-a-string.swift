@@ -87,4 +87,8 @@ class Solution {
         reverseEachWord(&chs)
         return String(chs)
     }
+    
+    static func main() {
+        
+    }
 }

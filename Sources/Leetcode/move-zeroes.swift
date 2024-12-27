@@ -37,4 +37,8 @@ class Solution {
             nums[i] = 0
         }
     }
+    
+    static func main() {
+        
+    }
 }

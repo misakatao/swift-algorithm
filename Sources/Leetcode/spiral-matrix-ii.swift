@@ -66,4 +66,8 @@ class Solution {
         }
         return matrix
     }
+    
+    static func main() {
+        
+    }
 }

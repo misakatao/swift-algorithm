@@ -71,4 +71,8 @@ class Solution {
         }
         return Array(res)
     }
+    
+    static func main() {
+        
+    }
 }

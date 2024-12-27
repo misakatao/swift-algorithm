@@ -28,4 +28,8 @@ class Solution {
         }
         return traverse(head)
     }
+    
+    static func main() {
+        
+    }
 }

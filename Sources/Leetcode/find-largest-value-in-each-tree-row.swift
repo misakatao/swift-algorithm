@@ -52,4 +52,8 @@ class Solution {
         traverse(root, 0)
         return res
     }
+    
+    static func main() {
+        
+    }
 }
