@@ -42,6 +42,19 @@ class Solution {
     }
     
     static func main() {
+        let solution = Solution()
+        printTime {
+            let bookings = [[1,2,10],[2,3,20],[2,5,25]]
+            let numberOfFlights = 5
+            print("示例1: \(solution.corpFlightBookings(bookings, numberOfFlights))")
+            // Output: [10,55,45,25,25]
+        }
         
+        printTime {
+            let bookings2 = [[1,2,10],[2,2,15]]
+            let numberOfFlights2 = 2
+            print("示例2: \(solution.corpFlightBookings(bookings2, numberOfFlights2))")
+            // Output: [10,25]
+        }
     }
 }

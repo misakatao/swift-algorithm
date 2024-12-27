@@ -85,6 +85,20 @@ class Solution {
     }
     
     static func main() {
+        let solution = Solution()
+        printTime {
+            print("示例1: \(solution.circularGameLosers(5, 2))")
+            // 输出: [4,5]
+        }
         
+        printTime {
+            print("示例2: \(solution.circularGameLosers(4, 4))")
+            // 输出: [2,3,4]
+        }
+        
+        printTime {
+            print("示例3: \(solution.circularGameLosers(3, 2))")
+            // 输出: [2]
+        }
     }
 }

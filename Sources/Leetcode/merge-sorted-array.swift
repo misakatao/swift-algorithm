@@ -44,6 +44,19 @@ class Solution {
     }
     
     static func main() {
+        let solution = Solution()
+        var nums1 = [1, 2, 3, 0, 0, 0]
+        let m = 3
+        let nums2 = [2, 5, 6]
+        let n = 3
         
+        print("Before merge:")
+        print("nums1 =", nums1)
+        print("nums2 =", nums2)
+        
+        solution.merge(&nums1, m, nums2, n)
+        
+        print("\nAfter merge:")
+        print("nums1 =", nums1)
     }
 }

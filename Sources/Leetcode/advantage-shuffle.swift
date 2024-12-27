@@ -43,6 +43,12 @@ class Solution {
     }
     
     static func main() {
-        
+        let s = Solution()
+        printTime {
+            print("示例1: \(s.advantageCount([2,7,11,15], [1,10,4,11]))")
+        }
+        printTime {
+            print("示例2: \(s.advantageCount([12,24,8,32], [13,25,32,11]))")
+        }
     }
 }

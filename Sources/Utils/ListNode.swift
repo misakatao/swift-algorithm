@@ -12,6 +12,21 @@ public class ListNode : Hashable {
     public var val: Int // 节点值
     public var next: ListNode? // 后继节点引用
     
+    public static func createLinkedList(_ array: [Int]) -> ListNode? {
+        guard !array.isEmpty else { return nil }
+        
+        let dummy = ListNode(0)
+        var current = dummy
+        
+        for val in array {
+            current.next = ListNode(val)
+            current = current.next!
+        }
+        
+        return dummy.next
+    }
+
+    
     public init(_ val: Int, _ next: ListNode? = nil) {
         self.val = val
         self.next = next

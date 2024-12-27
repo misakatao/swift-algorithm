@@ -34,6 +34,36 @@ class Solution {
     }
     
     static func main() {
+        let testCases = [
+            (
+                [1,3,2,5],
+                [2,1,3,nil,4,nil,7]
+            ),
+            (
+                [1],
+                [1,2]
+            ),
+            (
+                [1,2,nil,3],
+                [1,nil,2,nil,3]
+            )
+        ]
         
+        let solution = Solution()
+        
+        for (i, testCase) in testCases.enumerated() {
+            print("\nTest case \(i + 1):")
+            let root1 = TreeNode.createBinaryTree(testCase.0)
+            let root2 = TreeNode.createBinaryTree(testCase.1)
+            
+            print("Input:")
+            print("root1 =", TreeNode.serialize(root1))
+            print("root2 =", TreeNode.serialize(root2))
+            
+            printTime {
+                let result = solution.mergeTrees(root1, root2)
+                print("\nOutput:", TreeNode.serialize(result))
+            }
+        }
     }
 }

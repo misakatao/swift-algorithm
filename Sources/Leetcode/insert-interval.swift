@@ -48,6 +48,21 @@ class Solution {
     }
     
     static func main() {
+        let solution = Solution()
+        let intervals = [[1,3],[6,9]]
+        let newInterval = [2,5]
         
+        printTime {
+            let result = solution.insert(intervals, newInterval)
+            print(result)
+        }
+        
+        let intervals2 = [[1,2],[3,5],[6,7],[8,10],[12,16]]
+        let newInterval2 = [4,8]
+        
+        printTime {
+            let result = solution.insert(intervals2, newInterval2)
+            print(result)
+        }
     }
 }

@@ -44,6 +44,30 @@ class Solution {
     }
     
     static func main() {
+        let solution = Solution()
+        printTime {
+            print("示例1: \(solution.lengthOfLongestSubstring("abcabcbb"))")
+            // 输出: 3
+        }
         
+        printTime {
+            print("示例2: \(solution.lengthOfLongestSubstring("bbbbb"))")
+            // 输出: 1
+        }
+        
+        printTime {
+            print("示例3: \(solution.lengthOfLongestSubstring("pwwkew"))")
+            // 输出: 3
+        }
+        
+        printTime {
+            print("示例4: \(solution.lengthOfLongestSubstring(""))")
+            // 输出: 0
+        }
+        
+        printTime {
+            print("示例5: \(solution.lengthOfLongestSubstring("dvdf"))")
+            // 输出: 3
+        }
     }
 }

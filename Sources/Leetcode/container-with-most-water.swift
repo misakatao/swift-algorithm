@@ -43,6 +43,18 @@ class Solution {
     }
     
     static func main() {
-        
+        let s = Solution()
+        printTime {
+            print("示例1: \(s.maxArea([1,8,6,2,5,4,8,3,7]))")
+        }
+        printTime {
+            print("示例2: \(s.maxArea([1,1]))")
+        }
+        printTime {
+            print("示例3: \(s.maxArea([4,3,2,1,4]))")
+        }
+        printTime {
+            print("示例4: \(s.maxArea([1,2,4,3]))")
+        }
     }
 }

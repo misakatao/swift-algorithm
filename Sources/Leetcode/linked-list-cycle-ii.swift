@@ -46,6 +46,40 @@ class Solution {
     }
     
     static func main() {
+        let solution = Solution()
         
+        // 创建示例1: 有环链表 3->2->0->-4->2(循环)
+        let head1 = ListNode(3)
+        let node1 = ListNode(2)
+        let node2 = ListNode(0)
+        let node3 = ListNode(-4)
+        head1.next = node1
+        node1.next = node2
+        node2.next = node3
+        node3.next = node1  // 创建环
+        
+        printTime {
+            let result = solution.detectCycle(head1)
+            print("示例1: \(result?.val ?? -1)") // 应输出2
+        }
+        
+        // 创建示例2: 有环链表 1->2->1(循环)
+        let head2 = ListNode(1)
+        let node4 = ListNode(2)
+        head2.next = node4
+        node4.next = head2  // 创建环
+        
+        printTime {
+            let result = solution.detectCycle(head2)
+            print("示例2: \(result?.val ?? -1)") // 应输出1
+        }
+        
+        // 创建示例3: 无环链表
+        let head3 = ListNode(1)
+        
+        printTime {
+            let result = solution.detectCycle(head3)
+            print("示例3: \(result?.val ?? -1)") // 应输出-1
+        }
     }
 }

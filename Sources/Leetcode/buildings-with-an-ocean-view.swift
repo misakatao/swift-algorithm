@@ -46,12 +46,30 @@ class Solution {
     }
     
     static func main() {
-        let s = Solution()
+        let solution = Solution()
         printTime {
-            print("示例1: \(s.findBuildings([4,2,3,1]))")
-            print("示例2: \(s.findBuildings([4,3,2,1]))")
-            print("示例3: \(s.findBuildings([1,3,2,4]))")
-            print("示例3: \(s.findBuildings([2,2,2,2]))")
+            print("示例1: \(solution.findBuildings([4,2,3,1]))")
+        }
+        printTime {
+            print("示例2: \(solution.findBuildings([4,3,2,1]))")
+        }
+        printTime {
+            print("示例3: \(solution.findBuildings([1,3,2,4]))")
+        }
+        printTime {
+            print("示例4: \(solution.findBuildings([2,2,2,2]))")
+        }
+        printTime {
+            print("示例5: \(solution.findBuildings([1,2,3,4]))")
+        }
+        printTime {
+            print("示例6: \(solution.findBuildings([4,3,2,1,5]))")
+        }
+        printTime {
+            print("示例7: \(solution.findBuildings([1]))")
+        }
+        printTime {
+            print("示例8: \(solution.findBuildings([]))")
         }
     }
 }

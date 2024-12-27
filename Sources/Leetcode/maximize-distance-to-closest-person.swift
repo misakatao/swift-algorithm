@@ -41,6 +41,32 @@ class Solution {
     }
     
     static func main() {
+        let solution = Solution()
+        printTime {
+            print("示例1: \(solution.maxDistToClosest([1,0,0,0,1,0,1]))")
+            // 输出: 2
+            // 解释: 如果亚历克斯坐在第二个空位（seats[2]）上，他到离他最近的人的距离为 2
+        }
         
+        printTime {
+            print("示例2: \(solution.maxDistToClosest([1,0,0,0]))")
+            // 输出: 3
+            // 解释: 如果亚历克斯坐在最后一个位置上，他离最近的人有 3 个座位远
+        }
+        
+        printTime {
+            print("示例3: \(solution.maxDistToClosest([0,1]))")
+            // 输出: 1
+        }
+        
+        printTime {
+            print("示例4: \(solution.maxDistToClosest([1,0,0,1]))")
+            // 输出: 1
+        }
+        
+        printTime {
+            print("示例5: \(solution.maxDistToClosest([0,0,1]))")
+            // 输出: 2
+        }
     }
 }

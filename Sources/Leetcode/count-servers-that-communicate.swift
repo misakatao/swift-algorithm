@@ -46,6 +46,20 @@ class Solution {
     }
     
     static func main() {
+        let solution = Solution()
+        let testCases = [
+            [[1,0],[0,1]],
+            [[1,0],[1,1]],
+            [[1,1,0,0],[0,0,1,0],[0,0,1,0],[0,0,0,1]]
+        ]
         
+        for testCase in testCases {
+            print("Input: \(testCase)")
+            let startTime = CFAbsoluteTimeGetCurrent()
+            let result = solution.countServers(testCase)
+            let timeElapsed = CFAbsoluteTimeGetCurrent() - startTime
+            print("Output: \(result)")
+            print("Time elapsed: \(timeElapsed)s\n")
+        }
     }
 }

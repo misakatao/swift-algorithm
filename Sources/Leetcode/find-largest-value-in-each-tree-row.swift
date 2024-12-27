@@ -54,6 +54,22 @@ class Solution {
     }
     
     static func main() {
+        let solution = Solution()
+        printTime {
+            let root1 = TreeNode.fromArray([1,3,2,5,3,nil,9])
+            print("示例1: \(solution.largestValues(root1))")
+            // 输出: [1,3,9]
+        }
         
+        printTime {
+            let root2 = TreeNode.fromArray([1,2,3])
+            print("示例2: \(solution.largestValues(root2))")
+            // 输出: [1,3]
+        }
+        
+        printTime {
+            print("示例3: \(solution.largestValues(nil))")
+            // 输出: []
+        }
     }
 }

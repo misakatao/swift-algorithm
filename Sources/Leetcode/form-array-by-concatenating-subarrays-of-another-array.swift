@@ -69,11 +69,31 @@ class Solution {
     }
     
     static func main() {
-        let s = Solution()
+        let solution = Solution()
         printTime {
-            print("示例1: \(s.canChoose([[1,-1,-1],[3,-2,0]], [1,-1,0,1,-1,-1,3,-2,0]))")
-            print("示例2: \(s.canChoose([[10,-2],[1,2,3,4]], [1,2,3,4,10,-2]))")
-            print("示例3: \(s.canChoose([[1,2,3],[3,4]], [7,7,1,2,3,4,7,7]))")
+            print("示例1: \(solution.canChoose([[1,-1,-1],[3,-2,0]], [1,-1,0,1,-1,-1,3,-2,0]))")
+            // 输出: true
+        }
+        
+        printTime {
+            print("示例2: \(solution.canChoose([[10,-2],[1,2,3,4]], [1,2,3,4,10,-2]))")
+            // 输出: false
+        }
+        
+        printTime {
+            print("示例3: \(solution.canChoose([[1,2,3],[3,4]], [7,7,1,2,3,4,7,7]))")
+            // 输出: true
+        }
+        
+        // 添加更多测试用例
+        printTime {
+            print("示例4: \(solution.canChoose([[1,2],[3,4]], [1,2,3,4]))")
+            // 输出: true
+        }
+        
+        printTime {
+            print("示例5: \(solution.canChoose([[1,2,3]], [3,2,1,1,2,3]))")
+            // 输出: true
         }
     }
 }

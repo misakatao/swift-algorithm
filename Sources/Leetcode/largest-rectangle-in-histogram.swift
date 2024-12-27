@@ -51,6 +51,31 @@ class Solution {
     }
     
     static func main() {
+        let solution = Solution()
+        printTime {
+            print("示例1: \(solution.largestRectangleArea([2,1,5,6,2,3]))")
+            // 输出: 10
+        }
         
+        printTime {
+            print("示例2: \(solution.largestRectangleArea([2,4]))")
+            // 输出: 4
+        }
+        
+        // 添加更多测试用例
+        printTime {
+            print("示例3: \(solution.largestRectangleArea([1,1,1,1]))")
+            // 输出: 4
+        }
+        
+        printTime {
+            print("示例4: \(solution.largestRectangleArea([2,1,2]))")
+            // 输出: 3
+        }
+        
+        printTime {
+            print("示例5: \(solution.largestRectangleArea([5,4,1,2]))")
+            // 输出: 8
+        }
     }
 }

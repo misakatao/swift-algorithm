@@ -45,6 +45,20 @@ class Solution {
     }
     
     static func main() {
+        let solution = Solution()
+        printTime {
+            print("示例1: \(solution.groupAnagrams(["eat","tea","tan","ate","nat","bat"]))")
+            // 输出: [["bat"],["nat","tan"],["ate","eat","tea"]]
+        }
         
+        printTime {
+            print("示例2: \(solution.groupAnagrams([""]))")
+            // 输出: [[""]]
+        }
+        
+        printTime {
+            print("示例3: \(solution.groupAnagrams(["a"]))")
+            // 输出: [["a"]]
+        }
     }
 }

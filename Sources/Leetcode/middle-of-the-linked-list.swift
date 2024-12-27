@@ -33,6 +33,26 @@ class Solution {
     }
     
     static func main() {
+        let solution = Solution()
         
+        let testCases = [
+            [1, 2, 3, 4, 5],
+            [1, 2, 3, 4, 5, 6],
+            [1],
+            [1, 2]
+        ]
+        
+        for (i, testCase) in testCases.enumerated() {
+            print("\nTest case \(i + 1):")
+            let head = ListNode.createLinkedList(testCase)
+            
+            print("Input:")
+            print("head =", head?.toString ?? "[]")
+            
+            printTime {
+                let result = solution.middleNode(head)
+                print("\nOutput:", result?.toString ?? "[]")
+            }
+        }
     }
 }

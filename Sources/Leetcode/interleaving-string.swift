@@ -91,6 +91,31 @@ class Solution {
     }
     
     static func main() {
+        let solution = Solution()
+        printTime {
+            print("示例1: \(solution.isInterleave("aabcc", "dbbca", "aadbbcbcac"))")
+            // 输出: true
+        }
         
+        printTime {
+            print("示例2: \(solution.isInterleave("aabcc", "dbbca", "aadbbbaccc"))")
+            // 输出: false
+        }
+        
+        printTime {
+            print("示例3: \(solution.isInterleave("", "", ""))")
+            // 输出: true
+        }
+        
+        // 添加更多测试用例
+        printTime {
+            print("示例4: \(solution.isInterleave("a", "b", "ab"))")
+            // 输出: true
+        }
+        
+        printTime {
+            print("示例5: \(solution.isInterleave("abc", "def", "abcdef"))")
+            // 输出: true
+        }
     }
 }

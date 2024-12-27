@@ -64,6 +64,20 @@ class Solution {
     }
     
     static func main() {
+        let solution = Solution()
+        printTime {
+            print("示例1: \(solution.findReplaceString("abcd", [0, 2], ["a", "cd"], ["eee", "ffff"]))")
+            // 输出: "eeebffff"
+        }
         
+        printTime {
+            print("示例2: \(solution.findReplaceString("abcd", [0, 2], ["ab", "ec"], ["eee", "ffff"]))")
+            // 输出: "eeecd"
+        }
+        
+        printTime {
+            print("示例3: \(solution.findReplaceString("vmokgggqzp", [3,5,1], ["kg","ggq","mo"], ["s","so","bfr"]))")
+            // 输出: "vbfrssozp"
+        }
     }
 }

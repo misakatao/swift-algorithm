@@ -72,6 +72,18 @@ class Solution {
     }
     
     static func main() {
-        
+        let solution = Solution()
+        printTime {
+            print("示例1: \(solution.countRangeSum([-2,5,-1], -2, 2))")  // 输出: 3
+        }
+        printTime {
+            print("示例2: \(solution.countRangeSum([0], 0, 0))")  // 输出: 1
+        }
+        printTime {
+            print("示例3: \(solution.countRangeSum([0,-1,1], -1, 1))")  // 输出: 4
+        }
+        printTime {
+            print("示例4: \(solution.countRangeSum([-3,1,2,-2,2,-1], -3, -1))")  // 输出: 7
+        }
     }
 }

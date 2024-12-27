@@ -65,6 +65,20 @@ class Solution {
     }
     
     static func main() {
+        let solution = Solution()
+        printTime {
+            print("示例1: \(solution.strStr("sadbutsad", "sad"))")
+            // 输出: 0
+        }
         
+        printTime {
+            print("示例2: \(solution.strStr("leetcode", "leeto"))")
+            // 输出: -1
+        }
+        
+        printTime {
+            print("示例3: \(solution.strStr("hello", "ll"))")
+            // 输出: 2
+        }
     }
 }

@@ -54,6 +54,24 @@ class Solution {
     }
     
     static func main() {
+        let solution = Solution()
         
+        let testCases = [
+            [3,7,1,6],
+            [10,1],
+            [13,13,20,0,8,9,9],
+            [1,2,3,4,5]
+        ]
+        
+        for (i, testCase) in testCases.enumerated() {
+            print("\nTest case \(i + 1):")
+            print("Input:")
+            print("nums =", testCase)
+            
+            printTime {
+                let result = solution.minimizeArrayValue(testCase)
+                print("\nOutput:", result)
+            }
+        }
     }
 }
