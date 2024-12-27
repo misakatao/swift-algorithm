@@ -13,6 +13,70 @@ public class TreeNode {
     public var right: TreeNode? // 右子节点引用
     public var height: Int = 0 // 节点高度
     
+    public static func fromArray(_ array: [Any?]) -> TreeNode? {
+        guard !array.isEmpty, let firstVal = array[0] as? Int else { return nil }
+        
+        let root = TreeNode(firstVal)
+        var queue: [TreeNode] = [root]
+        var i = 1
+        
+        while i < array.count && !queue.isEmpty {
+            let node = queue.removeFirst()
+            
+            // Set left child
+            if i < array.count {
+                if let val = array[i] as? Int {
+                    node.left = TreeNode(val)
+                    queue.append(node.left!)
+                }
+                i += 1
+            }
+            
+            // Set right child
+            if i < array.count {
+                if let val = array[i] as? Int {
+                    node.right = TreeNode(val)
+                    queue.append(node.right!)
+                }
+                i += 1
+            }
+        }
+        
+        return root
+    }
+
+    public static func createBinaryTree(_ array: [Int?]) -> TreeNode? {
+        guard !array.isEmpty, let firstVal = array[0] else { return nil }
+        
+        let root = TreeNode(firstVal)
+        var queue: [TreeNode] = [root]
+        var i = 1
+        
+        while i < array.count && !queue.isEmpty {
+            let node = queue.removeFirst()
+            
+            // Set left child
+            if i < array.count {
+                if let val = array[i] {
+                    node.left = TreeNode(val)
+                    queue.append(node.left!)
+                }
+                i += 1
+            }
+            
+            // Set right child
+            if i < array.count {
+                if let val = array[i] {
+                    node.right = TreeNode(val)
+                    queue.append(node.right!)
+                }
+                i += 1
+            }
+        }
+        
+        return root
+    }
+
     public init(_ val: Int, _ left: TreeNode? = nil, _ right: TreeNode? = nil) {
         self.val = val
         self.left = left

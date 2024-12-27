@@ -56,6 +56,18 @@ class Solution {
     }
     
     static func main() {
-        
+        let s = Solution()
+        printTime {
+            print("示例1: \(s.carPooling([[2,1,5],[3,3,7]], 4))")
+        }
+        printTime {
+            print("示例2: \(s.carPooling([[2,1,5],[3,3,7]], 5))")
+        }
+        printTime {
+            print("示例3: \(s.carPooling([[2,1,5],[3,5,7]], 3))")
+        }
+        printTime {
+            print("示例4: \(s.carPooling([[3,2,7],[3,7,9],[8,3,9]], 11))")
+        }
     }
 }

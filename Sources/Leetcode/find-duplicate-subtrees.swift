@@ -42,6 +42,23 @@ class Solution {
     }
     
     static func main() {
+        let solution = Solution()
+        printTime {
+            let root1 = TreeNode.fromArray([1,2,3,4,nil,2,4,nil,nil,4])
+            print("示例1: \(solution.findDuplicateSubtrees(root1).map { $0?.val })")
+            // 输出: [4,2]
+        }
         
+        printTime {
+            let root2 = TreeNode.fromArray([2,1,1])
+            print("示例2: \(solution.findDuplicateSubtrees(root2).map { $0?.val })")
+            // 输出: [1]
+        }
+        
+        printTime {
+            let root3 = TreeNode.fromArray([2,2,2,3,nil,3,nil])
+            print("示例3: \(solution.findDuplicateSubtrees(root3).map { $0?.val })")
+            // 输出: [2,3]
+        }
     }
 }

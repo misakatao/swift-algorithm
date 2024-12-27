@@ -55,6 +55,25 @@ class Solution {
     }
     
     static func main() {
+        let solution = Solution()
+        printTime {
+            print("示例1: \(solution.longestConsecutive([100,4,200,1,3,2]))")
+            // 输出: 4
+        }
         
+        printTime {
+            print("示例2: \(solution.longestConsecutive([0,3,7,2,5,8,4,6,0,1]))")
+            // 输出: 9
+        }
+        
+        printTime {
+            print("示例3: \(solution.longestConsecutive([1,2,0,1]))")
+            // 输出: 3
+        }
+        
+        printTime {
+            print("示例4: \(solution.longestConsecutive([]))") 
+            // 输出: 0
+        }
     }
 }

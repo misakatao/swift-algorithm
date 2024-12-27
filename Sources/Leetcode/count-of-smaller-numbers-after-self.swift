@@ -60,6 +60,18 @@ class Solution {
     }
     
     static func main() {
-        
+        let solution = Solution()
+        printTime {
+            print("示例1: \(solution.countSmaller([5,2,6,1]))")  // 输出: [2,1,1,0]
+        }
+        printTime {
+            print("示例2: \(solution.countSmaller([-1]))")  // 输出: [0]
+        }
+        printTime {
+            print("示例3: \(solution.countSmaller([-1,-1]))")  // 输出: [0,0]
+        }
+        printTime {
+            print("示例4: \(solution.countSmaller([2,0,1]))")  // 输出: [2,0,0]
+        }
     }
 }

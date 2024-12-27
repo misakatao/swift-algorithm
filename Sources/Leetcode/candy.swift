@@ -25,17 +25,48 @@ class Solution {
      请你给每个孩子分发糖果，计算并返回需要准备的 最少糖果数目 。
      */
     func candy(_ ratings: [Int]) -> Int {
+        let length = ratings.count
+        if length <= 1 { return length }
         
-        return 0
+        // Use array for simplicity and safety while maintaining good performance
+        var candies = Array(repeating: 1, count: length)
+        
+        // Forward pass - compare with left neighbor
+        for index in 1..<length {
+            if ratings[index] > ratings[index-1] {
+                candies[index] = candies[index-1] + 1
+            }
+        }
+        
+        // Backward pass - compare with right neighbor and update running sum
+        var totalCandy = candies[length-1]
+        
+        for index in (0..<length-1).reversed() {
+            if ratings[index] > ratings[index+1] {
+                candies[index] = max(candies[index], candies[index+1] + 1)
+            }
+            totalCandy += candies[index]
+        }
+        
+        return totalCandy
     }
     
     static func main() {
-        let s = Solution()
+        let solution = Solution()
         printTime {
-            print("示例1: \(s.candy([1,0,2]))")
+            print("示例1: \(solution.candy([1,0,2]))")  // 输出: 5
         }
         printTime {
-            print("示例2: \(s.candy([1,2,2]))")
+            print("示例2: \(solution.candy([1,2,2]))")  // 输出: 4
+        }
+        printTime {
+            print("示例3: \(solution.candy([1,3,2,2,1]))")  // 输出: 7
+        }
+        printTime {
+            print("示例4: \(solution.candy([1,2,87,87,87,2,1]))")  // 输出: 13
+        }
+        printTime {
+            print("示例5: \(solution.candy([1]))")  // 输出: 1
         }
     }
 }

@@ -42,6 +42,30 @@ class Solution {
     }
     
     static func main() {
+        let solution = Solution()
+        printTime {
+            print("示例1: \(solution.longestPalindrome("babad"))")
+            // 输出: "bab" 或 "aba"
+        }
         
+        printTime {
+            print("示例2: \(solution.longestPalindrome("cbbd"))")
+            // 输出: "bb"
+        }
+        
+        printTime {
+            print("示例3: \(solution.longestPalindrome("a"))")
+            // 输出: "a"
+        }
+        
+        printTime {
+            print("示例4: \(solution.longestPalindrome("ac"))")
+            // 输出: "a"
+        }
+        
+        printTime {
+            print("示例5: \(solution.longestPalindrome("racecar"))")
+            // 输出: "racecar"
+        }
     }
 }

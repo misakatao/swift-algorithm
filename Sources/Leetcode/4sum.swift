@@ -73,6 +73,15 @@ class Solution {
     }
     
     static func main() {
-        
+        let s = Solution()
+        printTime {
+            print("示例1: \(s.fourSum([1,0,-1,0,-2,2], 0))")
+        }
+        printTime {
+            print("示例2: \(s.fourSum([2,2,2,2,2], 8))")
+        }
+        printTime {
+            print("示例3: \(s.fourSum([1,2,3,4], 10))")
+        }
     }
 }

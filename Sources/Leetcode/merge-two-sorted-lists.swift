@@ -43,23 +43,40 @@ class Solution {
     }
     
     static func main() {
-        let s = Solution()
-        printTime {
-            let head = ListNode(1)
-            head.next = ListNode(3)
-            head.next?.next = ListNode(5)
-            head.next?.next?.next = ListNode(7)
-            head.next?.next?.next?.next = ListNode(9)
+        let solution = Solution()
+        
+        let testCases = [
+            (
+                [1, 3, 5, 7, 9],
+                [2, 4, 6, 8, 10]
+            ),
+            (
+                [1, 2, 4],
+                [1, 3, 4]
+            ),
+            (
+                [],
+                []
+            ),
+            (
+                [],
+                [0]
+            )
+        ]
+        
+        for (i, testCase) in testCases.enumerated() {
+            print("\nTest case \(i + 1):")
+            let list1 = ListNode.createLinkedList(testCase.0)
+            let list2 = ListNode.createLinkedList(testCase.1)
             
-            let head2 = ListNode(2)
-            head2.next = ListNode(4)
-            head2.next?.next = ListNode(6)
-            head2.next?.next?.next = ListNode(8)
-            head2.next?.next?.next?.next = ListNode(10)
+            print("Input:")
+            print("list1 =", list1?.toString ?? "[]") 
+            print("list2 =", list2?.toString ?? "[]")
             
-            let res = s.mergeTwoLists(head, head2)
-            PrintUtil.printLinkedList(res)
-            print("示例1: \(res?.toString ?? "")")
+            printTime {
+                let result = solution.mergeTwoLists(list1, list2)
+                print("\nOutput:", result?.toString ?? "[]")
+            }
         }
     }
 }

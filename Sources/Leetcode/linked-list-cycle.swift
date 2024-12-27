@@ -37,6 +37,32 @@ class Solution {
     }
     
     static func main() {
+        let solution = Solution()
+        let head = ListNode(3)
+        head.next = ListNode(2)
+        head.next?.next = ListNode(0)
+        head.next?.next?.next = ListNode(-4)
+        head.next?.next?.next?.next = head.next // Create cycle at position 1
         
+        printTime {
+            let result = solution.hasCycle(head)
+            print("Has cycle: \(result)") // Should print true
+        }
+        
+        let head2 = ListNode(1)
+        head2.next = ListNode(2)
+        head2.next?.next = head2 // Create cycle at position 0
+        
+        printTime {
+            let result = solution.hasCycle(head2) 
+            print("Has cycle: \(result)") // Should print true
+        }
+        
+        let head3 = ListNode(1) // No cycle
+        
+        printTime {
+            let result = solution.hasCycle(head3)
+            print("Has cycle: \(result)") // Should print false
+        }
     }
 }

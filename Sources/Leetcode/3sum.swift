@@ -72,6 +72,15 @@ class Solution {
     }
     
     static func main() {
-        
+        let s = Solution()
+        printTime {
+            print("示例1: \(s.threeSum([-1,0,1,2,-1,-4]))")
+        }
+        printTime {
+            print("示例2: \(s.threeSum([0,1,1]))")
+        }
+        printTime {
+            print("示例3: \(s.threeSum([0,0,0]))")
+        }
     }
 }

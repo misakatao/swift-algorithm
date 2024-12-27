@@ -73,6 +73,18 @@ class Solution {
     }
     
     static func main() {
-        
+        let solution = Solution()
+        printTime {
+            print("示例1: \(solution.findAnagrams("cbaebabacd", "abc"))")  // 输出: [0,6]
+        }
+        printTime {
+            print("示例2: \(solution.findAnagrams("abab", "ab"))")  // 输出: [0,1,2]
+        }
+        printTime {
+            print("示例3: \(solution.findAnagrams("baa", "aa"))")  // 输出: [1]
+        }
+        printTime {
+            print("示例4: \(solution.findAnagrams("aaaaaaaaaa", "aaaaaaaaaaaaa"))")  // 输出: []
+        }
     }
 }

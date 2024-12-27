@@ -43,6 +43,20 @@ class Solution {
     }
     
     static func main() {
+        let solution = Solution()
+        printTime {
+            print("示例1: \(solution.firstMissingPositive([1,2,0]))")
+            // 输出: 3
+        }
         
+        printTime {
+            print("示例2: \(solution.firstMissingPositive([3,4,-1,1]))")
+            // 输出: 2
+        }
+        
+        printTime {
+            print("示例3: \(solution.firstMissingPositive([7,8,9,11,12]))")
+            // 输出: 1
+        }
     }
 }
